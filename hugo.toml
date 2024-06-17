@@ -1,0 +1,5 @@
+baseURL = 'https://www.ha-box.xyz/'
+languageCode = 'zh-cn'
+title = 'Ha Box 用户体验中心'
+theme = 'hugo-theme-relearn'
+
