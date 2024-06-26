@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HA Box 用户体验中心</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Home Assistant简介 Home Assistant是什么？ Home Assistant是一个开源的家庭自动化控制系统，其将本地化控制和隐私保护作为产品首要考虑的内容。由来自全世界的开发者和DIY爱好者组成的社区提供支持。十分适合在树莓派（Raspberry Pi ）或者本地服务器中运行。&#xA;优势 整个系统采用模块化的方式构建，所以很容易实现对不同设备和动作（action）的支持。更多有关内容可以参见系统架构部分。&#xA;借助模块构建的优势在社区和爱好者的支持下实现了对不同种类、不同品牌传感器和设备的支持。你也可以自己构建自己的组件。&#xA;局限性 不过由于自带的DIY属性（或者叫精神？）的原因，导致其使用门槛比较高，你可能需要自己烧录镜像、自己修改Yaml配置（是的！你可能需要自己修改纯文本的配置文件！）。所以当前的HA不是一个开箱即用的系统。&#xA;配置文件大概长这样：&#xA;configuration.yaml&#xA;# Configure a default setup of Home Assistant (frontend, api, etc) default_config: frontend: themes: !include_dir_merge_named themes #包含主题文件内所有的主题，该文件夹为HACS安装主题的默认路径 # Text to speech tts: - platform: google_translate time_memory: 60 base_url: http://192.168.31.178:8123 service_name: google_say language: &#34;zh-cn&#34; group: !include groups.yaml remote: !include_dir_merge_list custom_config/remote climate: !include_dir_merge_list custom_config/climate #空调 sensor: !include_dir_merge_list custom_config/sensor说明 HA也一直在向着易用化的方向努力，当前很大一部分的配置都可以通过图形界面完成。不过可以预见的是这需要时间，特别是对于非英语用户来说更是如此。&#xA;为什么是Home Assistant？ 在市场上有众多的家庭自动化系统方案可供选择，很多都是由大型企业提供的成熟产品。在使用和体验上可能还是优于Home Assistant系统的，为何我们要舍近求远的再去使用一个不是那么成熟的系统？&#xA;如同HA对自己的介绍中所说的，本地化运行和隐私保护才是HA最为关注的。我们不能说那些成熟商业产品就不注重保护隐私，但我们相信只有自己的数据掌握在自己的手中才是最可靠的。&#xA;绝大部分商业家庭自动化产品都依赖于云端服务，一旦离开了互联网其大概率会罢工。&#xA;其对于云端服务的强依赖也让说明了系统数据的流向，我们的任何数据都毫无保留的流向了我们无法探知和控制的云端。它们也将长期（甚至是永久）的存储在那里。&#xA;本地化运行可以让所有的操作控制、数据存储都在本地，我们可以在不依赖互联网的情况下控制设备，可以决定怎么处理这些数据。</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
