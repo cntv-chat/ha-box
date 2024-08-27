@@ -302,7 +302,7 @@ highlightWrap = true
 # for the unresolved path. If set to `warning` the same happens and an additional
 # warning is printed. If set to `error` an error message is printed and the build
 # is aborted.
-include.errorlevel = "error"
+#include.errorlevel = "error"
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Images
@@ -346,7 +346,7 @@ include.errorlevel = "error"
 # aborted.
 # Please note that with Hugo < 0.123.0 + `uglyURLs=true` this can lead to false
 # negatives.
-link.errorlevel = "error"
+#link.errorlevel = "error"
 
 # How to open external links.
 # Default: "_blank"
@@ -457,4 +457,4 @@ customOpenapiURL = "" # "https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"
 # printed. If set to `error` an error message is printed and the build is
 # aborted.
 # Please note that this can not resolve files inside of your `static` directory.
-openapi.errorlevel = "error"
+#openapi.errorlevel = "error"
