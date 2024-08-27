@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！
+话不多说，直接开干！
+前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="远程控制Homeassistant盒子 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！
+话不多说，直接开干！
+前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库">
+    <meta property="og:url" content="http://localhost:1313/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%89%AF%E6%9C%AC/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="远程控制Homeassistant盒子 :: HaBox 技术支持站">
+    <meta property="og:description" content="出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！
+话不多说，直接开干！
+前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="远程控制Homeassistant盒子 :: HaBox 技术支持站">
+    <meta itemprop="description" content="出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！
+话不多说，直接开干！
+前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库">
+    <meta itemprop="wordCount" content="42">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Documentation">
+    <title>远程控制Homeassistant盒子 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%89%AF%E6%9C%AC/index.html" rel="canonical" type="text/html" title="远程控制Homeassistant盒子 :: HaBox 技术支持站">
+    <link href="../../%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%89%AF%E6%9C%AC/index.xml" rel="alternate" type="application/rss+xml" title="远程控制Homeassistant盒子 :: HaBox 技术支持站">
+    <link href="../../css/fontawesome-all.min.css?1724501195" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1724501195" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1724501195" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1724501195" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1724501195" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1724501195" rel="stylesheet">
+    <link href="../../css/fonts.css?1724501195" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1724501195" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1724501195" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1724501195" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1724501195" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1724501195" rel="stylesheet">
+    <link href="../../css/print.css?1724501195" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1724501195" rel="stylesheet">
+    <script src="../../js/variant.js?1724501195"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%89%AF%E6%9C%AC/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/index.html"><span itemprop="name">网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">远程控制Homeassistant盒子</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.html" title="搭建免费科学上网节点 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/index.html" title="远程控制Homeassistant盒子 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="远程控制homeassistant盒子">远程控制Homeassistant盒子</h1>
+
+<p>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！</p>
+<p>话不多说，直接开干！</p>
+<h2 id="前提条件">前提条件：</h2>
+<ol>
+<li>你在cloudflare已经注册了账户</li>
+<li>你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址</li>
+<li>你已经拥有哈HA 盒子</li>
+</ol>
+<h2 id="在homeassistant安装cloudflared加载项">在homeassistant安装Cloudflared加载项</h2>
+<p>仓库地址：<code>https://github.com/brenner-tobias/addon-cloudflared</code>
+进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</p>
+<p><a href="#R-image-e50b4c72a77a7dcba75ecb38996739a4" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cda7a9c64acc4809d8466fe304777fea93f45e0c_2_690x274.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e50b4c72a77a7dcba75ecb38996739a4"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cda7a9c64acc4809d8466fe304777fea93f45e0c_2_690x274.png"></a></p>
+<p>输入 <code>https://github.com/brenner-tobias/ha-addons</code>
+然后点添加</p>
+<p><a href="#R-image-f23af4cad944dbb2d012e80a4cb18968" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/147a7a8583cb185a0221b957a9c2f6b56053133a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f23af4cad944dbb2d012e80a4cb18968"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/147a7a8583cb185a0221b957a9c2f6b56053133a.png"></a></p>
+<p>添加不成功，这……，需要考虑换个时间再试，或者科学上网</p>
+<p><a href="#R-image-87f7b68d4c79c0d006ef221363db1809" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a_2_514x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-87f7b68d4c79c0d006ef221363db1809"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a_2_514x500.jpeg"></a></p>
+<p>添加成功后，关闭对话框
+重新进入加载项商店，搜索cloudflared，就能看到加载项Cloudflared，点它然后安装
+<a href="#R-image-a5ff70a8ab1958f1e8c9f9c5afb22c7c" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5ff70a8ab1958f1e8c9f9c5afb22c7c"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png"></a></p>
+<p>安装好之后，进入配置选项卡，配置第一项就行，值为要使用的域名（该域名已添加到cloudflare），然后保存</p>
+<p><a href="#R-image-5ad8f0328f182fbfacc41a2136687477" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e5dba2ce374adb105c3b7fe355b72fb5fd473207_2_690x362.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ad8f0328f182fbfacc41a2136687477"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e5dba2ce374adb105c3b7fe355b72fb5fd473207_2_690x362.png"></a></p>
+<p>之后启动该加载项，在日志选项卡里面你将看到如下信息</p>
+<p><a href="#R-image-d58bde44789f86092fe0f1a37cf733b6" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/81635a3de25d8b41bf0ecbd780d4acf80a205b9b_2_690x325.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d58bde44789f86092fe0f1a37cf733b6"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/81635a3de25d8b41bf0ecbd780d4acf80a205b9b_2_690x325.jpeg"></a></p>
+<p>拷贝高亮所示的链接地址到浏览器地址栏，并访问。
+嗯，点你你需要用来远程访问homeassistant的域名并授权</p>
+<p><a href="#R-image-7fe57d2d8046d15421f04ab9cc5110cf" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc_2_690x275.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fe57d2d8046d15421f04ab9cc5110cf"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc_2_690x275.png"></a></p>
+<p><a href="#R-image-aac993e0cebcf5b830312e469dbb92d7" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d_2_690x167.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aac993e0cebcf5b830312e469dbb92d7"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d_2_690x167.png"></a></p>
+<p><a href="#R-image-d04455ae57818be81451829c08b8102e" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4cc884a49914861d78edabd6e2b7382bf653e112_2_690x139.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d04455ae57818be81451829c08b8102e"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4cc884a49914861d78edabd6e2b7382bf653e112_2_690x139.png"></a></p>
+<p>接下来，还有一些事要做</p>
+<p>打开连接 <a href="https://one.dash.cloudflare.com/" rel="external" target="_self">https://one.dash.cloudflare.com/</a></p>
+<p>导航到左侧边栏 - Networks - Tunnels</p>
+<p><a href="#R-image-3d2810197c98edb41a59a5eaba2dbf9d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c348bb3f2c2797b5d74c8fb875159ddafe531304_2_690x243.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d2810197c98edb41a59a5eaba2dbf9d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c348bb3f2c2797b5d74c8fb875159ddafe531304_2_690x243.jpeg"></a></p>
+<p>拉到Homeassistant这条记录的最右边，有三个小点，点进去，Configure</p>
+<p><a href="#R-image-bbd64435922bbec647d474ae13de0ff5" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4adc7d14223d9a250a0d0885e7fe5564573d6803_2_690x244.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bbd64435922bbec647d474ae13de0ff5"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4adc7d14223d9a250a0d0885e7fe5564573d6803_2_690x244.png"></a></p>
+<p>也许你需要点右边三小点，Edit进行编辑</p>
+<p><a href="#R-image-eeb983f64c12c2e6490e6ece59957ac4" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0205a3d16cfdbcbdea4c711c03cd571168621645_2_690x292.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eeb983f64c12c2e6490e6ece59957ac4"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0205a3d16cfdbcbdea4c711c03cd571168621645_2_690x292.jpeg"></a></p>
+<p>最后你可以确认下dns是不是已经自动配置好了</p>
+<p><a href="#R-image-56cba4dc1f03d41a4d393910b43afa6a" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/8b4aa7498406a60ce8d7cb017bb7775b1926e335_2_690x238.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56cba4dc1f03d41a4d393910b43afa6a"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/8b4aa7498406a60ce8d7cb017bb7775b1926e335_2_690x238.jpeg"></a></p>
+<p>接下来在回到HA盒子，安装加载项File Editor（如果还没安装的话）
+然后在/homeassistant/configuration.yaml中添加如下内容</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">http</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_x_forwarded_for</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">trusted_proxies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">172.30.33.0</span><span class="l">/24</span></span></span></code></pre></div><p><a href="#R-image-93e27bce8c1fed46944e6ce69a5a9042" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/64e468b1b83fe3b9a0122105b58b389f6c07910d_2_690x383.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-93e27bce8c1fed46944e6ce69a5a9042"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/64e468b1b83fe3b9a0122105b58b389f6c07910d_2_690x383.jpeg"></a></p>
+<p>修改完后记得重启下盒子
+然后就可以愉快的远程访问啦</p>
+<p><a href="#R-image-3f3ceade8ce107a63e7311471efe05c6" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4e6b816376cee4395a5794dea3d6eda17aff3b61_2_563x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f3ceade8ce107a63e7311471efe05c6"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4e6b816376cee4395a5794dea3d6eda17aff3b61_2_563x500.png"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1724501195" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1724501195" defer></script>
+    <script src="../../js/theme.js?1724501195" defer></script>
+  </body>
+</html>

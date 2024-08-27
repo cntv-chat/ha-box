@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络技术 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/network/index.html</link>
+    <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ha盒子配置科学上网</title>
+      <link>http://localhost:1313/network/habox-over-greatwall/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/habox-over-greatwall/index.html</guid>
+      <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）&#xA;安装完后，点启动，配置选项卡可以不用修改默认就行&#xA;打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。&#xA;导入节点&#xA;然后，选择，启动&#xA;此时，应该就可以用了。开个窗口测试一下 http://homeassistant.local:7681/ 进入后输入login 回车 输入curl www.</description>
+    </item>
+    <item>
+      <title>搭建免费科学上网节点</title>
+      <link>http://localhost:1313/network/free-vless-node/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-vless-node/index.html</guid>
+      <description>准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。&#xA;2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号&#xA;3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js&#xA;备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</description>
+    </item>
+    <item>
+      <title>远程控制Homeassistant盒子</title>
+      <link>http://localhost:1313/network/free-remote-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-remote-control/index.html</guid>
+      <description>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！&#xA;话不多说，直接开干！&#xA;前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</description>
+    </item>
+  </channel>
+</rss>

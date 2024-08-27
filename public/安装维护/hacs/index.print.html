@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="HACS安装激活 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。">
+    <meta property="og:url" content="http://localhost:1313/%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/hacs/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="HACS安装激活 :: HaBox 技术支持站">
+    <meta property="og:description" content="一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="HACS安装激活 :: HaBox 技术支持站">
+    <meta itemprop="description" content="一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。">
+    <meta itemprop="wordCount" content="32">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Documentation">
+    <title>HACS安装激活 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/hacs/index.html" rel="canonical" type="text/html" title="HACS安装激活 :: HaBox 技术支持站">
+    <link href="../../%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/hacs/index.xml" rel="alternate" type="application/rss+xml" title="HACS安装激活 :: HaBox 技术支持站">
+    <link href="../../css/fontawesome-all.min.css?1724501017" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1724501017" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1724501017" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1724501017" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1724501017" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1724501017" rel="stylesheet">
+    <link href="../../css/fonts.css?1724501017" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1724501017" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1724501017" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1724501017" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1724501017" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1724501017" rel="stylesheet">
+    <link href="../../css/print.css?1724501017" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1724501017" rel="stylesheet">
+    <script src="../../js/variant.js?1724501017"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/hacs/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/index.html"><span itemprop="name">安装维护</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">HACS安装激活</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../%E5%AE%89%E8%A3%85%E7%BB%B4%E6%8A%A4/index.html" title="安装维护 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%85%A5/index.html" title="设备接入 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="hacs安装激活">HACS安装激活</h1>
+
+<h2 id="一hacs是什么">一、HACS是什么</h2>
+<p>HACS 是一个全面的、社区驱动的<strong>插件管理系统</strong> ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。</p>
+<h2 id="二安装hacs">二、安装HACS</h2>
+<p>由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。</p>
+<p>配置 - 设备与服务 ，在集成选项卡右下角点<strong>添加集成</strong>按钮</p>
+<p><a href="#R-image-30dfe00279166f5430bcf732a0eab4b2" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/646e80ca68cea28649631171ebf4b080391deba2_2_690x365.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30dfe00279166f5430bcf732a0eab4b2"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/646e80ca68cea28649631171ebf4b080391deba2_2_690x365.jpeg"></a></p>
+<p><a href="#R-image-0d1497d6b996550c82e49660bfb0bc99" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7f8475698172de98cb56982a9863f0dacdef74f3_2_690x389.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d1497d6b996550c82e49660bfb0bc99"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7f8475698172de98cb56982a9863f0dacdef74f3_2_690x389.jpeg"></a></p>
+<p>在弹出窗口搜索HACS，你将看到HACS已经在列表里，然后点击它（整行随便点就行，右边的几个图标只是告诉你HACS的一些功能）</p>
+<p><a href="#R-image-a19149ca140ab8c4957a8de91ca0875f" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9_2_690x384.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a19149ca140ab8c4957a8de91ca0875f"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9_2_690x384.jpeg"></a></p>
+<p>全勾选上，然后提交</p>
+<p><a href="#R-image-e7d34af446e47e2a2dc0743f4209ca96" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ee51e28640e1ccf768c04cec998f9325200c7452_2_690x482.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7d34af446e47e2a2dc0743f4209ca96"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ee51e28640e1ccf768c04cec998f9325200c7452_2_690x482.jpeg"></a></p>
+<p>接下来是打开链接，进到github.com有个授权的动作</p>
+<p><a href="#R-image-a5ecf75de88dbbfcd5c2976530063fe7" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d6a02518146386e9793c52f4200598aa7e8e9a6d_2_690x403.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5ecf75de88dbbfcd5c2976530063fe7"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d6a02518146386e9793c52f4200598aa7e8e9a6d_2_690x403.jpeg"></a></p>
+<p>不出以外的话，你将看到这个页面，复制刚才弹窗给你的验证码，直接鼠标全选上复制过去直接粘贴，然后点 Continue 继续</p>
+<p><a href="#R-image-8fe2f9d2d9674716fcfca9957a3a6571" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/096b8d5fab1cbb4372edccd400f22dbf5b22579c_2_690x487.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8fe2f9d2d9674716fcfca9957a3a6571"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/096b8d5fab1cbb4372edccd400f22dbf5b22579c_2_690x487.png"></a></p>
+<p>有时候会因为种种原因出现下面这个弹窗，直接关闭从头再来，我们接着往下走</p>
+<p><a href="#R-image-550cfd47ea3399c6d3326a7654aeb8bc" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/30b77c357606c423ee9554fed6843dfa583132f8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-550cfd47ea3399c6d3326a7654aeb8bc"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/30b77c357606c423ee9554fed6843dfa583132f8.png"></a></p>
+<p>出现下面这个页面说明你刚才的验证码没输错，可以点击Authorize hacs授权了</p>
+<p><a href="#R-image-0693b63cf89683ebe737339b51f710e8" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f0c8d06fa2176e0832ba8532c56e1b013a2499e7_2_618x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0693b63cf89683ebe737339b51f710e8"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f0c8d06fa2176e0832ba8532c56e1b013a2499e7_2_618x500.jpeg"></a></p>
+<p>OK,到这里说明已经配置成功了，可以关闭这个页面了。</p>
+<p><a href="#R-image-782901e9fe4d050875d6a04a3a3c12ba" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a7f6b1024805fa524a0d85d853081d3c184facda_2_690x379.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-782901e9fe4d050875d6a04a3a3c12ba"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a7f6b1024805fa524a0d85d853081d3c184facda_2_690x379.png"></a></p>
+<p>返回到Homeassistant,HACS已经配置成功，并自动发现了家里的一些设备，可以对区域进行配置，告诉HACS这个设备是在客厅还是在卧室或者别的房间。当然你也可以直接点关闭或完成。</p>
+<p><a href="#R-image-00e691e3e43e4c826dff79ddaa1e6b60" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eabec53c489ed0f40401fe3d59537fbed6f7d9ec_2_657x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00e691e3e43e4c826dff79ddaa1e6b60"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eabec53c489ed0f40401fe3d59537fbed6f7d9ec_2_657x500.png"></a></p>
+<p>看，左侧已经出现HACS的连接，集成里面已配置列表已经有HACS了。</p>
+<p><a href="#R-image-09beec75d223033e1be44a0dccc59acc" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c535214811638b31d0ebea7cf29975b2ca6e11_2_690x418.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-09beec75d223033e1be44a0dccc59acc"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c535214811638b31d0ebea7cf29975b2ca6e11_2_690x418.jpeg"></a></p>
+<p>此时你可能需要重启一下HA Box缓解一下激动的心情了</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1724501017" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1724501017" defer></script>
+    <script src="../../js/theme.js?1724501017" defer></script>
+  </body>
+</html>

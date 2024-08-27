@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>将米家设备接入HomeAssistant :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/access/mijia/index.html</link>
+    <description>HA Box使用说明书&#xA;在HA Box 中安装HACS&#xA;前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装&#xA;1将米家设备接入HomeAssistant 1 安装 Xiaomi Miot Atuo 接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/access/mijia/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

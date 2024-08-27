@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> 给HA Box插上无线WIFI的翅膀 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/installation/wifi/index.html</link>
+    <description>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。&#xA;要配置无线网卡，你需要先连上网线，或者接上显示器和键盘。 如果是已连上有线网络，那么在浏览器打开http://homeassistant.local:7681/ （或者用ip访问，比如http://192.168.3.209:7681/ ，请使用你HA Box实际的ip地址替换192.168.3.209），打开后你将看到如下界面&#xA;当然，如果你没有连有线网络，但是接连显示器和键盘，同样在显示器上你也将看到类似的界面。&#xA;在ha&gt;提示符下输入“login”然后回车，进入root模式下。</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/installation/wifi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

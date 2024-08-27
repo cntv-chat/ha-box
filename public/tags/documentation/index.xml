@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation :: 标签 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/tags/documentation/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> HA盒子使用说明书（开箱即用）</title>
+      <link>http://localhost:1313/installation/instructions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/installation/instructions/index.html</guid>
+      <description>首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。&#xA;等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 79 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123 12进行访问）&#xA;基本设置 创建用户 选择家的位置 这个地方如果搜索不到，您可以通过缩放地图，拖动地图中的位置图标到家所在的位置，然后是设置国家选项（如果是通过搜索找到的位置，就没有这个选项，系统自动设置了）</description>
+    </item>
+    <item>
+      <title> 给HA Box插上无线WIFI的翅膀</title>
+      <link>http://localhost:1313/installation/wifi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/installation/wifi/index.html</guid>
+      <description>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。&#xA;要配置无线网卡，你需要先连上网线，或者接上显示器和键盘。 如果是已连上有线网络，那么在浏览器打开http://homeassistant.local:7681/ （或者用ip访问，比如http://192.168.3.209:7681/ ，请使用你HA Box实际的ip地址替换192.168.3.209），打开后你将看到如下界面&#xA;当然，如果你没有连有线网络，但是接连显示器和键盘，同样在显示器上你也将看到类似的界面。&#xA;在ha&gt;提示符下输入“login”然后回车，进入root模式下。</description>
+    </item>
+    <item>
+      <title>HA Box桥接米家设备到HomeKit</title>
+      <link>http://localhost:1313/access/homekit/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/access/homekit/index.html</guid>
+      <description>HA Box使用说明书&#xA;在HA Box 中安装HACS&#xA;将米家设备接入HomeAssistant&#xA;前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装&#xA;接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。</description>
+    </item>
+    <item>
+      <title>HACS安装激活</title>
+      <link>http://localhost:1313/installation/hacs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/installation/hacs/index.html</guid>
+      <description>一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。</description>
+    </item>
+    <item>
+      <title>Ha盒子配置科学上网</title>
+      <link>http://localhost:1313/network/habox-over-greatwall/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/habox-over-greatwall/index.html</guid>
+      <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）&#xA;安装完后，点启动，配置选项卡可以不用修改默认就行&#xA;打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。&#xA;导入节点&#xA;然后，选择，启动&#xA;此时，应该就可以用了。开个窗口测试一下 http://homeassistant.local:7681/ 进入后输入login 回车 输入curl www.</description>
+    </item>
+    <item>
+      <title>搭建免费科学上网节点</title>
+      <link>http://localhost:1313/network/free-vless-node/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-vless-node/index.html</guid>
+      <description>准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。&#xA;2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号&#xA;3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js&#xA;备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</description>
+    </item>
+    <item>
+      <title>将米家设备接入HomeAssistant</title>
+      <link>http://localhost:1313/access/mijia/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/access/mijia/index.html</guid>
+      <description>HA Box使用说明书&#xA;在HA Box 中安装HACS&#xA;前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装&#xA;1将米家设备接入HomeAssistant 1 安装 Xiaomi Miot Atuo 接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。</description>
+    </item>
+    <item>
+      <title>远程控制Homeassistant盒子</title>
+      <link>http://localhost:1313/network/free-remote-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-remote-control/index.html</guid>
+      <description>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！&#xA;话不多说，直接开干！&#xA;前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</description>
+    </item>
+  </channel>
+</rss>

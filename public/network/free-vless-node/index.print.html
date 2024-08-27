@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.1">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）">
+    <meta property="og:url" content="http://localhost:1313/network/free-vless-node/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta property="og:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta itemprop="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）">
+    <meta itemprop="wordCount" content="46">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Documentation">
+    <title>搭建免费科学上网节点 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/network/free-vless-node/index.html" rel="canonical" type="text/html" title="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <link href="../../network/free-vless-node/index.xml" rel="alternate" type="application/rss+xml" title="搭建免费科学上网节点 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1724750929" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1724750929" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1724750929" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1724750929" rel="stylesheet">
+    <link href="../../css/fonts.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1724750929" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1724750929" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1724750929" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1724750929" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1724750929" rel="stylesheet">
+    <link href="../../css/print.css?1724750929" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1724750929" rel="stylesheet">
+    <script src="../../js/variant.js?1724750929"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../network/free-vless-node/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">搭建免费科学上网节点</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/free-remote-control/index.html" title="远程控制Homeassistant盒子 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="搭建免费科学上网节点">搭建免费科学上网节点</h1>
+
+<h2 id="准备物料">准备物料</h2>
+<h2 id="1域名一个">1)域名一个</h2>
+<p>推荐到<a href="https://www.namesilo.com/" rel="external" target="_self">namesilo.com</a>注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。</p>
+<p>注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</p>
+<h3 id="2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</h3>
+<p>打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号</p>
+<h3 id="3准备代码">3)准备代码</h3>
+<p><a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js" rel="external" target="_self">https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js</a></p>
+<p><a href="https://4i5i-my.sharepoint.com/:u:/g/personal/sosel_4i5i_onmicrosoft_com/EQr1zW3GUINKptRic9MlSKIBOmUXEukBXOzK6oq-ED0QQQ?e=cTDsBR" rel="external" target="_self">备用地址</a> （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</p>
+<h2 id="在cloudflare添加网站">在Cloudflare添加网站</h2>
+<p>登陆Cloudflare，然后添加网站，就是将你刚注册的域名添加到这里</p>
+<p><a href="#R-image-56d988fd62616a5e741b1b2ac4ce5a84" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b1c3498eee818656643b898a86c72fcd77eaabd3_2_690x259.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56d988fd62616a5e741b1b2ac4ce5a84"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b1c3498eee818656643b898a86c72fcd77eaabd3_2_690x259.png"></a></p>
+<p>然后选择<strong>免费</strong>的方案就行，如下图，然后<strong>继续</strong></p>
+<p><a href="#R-image-80c622c75e160fa78918d9becced56e5" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/90241e3e480226358c120d6be86510c2587b268f_2_690x172.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80c622c75e160fa78918d9becced56e5"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/90241e3e480226358c120d6be86510c2587b268f_2_690x172.png"></a></p>
+<p>此时我们先不添加DNS，先把域名解析服务器改到Cloudflare，点击左边栏 <strong>DNS</strong>，记下Cloudflare名称服务器地址，你看到的可能和我看到不一定一样，别弄错了。</p>
+<p><a href="#R-image-c2d4e9db0f146897312f42535daef504" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/619ee5212f9f721c3c60ba3ad41a855f02ccc158_2_690x239.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2d4e9db0f146897312f42535daef504"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/619ee5212f9f721c3c60ba3ad41a855f02ccc158_2_690x239.png"></a></p>
+<p>去域名注册平台后台https://www.namesilo.com/account_domains.php</p>
+<p><a href="#R-image-069fd1eda9e0c80ed9225ffd33eb0f74" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77_2_690x226.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-069fd1eda9e0c80ed9225ffd33eb0f74"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77_2_690x226.jpeg"></a></p>
+<p>填入Cloudflare的名称服务器地址，然后提交（submit），名称服务器生效可能要等一段时间</p>
+<p><a href="#R-image-31e0eecd320453d6690c6913a3318a0e" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/73fd0ce7fd47d3e25d5035f6af78106fd531509a_2_690x258.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31e0eecd320453d6690c6913a3318a0e"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/73fd0ce7fd47d3e25d5035f6af78106fd531509a_2_690x258.png"></a></p>
+<h2 id="创建应用程序">创建应用程序</h2>
+<p>回到Cloudflare，导航到<strong>Workers 和 Pages</strong> 创建应用程序</p>
+<p><a href="#R-image-ee7783ec45917b266385bb7cd2628ff2" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6202273f3867236110d6a2a3e9d4a48ba7b52446_2_690x449.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee7783ec45917b266385bb7cd2628ff2"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6202273f3867236110d6a2a3e9d4a48ba7b52446_2_690x449.jpeg"></a></p>
+<p><a href="#R-image-0f788602f6e112fa30f8813b8e7c0f74" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0_2_690x287.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f788602f6e112fa30f8813b8e7c0f74"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0_2_690x287.png"></a></p>
+<p>名称可以随意，完了点击部署按钮，代码先不管它</p>
+<p><a href="#R-image-0f3ee10ffa71d19abb2062ba7bbc6a9e" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/045bcecb3b15412597fef3db606a8de38b5b7c9e_2_672x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f3ee10ffa71d19abb2062ba7bbc6a9e"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/045bcecb3b15412597fef3db606a8de38b5b7c9e_2_672x500.png"></a></p>
+<p>Worker部署成功</p>
+<p><a href="#R-image-b0b55c1e15a9f97362209965a020aef6" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb_2_690x296.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0b55c1e15a9f97362209965a020aef6"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb_2_690x296.png"></a></p>
+<h2 id="替换脚本代码">替换脚本代码</h2>
+<p>点击编辑代码，将https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js代码复制过来，贴到编辑器里面替换原来的内容</p>
+<p>修改两个地方：</p>
+<p>1，第7行的userID，随便找个UUID替换，<a href="https://www.uuidgenerator.net/version4" rel="external" target="_self">点击这里获取一个 4</a>，注意用version4，否则会报UUID不合法。</p>
+<p>2，第9行的proxyIP，可以找前辈们提供的，随便在下面的列表中找一个</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.org</code></pre></div><p><em>userID不用改也行 ，userID记在小本本上以后要用</em></p>
+<p>proxyIP<em>我测试了也可以不用改，空着就行</em></p>
+<p><strong>保存并部署</strong>（按钮在屏幕右上角）</p>
+<h2 id="绑定域名">绑定域名</h2>
+<p><a href="#R-image-880c402277b273ac843218903f88a456" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/42db9218a49c38b1e5fc04f5a965596776ad3be3_2_690x389.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-880c402277b273ac843218903f88a456"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/42db9218a49c38b1e5fc04f5a965596776ad3be3_2_690x389.png"></a></p>
+<p><a href="#R-image-96632ebb3f58645efd466b7405321016" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/67c86bffc006e2047714fe596cd6d07f63abae6f_2_690x407.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96632ebb3f58645efd466b7405321016"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/67c86bffc006e2047714fe596cd6d07f63abae6f_2_690x407.png"></a></p>
+<p>自定义域前缀可以随意，根据自己需要填写然后点击“添加自定义域”，等一会儿生效后就可以用了。。。</p>
+<h2 id="配置科学上网客户端">配置科学上网客户端</h2>
+<p>在浏览器地址栏输入你刚配置的自定义域+代码中配置的userID，得到相应的科学上网的配置参数</p>
+<p>比如：https://hi.cntv.chat/6efcf080-745f-42c0-a0e6-4b0f9a2f8f1c</p>
+<p><a href="#R-image-1ed1e26869e6ee1d6216d7a21f1cd4d9" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0_2_690x384.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ed1e26869e6ee1d6216d7a21f1cd4d9"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0_2_690x384.png"></a></p>
+<p>复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG</p>
+<p>好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！</p>
+<p>若有不明白或遇到什么问题，请给我留言。</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1724750929" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1724750929" defer></script>
+    <script src="../../js/theme.js?1724750929" defer></script>
+  </body>
+</html>

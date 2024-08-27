@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.1">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="A theme for Hugo designed for documentation.">
+    <meta name="author" content="Sören Weber">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="Hugo Relearn Theme :: HaBox 技术支持站">
+    <meta name="twitter:description" content="A theme for Hugo designed for documentation.">
+    <meta property="og:url" content="http://localhost:1313/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="Hugo Relearn Theme :: HaBox 技术支持站">
+    <meta property="og:description" content="A theme for Hugo designed for documentation.">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="Hugo Relearn Theme :: HaBox 技术支持站">
+    <meta itemprop="description" content="A theme for Hugo designed for documentation.">
+    <meta itemprop="wordCount" content="1">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <title>Hugo Relearn Theme :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/index.html" rel="canonical" type="text/html" title="Hugo Relearn Theme :: HaBox 技术支持站">
+    <link href="./index.xml" rel="alternate" type="application/rss+xml" title="Hugo Relearn Theme :: HaBox 技术支持站"><link rel="icon" href="./images/favicon.png" type="image/png">
+
+    <link href="./css/fontawesome-all.min.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fontawesome-all.min.css?1724750929" rel="stylesheet"></noscript>
+    <link href="./css/nucleus.css?1724750929" rel="stylesheet">
+    <link href="./css/auto-complete.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/auto-complete.css?1724750929" rel="stylesheet"></noscript>
+    <link href="./css/perfect-scrollbar.min.css?1724750929" rel="stylesheet">
+    <link href="./css/fonts.css?1724750929" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fonts.css?1724750929" rel="stylesheet"></noscript>
+    <link href="./css/theme.css?1724750929" rel="stylesheet">
+    <link href="./css/theme-relearn-auto.css?1724750929" rel="stylesheet" id="R-variant-style">
+    <link href="./css/chroma-relearn-auto.css?1724750929" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="./css/variant.css?1724750929" rel="stylesheet">
+    <link href="./css/print.css?1724750929" rel="stylesheet" media="print">
+    <link href="./css/format-print.css?1724750929" rel="stylesheet">
+    <script src="./js/variant.js?1724750929"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='.';
+      window.relearn.relBaseUri='.';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="./index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="./index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-left"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="./installation/index.html" title="安装维护 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable home" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="home">
+            <header class="headline">
+            </header>
+
+<h1 id="hugo-relearn-theme">Hugo Relearn Theme</h1>
+
+<p>欢迎来到HaBox技术支持站</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Hugo Relearn Theme 的子部分</h1>
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">第1章</div>
+
+<h1 id="安装维护">安装维护</h1>
+
+<p>Discover what this Hugo theme is all about and the core-concepts behind it.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">安装维护 的子部分</h1>
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="ha盒子使用说明书开箱即用"> HA盒子使用说明书（开箱即用）</h1>
+
+<p>首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。</p>
+<h2 id="等待欢迎界面">等待欢迎界面</h2>
+<p>拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入<a href="http://homeassistant.local:8123/" rel="external" target="_self">http://homeassistant.local:8123 79</a> 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入<a href="http://ip:8123/" rel="external" target="_self">http://ip:8123 12</a>进行访问）</p>
+<p><a href="#R-image-a93780d52ac08553d021872777044ca6" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e44a5581acae451ff0707c4d898449c3e4e7b897_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a93780d52ac08553d021872777044ca6"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e44a5581acae451ff0707c4d898449c3e4e7b897_2_689x500.png"></a></p>
+<h2 id="基本设置">基本设置</h2>
+<h3 id="创建用户">创建用户</h3>
+<p><a href="#R-image-8662fc845823824ce99470a951e1abc5" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/dfe10595ea8029c304b1e5e1645970fd92430e55_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8662fc845823824ce99470a951e1abc5"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/dfe10595ea8029c304b1e5e1645970fd92430e55_2_689x500.png"></a></p>
+<h3 id="选择家的位置">选择家的位置</h3>
+<p>这个地方如果搜索不到，您可以通过缩放地图，拖动地图中的位置图标到家所在的位置，然后是设置国家选项（如果是通过搜索找到的位置，就没有这个选项，系统自动设置了）</p>
+<p><a href="#R-image-695b294f4f85e01f3952efb40aa22191" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/70fb324044aaae25d270320b9ae184765ade05e3_2_689x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-695b294f4f85e01f3952efb40aa22191"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/70fb324044aaae25d270320b9ae184765ade05e3_2_689x500.jpeg"></a></p>
+<p><a href="#R-image-1466b74133bbe8b149a12c7df43bb736" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/dcadf4b43bd1cb9d82c5fa5caf15d181a7b65bc1_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1466b74133bbe8b149a12c7df43bb736"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/dcadf4b43bd1cb9d82c5fa5caf15d181a7b65bc1_2_689x500.png"></a></p>
+<h3 id="信息收集">信息收集</h3>
+<p>接下来是收集数据，建议不选，然后是自动发现家里的智能设备，直接点完成即可。</p>
+<p><a href="#R-image-2235d3d1d7d13d0c11c89f6372b1c935" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b15a07d394ded87a2aaf92bc75b369df4f73f99e_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2235d3d1d7d13d0c11c89f6372b1c935"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b15a07d394ded87a2aaf92bc75b369df4f73f99e_2_689x500.png"></a></p>
+<p><a href="#R-image-95cc325b71c5924fc48f2c63fbcee97f" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eda80d3fa1b84e6608768f7e03a8792cb112d4af_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95cc325b71c5924fc48f2c63fbcee97f"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eda80d3fa1b84e6608768f7e03a8792cb112d4af_2_689x500.png"></a></p>
+<h3 id="正式进入后台">正式进入后台</h3>
+<p><a href="#R-image-d325d2fcc963d4dec8d99e4324d61519" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/f93054b3b3f85803c4f7d6481b391a1beed52bdf_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d325d2fcc963d4dec8d99e4324d61519"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/f93054b3b3f85803c4f7d6481b391a1beed52bdf_2_689x500.png"></a><a href="#R-image-63d7f06937082965c41c6e7df2774e12" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f93054b3b3f85803c4f7d6481b391a1beed52bdf_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-63d7f06937082965c41c6e7df2774e12"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f93054b3b3f85803c4f7d6481b391a1beed52bdf_2_689x500.png"></a></p>
+<h3 id="升级和修复">升级和修复</h3>
+<p>您可能会发现左侧配置选项边上有如上图所示的数字提示，点进去</p>
+<p>该升级升级，该修复修复</p>
+<p><a href="#R-image-1d68bc9ab6d57f748d6459a8dc0e981b" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c664e0a2fa27ba6fc97a773560ed5975a97b49_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1d68bc9ab6d57f748d6459a8dc0e981b"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c664e0a2fa27ba6fc97a773560ed5975a97b49_2_689x500.png"></a></p>
+<p><a href="#R-image-8a80e23679479641091a0207fbc06b28" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8a80e23679479641091a0207fbc06b28"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54_2_689x500.png"></a></p>
+<p><a href="#R-image-6de937be5cb5d0576cc5df2b242748cd" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f152df71ed02d594e08f2d4b0bc31e6186aa8d08_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6de937be5cb5d0576cc5df2b242748cd"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f152df71ed02d594e08f2d4b0bc31e6186aa8d08_2_689x500.png"></a></p>
+<p><a href="#R-image-f16d3070d5696249a1b4ba5b9bd94da4" class="lightbox-link"><img alt="img" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3_2_689x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f16d3070d5696249a1b4ba5b9bd94da4"><img alt="img" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3_2_689x500.png"></a></p>
+<h3 id="结束语">结束语</h3>
+<p>到此，您基本上就可以根据自身情况进行设备的接入和控制了，请持续关注我们，我们将持续发布使用HomeAssistant盒子相关的使用说明！</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="给ha-box插上无线wifi的翅膀"> 给HA Box插上无线WIFI的翅膀</h1>
+
+<p>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。</p>
+<p><a href="#R-image-4ffca747ef2900a2c793f8a947557819" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/f45429c03828801ccbd43f1dc3a847c7b7ff2fac.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ffca747ef2900a2c793f8a947557819"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/f45429c03828801ccbd43f1dc3a847c7b7ff2fac.jpeg"></a></p>
+<p><a href="#R-image-dc082f74ff3fa2b7a5194169dacbc06d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/71942a02d4e244aea0a832152b7a297e4b7e8c4a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc082f74ff3fa2b7a5194169dacbc06d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/71942a02d4e244aea0a832152b7a297e4b7e8c4a.jpeg"></a></p>
+<p>要配置无线网卡，你需要先连上网线，或者接上显示器和键盘。
+如果是已连上有线网络，那么在浏览器打开http://homeassistant.local:7681/ （或者用ip访问，比如http://192.168.3.209:7681/ ，请使用你HA Box实际的ip地址替换192.168.3.209），打开后你将看到如下界面</p>
+<p><a href="#R-image-3d765fdf72891dd543c8de1e5040750f" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/80151f8634398af9174d5c9dee81e241ef822a68_2_690x310.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d765fdf72891dd543c8de1e5040750f"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/80151f8634398af9174d5c9dee81e241ef822a68_2_690x310.jpeg"></a></p>
+<p>当然，如果你没有连有线网络，但是接连显示器和键盘，同样在显示器上你也将看到类似的界面。</p>
+<p>在ha&gt;提示符下输入“<strong>login</strong>”然后回车，进入root模式下。</p>
+<p>输入 “<strong>ip a</strong>”回车，你将会发现有如下的网卡信息，这就是刚插上的无线网卡了</p>
+<blockquote>
+<p>wlu2: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN group default qlen 1000</p>
+</blockquote>
+<p>好啦，现在我们来设置无线网卡连接信息：
+在#提示符下（root模式）输入：
+<strong><code>nmcli device wifi</code></strong>
+然后回车，将看到能扫描到的wifi信号
+<a href="#R-image-379beb8c29e482a66e88f88be86d28cf" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/9acd43c46494811129589ab7a0e8e74e7fc38867.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-379beb8c29e482a66e88f88be86d28cf"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/9acd43c46494811129589ab7a0e8e74e7fc38867.jpeg"></a></p>
+<p>连接wifi的命令如下：</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-perl" data-lang="perl"><span class="line"><span class="cl"><span class="n">nmcli</span> <span class="n">device</span> <span class="n">wifi</span> <span class="nb">connect</span> <span class="s">&#34;YOUR_SSID&#34;</span> <span class="n">password</span> <span class="s">&#34;YOUR_WIFI_PASSWORD&#34;</span></span></span></code></pre></div><p>当你看到返回下面的信息时，说明连接成功连。需要注意的是该网卡只支持2.4G频段的wifi信号，如果你家wifi没有支持2.4G频段的信号，将连接失败。</p>
+<blockquote>
+<p>root@homeassistant:/ # nmcli device wifi connect “liying” password “8888800000”</p>
+<p>Device ‘wlu2’ successfully activated with ‘6f2bf3bc-6682-4c84-bd5c-5403d25743c6’.</p>
+<p>root@homeassistant:/ #</p>
+</blockquote>
+<p>当我们再用“ip a”命令查看的是很，发现无线网卡已经有了ip信息</p>
+<blockquote>
+<p>wlu2: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default qlen 1000
+link/ether 00:e0:4d:2d:14:ca brd ff:ff:ff:ff:ff:ff
+inet 192.168.3.210/24 brd 192.168.3.255 scope global dynamic noprefixroute wlu2
+valid_lft 86022sec preferred_lft 86022sec
+inet6 2409:8a00:78a6:8d94:c868:de7f:dc92:10/128 scope global dynamic noprefixroute
+valid_lft 6821sec preferred_lft 3221sec
+inet6 2409:8a00:78a6:8d94:a299:4c8b:50fc:8b38/64 scope global dynamic noprefixroute
+valid_lft 7179sec preferred_lft 3579sec
+inet6 fe80::dba2:e2ad:dd62:784/64 scope link noprefixroute
+valid_lft forever preferred_lft forever</p>
+</blockquote>
+<p>此时，我们就可以用wifi网卡对应的ip访问HA Box了</p>
+<blockquote>
+<p>http://192.168.3.210:8123/onboarding.html</p>
+</blockquote>
+<p><a href="#R-image-68cd8f065706f0d378211c6a0a6773e2" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134_2_596x499.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68cd8f065706f0d378211c6a0a6773e2"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134_2_596x499.jpeg"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="hacs安装激活">HACS安装激活</h1>
+
+<h2 id="一hacs是什么">一、HACS是什么</h2>
+<p>HACS 是一个全面的、社区驱动的<strong>插件管理系统</strong> ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。</p>
+<h2 id="二安装hacs">二、安装HACS</h2>
+<p>由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。</p>
+<p>配置 - 设备与服务 ，在集成选项卡右下角点<strong>添加集成</strong>按钮</p>
+<p><a href="#R-image-0efc2deb3491aa8680490d28fda50e24" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/646e80ca68cea28649631171ebf4b080391deba2_2_690x365.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0efc2deb3491aa8680490d28fda50e24"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/646e80ca68cea28649631171ebf4b080391deba2_2_690x365.jpeg"></a></p>
+<p><a href="#R-image-d531f14675fd95a09da535f4f66bc253" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7f8475698172de98cb56982a9863f0dacdef74f3_2_690x389.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d531f14675fd95a09da535f4f66bc253"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7f8475698172de98cb56982a9863f0dacdef74f3_2_690x389.jpeg"></a></p>
+<p>在弹出窗口搜索HACS，你将看到HACS已经在列表里，然后点击它（整行随便点就行，右边的几个图标只是告诉你HACS的一些功能）</p>
+<p><a href="#R-image-0260b165cfe5dbd942ca8e19f2b9c17a" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9_2_690x384.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0260b165cfe5dbd942ca8e19f2b9c17a"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9_2_690x384.jpeg"></a></p>
+<p>全勾选上，然后提交</p>
+<p><a href="#R-image-abc49ddc92faeed4a00b0c6176b10e57" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ee51e28640e1ccf768c04cec998f9325200c7452_2_690x482.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-abc49ddc92faeed4a00b0c6176b10e57"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ee51e28640e1ccf768c04cec998f9325200c7452_2_690x482.jpeg"></a></p>
+<p>接下来是打开链接，进到github.com有个授权的动作</p>
+<p><a href="#R-image-1b94eeafabb09379fe37e98f0cf61958" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d6a02518146386e9793c52f4200598aa7e8e9a6d_2_690x403.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b94eeafabb09379fe37e98f0cf61958"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d6a02518146386e9793c52f4200598aa7e8e9a6d_2_690x403.jpeg"></a></p>
+<p>不出以外的话，你将看到这个页面，复制刚才弹窗给你的验证码，直接鼠标全选上复制过去直接粘贴，然后点 Continue 继续</p>
+<p><a href="#R-image-79731af1baed90fc3bb94a50ce8036ca" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/096b8d5fab1cbb4372edccd400f22dbf5b22579c_2_690x487.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-79731af1baed90fc3bb94a50ce8036ca"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/096b8d5fab1cbb4372edccd400f22dbf5b22579c_2_690x487.png"></a></p>
+<p>有时候会因为种种原因出现下面这个弹窗，直接关闭从头再来，我们接着往下走</p>
+<p><a href="#R-image-135e255f8a516886b1e2ae213d39383d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/30b77c357606c423ee9554fed6843dfa583132f8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-135e255f8a516886b1e2ae213d39383d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/30b77c357606c423ee9554fed6843dfa583132f8.png"></a></p>
+<p>出现下面这个页面说明你刚才的验证码没输错，可以点击Authorize hacs授权了</p>
+<p><a href="#R-image-0a4ef7dc3b45074ccb6d48ea10fc96cc" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f0c8d06fa2176e0832ba8532c56e1b013a2499e7_2_618x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a4ef7dc3b45074ccb6d48ea10fc96cc"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/f0c8d06fa2176e0832ba8532c56e1b013a2499e7_2_618x500.jpeg"></a></p>
+<p>OK,到这里说明已经配置成功了，可以关闭这个页面了。</p>
+<p><a href="#R-image-af332a54c46fa9ea844684a9c367983b" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a7f6b1024805fa524a0d85d853081d3c184facda_2_690x379.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-af332a54c46fa9ea844684a9c367983b"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a7f6b1024805fa524a0d85d853081d3c184facda_2_690x379.png"></a></p>
+<p>返回到Homeassistant,HACS已经配置成功，并自动发现了家里的一些设备，可以对区域进行配置，告诉HACS这个设备是在客厅还是在卧室或者别的房间。当然你也可以直接点关闭或完成。</p>
+<p><a href="#R-image-220f6416b6cc6b81f809c2a3293c373f" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eabec53c489ed0f40401fe3d59537fbed6f7d9ec_2_657x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-220f6416b6cc6b81f809c2a3293c373f"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/eabec53c489ed0f40401fe3d59537fbed6f7d9ec_2_657x500.png"></a></p>
+<p>看，左侧已经出现HACS的连接，集成里面已配置列表已经有HACS了。</p>
+<p><a href="#R-image-8dfde7d2bdef39d0e09511b222699510" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c535214811638b31d0ebea7cf29975b2ca6e11_2_690x418.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8dfde7d2bdef39d0e09511b222699510"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d2c535214811638b31d0ebea7cf29975b2ca6e11_2_690x418.jpeg"></a></p>
+<p>此时你可能需要重启一下HA Box缓解一下激动的心情了</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">第1章</div>
+
+<h1 id="设备接入">设备接入</h1>
+
+<p>Discover what this Hugo theme is all about and the core-concepts behind it.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">设备接入 的子部分</h1>
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="ha-box桥接米家设备到homekit">HA Box桥接米家设备到HomeKit</h1>
+
+<p><a href="http://localhost:1313/installation/instructions/" rel="external" target="_self">HA Box使用说明书</a></p>
+<p><a href="http://localhost:1313/installation/hacs/" rel="external" target="_self">在HA Box 中安装HACS</a></p>
+<p><a href="http://localhost:1313/access/mijia/" rel="external" target="_self">将米家设备接入HomeAssistant</a></p>
+<p>前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装</p>
+<p>接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。</p>
+<p>首先，我们要添加 HomeKit Bridge 集成。点击“配置”，进入“设备与服务”页面。在“集成”选项下，点右下角“添加集成”
+然后输入“homekit” 或者&quot;apple&quot;</p>
+<p><a href="#R-image-34d7be79485cd0ed2acb55251e39a678" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2405b767378b89b3a841ce13334d05cfc9061cf4_2_681x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-34d7be79485cd0ed2acb55251e39a678"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2405b767378b89b3a841ce13334d05cfc9061cf4_2_681x500.jpeg"></a></p>
+<p>点击“Apple”</p>
+<p><a href="#R-image-92e74b519146a86141f3872eae22d8f0" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a0787982f4a5381754deb552770fda923788b729_2_547x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-92e74b519146a86141f3872eae22d8f0"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a0787982f4a5381754deb552770fda923788b729_2_547x500.jpeg"></a></p>
+<p>点击添加“HomeKit Bridge 集成”，按照指引完成添加。</p>
+<p>需要注意是的，如果你有温湿度传感器，点击“要添加的域”下拉选项，记得勾选“Sensor”，这个选项默认是不勾选的。</p>
+<p><a href="#R-image-edaf64a9a53f407f1d28db1d18be00eb" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a_2_690x459.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-edaf64a9a53f407f1d28db1d18be00eb"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a_2_690x459.jpeg"></a></p>
+<p>添加 HomeKit Bridge 集成成功后，点击界面左下角的通知按钮。查看 homekit 的配对二维码。</p>
+<p><a href="#R-image-e5aeafbdf69cad93482d22b1fb20377e" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b08589161582a58e794c2cb626c3ec44e2299ce0_2_690x405.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e5aeafbdf69cad93482d22b1fb20377e"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b08589161582a58e794c2cb626c3ec44e2299ce0_2_690x405.jpeg"></a></p>
+<p><a href="#R-image-0572bc05249868df3b5b17f73194a375" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/3718c6668fa3b68c066162da84fe46579fd3c855_2_571x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0572bc05249868df3b5b17f73194a375"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/3718c6668fa3b68c066162da84fe46579fd3c855_2_571x500.jpeg"></a></p>
+<p>打开“家庭”应用，点击左上角的“+”号，选择“添加配件”。扫描上个步骤的得到的二维码，点击“添加到家庭”。在加入过程中，可能会提示“未认证设备”，点击“仍要添加”。然后完成剩余步骤，逐个添加设备。完成后，你就能能用Siri控制你的智能设备了。</p>
+<p><a href="#R-image-c6d1bf216e7f648a9aff5f8d7a4bb144" class="lightbox-link"><img alt="桥接homekit6.png" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce_2_230x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6d1bf216e7f648a9aff5f8d7a4bb144"><img alt="桥接homekit6.png" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce_2_230x500.jpeg"></a></p>
+<p><a href="#R-image-c2ba064c93debf23dd3e2bf8f5d49cad" class="lightbox-link"><img alt="桥接homekit7.png" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d9897e682d94ac340ab1a1aff6821f0dd09b2144_2_230x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2ba064c93debf23dd3e2bf8f5d49cad"><img alt="桥接homekit7.png" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d9897e682d94ac340ab1a1aff6821f0dd09b2144_2_230x500.jpeg"></a></p>
+<p><a href="#R-image-a0605701800f256f32e6a728d536bd68" class="lightbox-link"><img alt="桥接homekit8.png" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a07d8ff1e7af35d33193fdba56efa787ba360d89_2_230x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0605701800f256f32e6a728d536bd68"><img alt="桥接homekit8.png" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a07d8ff1e7af35d33193fdba56efa787ba360d89_2_230x500.jpeg"></a></p>
+<p>大功告成！</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="将米家设备接入homeassistant">将米家设备接入HomeAssistant</h1>
+
+<p><a href="http://localhost:1313/installation/instructions/" rel="external" target="_self">HA Box使用说明书</a></p>
+<p><a href="http://localhost:1313/installation/hacs/" rel="external" target="_self">在HA Box 中安装HACS</a></p>
+<p>前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装</p>
+<h2 id="1将米家设备接入homeassistant">1将米家设备接入HomeAssistant</h2>
+<h3 id="1-安装-xiaomi-miot-atuo">1 安装 Xiaomi Miot Atuo</h3>
+<p>接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。</p>
+<p>进入 HACS 页面，清除筛选方式（默认只显示已下载的）</p>
+<p><a href="#R-image-c642b0f2ea8fcaf5fc57256a4020bc59" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/70e2335f30d0ac09481483ab161fd31c8ccdae7d_2_690x304.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c642b0f2ea8fcaf5fc57256a4020bc59"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/70e2335f30d0ac09481483ab161fd31c8ccdae7d_2_690x304.jpeg"></a></p>
+<p>然后在搜索框输入“xiaomi miot”，出来后点击它</p>
+<p><a href="#R-image-59764adf22b00996f77b4e913db387bc" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7dbb3b2832a340b7144704101831281b78997f9a_2_690x268.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59764adf22b00996f77b4e913db387bc"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/7dbb3b2832a340b7144704101831281b78997f9a_2_690x268.png"></a></p>
+<p>点击右下角DOWNLOAD进行下载</p>
+<p><a href="#R-image-357b373ce67b0fcfa671fc7ecc641e95" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c2e5a0057e07c7c71caa918194f809e2caa43ed4_2_690x272.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-357b373ce67b0fcfa671fc7ecc641e95"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c2e5a0057e07c7c71caa918194f809e2caa43ed4_2_690x272.png"></a></p>
+<p><a href="#R-image-1cb2c4f0e58c79e3dccf4fa813adff6c" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4052018b771c4df4176b353895c0596dcfb258a2_2_690x347.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cb2c4f0e58c79e3dccf4fa813adff6c"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4052018b771c4df4176b353895c0596dcfb258a2_2_690x347.jpeg"></a></p>
+<p>安装完集成之后需要重启 HomeAssistant。
+配置 → 系统 右上角有重启按钮</p>
+<h3 id="2-配置-xiaomi-miot-atuo">2 配置 Xiaomi Miot Atuo</h3>
+<p>接下来，我们配置 Xiaomi Miot Atuo 将米家设备接入HomeAssistant。<strong>注意，配置 Xiaomi Miot Atuo 前需要重启 HomeAssistant。</strong></p>
+<p>点击“设置”，选择“设备与服务”
+切换到 “设备” 选项卡， 然后点击右下角 “添加设备”
+然后输入“xiaomi”，然后选择&quot;Xiaomi Miot Auto&quot;</p>
+<p><a href="#R-image-7cd240a1610933a6a9750d2eaf469210" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6522b231a80bf78d487a8fc545347c4b350d2730_2_661x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7cd240a1610933a6a9750d2eaf469210"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6522b231a80bf78d487a8fc545347c4b350d2730_2_661x500.jpeg"></a></p>
+<p>选择“账号集成”，登录小米账号获取设备信息。</p>
+<p><a href="#R-image-f432fdccbb088dcb56f56fcf6c4fc9c7" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cd71249cb01282859a521a8a373a6e5629323f92_2_690x344.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f432fdccbb088dcb56f56fcf6c4fc9c7"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cd71249cb01282859a521a8a373a6e5629323f92_2_690x344.jpeg"></a></p>
+<p><a href="#R-image-673fe0b3d744a3f1fe2e3d3caf369580" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/92f4e0e5a705997eb38b985073bb5c8fa47a881a_2_644x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-673fe0b3d744a3f1fe2e3d3caf369580"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/92f4e0e5a705997eb38b985073bb5c8fa47a881a_2_644x500.jpeg"></a></p>
+<p>按照配置指引完成剩余步骤，
+这里可以根据自身情况默认选择排除模式还是包含模式
+在设备列表中你想要接入 HomeAssistant 的设备。
+排除模式就是将设备列表中没有勾选色设备接入到Homeassistant
+包含模式就是将设备列表中已勾选的设备接入到Homeassistant</p>
+<p><a href="#R-image-fcc651f17ab022a609aaca5ead74d9f2" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c403c5c6840ffcc7de4c78bdedd16c2ade91c357_2_690x441.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fcc651f17ab022a609aaca5ead74d9f2"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c403c5c6840ffcc7de4c78bdedd16c2ade91c357_2_690x441.jpeg"></a></p>
+<p>接下来就是设置设备所在区域。这样就算是将米家智能设&gt; 备接入进来了。</p>
+<blockquote>
+<p>上面有一句话：如果想集成网关子设备，请直接选择子设备接入，只接入网关不会自动集成子设备。自己体会，至此就算接入完成了。</p>
+</blockquote>
+<p>回到概览，就可以看到我们刚才接入的设备了</p>
+<p><a href="#R-image-27db3bdf33de51fb6d67c426cc5343e5" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/55cbe342ce51cb278d4599e0061df76d510d5b0b_2_690x443.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-27db3bdf33de51fb6d67c426cc5343e5"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/55cbe342ce51cb278d4599e0061df76d510d5b0b_2_690x443.jpeg"></a></p>
+<p>在配置 - 设备与服务中就能看到Xiaomi Miot Auto</p>
+<p><a href="#R-image-c5cd1b3bf750fca0654cc698e2208403" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ad4e3cd4220230604a9b3354a652d2566cc1a322_2_690x346.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5cd1b3bf750fca0654cc698e2208403"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/ad4e3cd4220230604a9b3354a652d2566cc1a322_2_690x346.jpeg"></a></p>
+<p>点进去就可以看到接入了多少个设备，多少个实体</p>
+<p>我们进入米家插座，就能看到很多信息，并且可以进行更丰富的控制和设置，更多高级的功能，期待你的发现和研究</p>
+<p><a href="#R-image-67bf2c0680cb36bb2c7112c2da65f3f5" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/103b0749a541718c1a75e8ecea1cb438338f0ee0_2_690x442.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67bf2c0680cb36bb2c7112c2da65f3f5"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/103b0749a541718c1a75e8ecea1cb438338f0ee0_2_690x442.jpeg"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">第1章</div>
+
+<h1 id="网络技术">网络技术</h1>
+
+<p>Discover what this Hugo theme is all about and the core-concepts behind it.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">网络技术 的子部分</h1>
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="ha盒子配置科学上网">Ha盒子配置科学上网</h1>
+
+<p>前提，你已拥有可以用的梯子（节点），如果没有请参考：</p>
+<p><a href="http://localhost:1313/network/free-vless-node/" rel="external" target="_self" title="搭建免费科学上网节点">搭建免费科学上网节点</a></p>
+<p>加载项商店搜索&quot;加速&quot;，安装它（实际上就是v2raya,很好用的工具）</p>
+<p><a href="#R-image-a7c1e817f3cf31514881dd5de3e93501" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/070adbd5eb8a90dc0647ed13a5c1acd21d457be8_2_690x260.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a7c1e817f3cf31514881dd5de3e93501"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/070adbd5eb8a90dc0647ed13a5c1acd21d457be8_2_690x260.png"></a></p>
+<p>安装完后，点启动，配置选项卡可以不用修改默认就行</p>
+<p><a href="#R-image-49747a76d793c01879ba76be0eab1711" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/df3fc21234594a0b1260007e57f8a549aebe0075_2_690x347.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-49747a76d793c01879ba76be0eab1711"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/df3fc21234594a0b1260007e57f8a549aebe0075_2_690x347.png"></a></p>
+<p>打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。</p>
+<p>导入节点</p>
+<p><a href="#R-image-3159d95456a31b84ebf99f8bcaf6a1e4" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3_2_690x201.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3159d95456a31b84ebf99f8bcaf6a1e4"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3_2_690x201.png"></a></p>
+<p>然后，选择，启动</p>
+<p><a href="#R-image-4c0adcd060c4d03b86bd840f8cbd6da9" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6039b77ac1aa021955fcb987013cbb0505db3e30_2_690x296.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c0adcd060c4d03b86bd840f8cbd6da9"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6039b77ac1aa021955fcb987013cbb0505db3e30_2_690x296.png"></a></p>
+<p>此时，应该就可以用了。开个窗口测试一下
+<code>http://homeassistant.local:7681/</code>
+进入后输入login 回车
+输入curl <a href="https://www.google.com" rel="external" target="_self">www.google.com</a>回车</p>
+<p>是不是看到google页面返回的网页源码了？</p>
+<p><a href="#R-image-961e783cae5317899226216f5dab1217" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/61122d3118036f0ece49f011ee703944e86ec39a_2_690x307.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-961e783cae5317899226216f5dab1217"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/61122d3118036f0ece49f011ee703944e86ec39a_2_690x307.jpeg"></a></p>
+<p>如果不行，请检查是不是节点或者订阅连接有问题</p>
+<p>关于 v2raya的其他配置，请自行bing。</p>
+<p>其他电脑想要科学上网，也可以修改网络配置，将网关设置为HA盒子的ip地址，也能通过HA盒子实现科学上网的梦想。</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="搭建免费科学上网节点">搭建免费科学上网节点</h1>
+
+<h2 id="准备物料">准备物料</h2>
+<h2 id="1域名一个">1)域名一个</h2>
+<p>推荐到<a href="https://www.namesilo.com/" rel="external" target="_self">namesilo.com</a>注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。</p>
+<p>注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</p>
+<h3 id="2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</h3>
+<p>打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号</p>
+<h3 id="3准备代码">3)准备代码</h3>
+<p><a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js" rel="external" target="_self">https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js</a></p>
+<p><a href="https://4i5i-my.sharepoint.com/:u:/g/personal/sosel_4i5i_onmicrosoft_com/EQr1zW3GUINKptRic9MlSKIBOmUXEukBXOzK6oq-ED0QQQ?e=cTDsBR" rel="external" target="_self">备用地址</a> （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</p>
+<h2 id="在cloudflare添加网站">在Cloudflare添加网站</h2>
+<p>登陆Cloudflare，然后添加网站，就是将你刚注册的域名添加到这里</p>
+<p><a href="#R-image-56d988fd62616a5e741b1b2ac4ce5a84" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b1c3498eee818656643b898a86c72fcd77eaabd3_2_690x259.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56d988fd62616a5e741b1b2ac4ce5a84"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/b1c3498eee818656643b898a86c72fcd77eaabd3_2_690x259.png"></a></p>
+<p>然后选择<strong>免费</strong>的方案就行，如下图，然后<strong>继续</strong></p>
+<p><a href="#R-image-80c622c75e160fa78918d9becced56e5" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/90241e3e480226358c120d6be86510c2587b268f_2_690x172.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80c622c75e160fa78918d9becced56e5"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/90241e3e480226358c120d6be86510c2587b268f_2_690x172.png"></a></p>
+<p>此时我们先不添加DNS，先把域名解析服务器改到Cloudflare，点击左边栏 <strong>DNS</strong>，记下Cloudflare名称服务器地址，你看到的可能和我看到不一定一样，别弄错了。</p>
+<p><a href="#R-image-c2d4e9db0f146897312f42535daef504" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/619ee5212f9f721c3c60ba3ad41a855f02ccc158_2_690x239.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2d4e9db0f146897312f42535daef504"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/619ee5212f9f721c3c60ba3ad41a855f02ccc158_2_690x239.png"></a></p>
+<p>去域名注册平台后台https://www.namesilo.com/account_domains.php</p>
+<p><a href="#R-image-069fd1eda9e0c80ed9225ffd33eb0f74" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77_2_690x226.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-069fd1eda9e0c80ed9225ffd33eb0f74"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77_2_690x226.jpeg"></a></p>
+<p>填入Cloudflare的名称服务器地址，然后提交（submit），名称服务器生效可能要等一段时间</p>
+<p><a href="#R-image-31e0eecd320453d6690c6913a3318a0e" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/73fd0ce7fd47d3e25d5035f6af78106fd531509a_2_690x258.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31e0eecd320453d6690c6913a3318a0e"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/73fd0ce7fd47d3e25d5035f6af78106fd531509a_2_690x258.png"></a></p>
+<h2 id="创建应用程序">创建应用程序</h2>
+<p>回到Cloudflare，导航到<strong>Workers 和 Pages</strong> 创建应用程序</p>
+<p><a href="#R-image-ee7783ec45917b266385bb7cd2628ff2" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6202273f3867236110d6a2a3e9d4a48ba7b52446_2_690x449.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee7783ec45917b266385bb7cd2628ff2"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/6202273f3867236110d6a2a3e9d4a48ba7b52446_2_690x449.jpeg"></a></p>
+<p><a href="#R-image-0f788602f6e112fa30f8813b8e7c0f74" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0_2_690x287.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f788602f6e112fa30f8813b8e7c0f74"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0_2_690x287.png"></a></p>
+<p>名称可以随意，完了点击部署按钮，代码先不管它</p>
+<p><a href="#R-image-0f3ee10ffa71d19abb2062ba7bbc6a9e" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/045bcecb3b15412597fef3db606a8de38b5b7c9e_2_672x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f3ee10ffa71d19abb2062ba7bbc6a9e"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/045bcecb3b15412597fef3db606a8de38b5b7c9e_2_672x500.png"></a></p>
+<p>Worker部署成功</p>
+<p><a href="#R-image-b0b55c1e15a9f97362209965a020aef6" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb_2_690x296.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0b55c1e15a9f97362209965a020aef6"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb_2_690x296.png"></a></p>
+<h2 id="替换脚本代码">替换脚本代码</h2>
+<p>点击编辑代码，将https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js代码复制过来，贴到编辑器里面替换原来的内容</p>
+<p>修改两个地方：</p>
+<p>1，第7行的userID，随便找个UUID替换，<a href="https://www.uuidgenerator.net/version4" rel="external" target="_self">点击这里获取一个 4</a>，注意用version4，否则会报UUID不合法。</p>
+<p>2，第9行的proxyIP，可以找前辈们提供的，随便在下面的列表中找一个</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.org</code></pre></div><p><em>userID不用改也行 ，userID记在小本本上以后要用</em></p>
+<p>proxyIP<em>我测试了也可以不用改，空着就行</em></p>
+<p><strong>保存并部署</strong>（按钮在屏幕右上角）</p>
+<h2 id="绑定域名">绑定域名</h2>
+<p><a href="#R-image-880c402277b273ac843218903f88a456" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/42db9218a49c38b1e5fc04f5a965596776ad3be3_2_690x389.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-880c402277b273ac843218903f88a456"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/42db9218a49c38b1e5fc04f5a965596776ad3be3_2_690x389.png"></a></p>
+<p><a href="#R-image-96632ebb3f58645efd466b7405321016" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/67c86bffc006e2047714fe596cd6d07f63abae6f_2_690x407.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96632ebb3f58645efd466b7405321016"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/67c86bffc006e2047714fe596cd6d07f63abae6f_2_690x407.png"></a></p>
+<p>自定义域前缀可以随意，根据自己需要填写然后点击“添加自定义域”，等一会儿生效后就可以用了。。。</p>
+<h2 id="配置科学上网客户端">配置科学上网客户端</h2>
+<p>在浏览器地址栏输入你刚配置的自定义域+代码中配置的userID，得到相应的科学上网的配置参数</p>
+<p>比如：https://hi.cntv.chat/6efcf080-745f-42c0-a0e6-4b0f9a2f8f1c</p>
+<p><a href="#R-image-1ed1e26869e6ee1d6216d7a21f1cd4d9" class="lightbox-link"><img alt="notion image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0_2_690x384.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ed1e26869e6ee1d6216d7a21f1cd4d9"><img alt="notion image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0_2_690x384.png"></a></p>
+<p>复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG</p>
+<p>好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！</p>
+<p>若有不明白或遇到什么问题，请给我留言。</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="./tags/documentation/index.html">Documentation</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="远程控制homeassistant盒子">远程控制Homeassistant盒子</h1>
+
+<p>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！</p>
+<p>话不多说，直接开干！</p>
+<h2 id="前提条件">前提条件：</h2>
+<ol>
+<li>你在cloudflare已经注册了账户</li>
+<li>你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址</li>
+<li>你已经拥有哈HA 盒子</li>
+</ol>
+<h2 id="在homeassistant安装cloudflared加载项">在homeassistant安装Cloudflared加载项</h2>
+<p>仓库地址：<code>https://github.com/brenner-tobias/addon-cloudflared</code>
+进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</p>
+<p><a href="#R-image-b42733ddaa124ca046f73585ad03b4c7" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cda7a9c64acc4809d8466fe304777fea93f45e0c_2_690x274.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b42733ddaa124ca046f73585ad03b4c7"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/cda7a9c64acc4809d8466fe304777fea93f45e0c_2_690x274.png"></a></p>
+<p>输入 <code>https://github.com/brenner-tobias/ha-addons</code>
+然后点添加</p>
+<p><a href="#R-image-d189b078e268526baae42fc67d0a83b6" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/147a7a8583cb185a0221b957a9c2f6b56053133a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d189b078e268526baae42fc67d0a83b6"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/original/1X/147a7a8583cb185a0221b957a9c2f6b56053133a.png"></a></p>
+<p>添加不成功，这……，需要考虑换个时间再试，或者科学上网</p>
+<p><a href="#R-image-50ce07bcbd92f831edf61e7fca6dd128" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a_2_514x500.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50ce07bcbd92f831edf61e7fca6dd128"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a_2_514x500.jpeg"></a></p>
+<p>添加成功后，关闭对话框
+重新进入加载项商店，搜索cloudflared，就能看到加载项Cloudflared，点它然后安装
+<a href="#R-image-76c2b5b089a86f4f649135cadd9ebcb7" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-76c2b5b089a86f4f649135cadd9ebcb7"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png"></a></p>
+<p>安装好之后，进入配置选项卡，配置第一项就行，值为要使用的域名（该域名已添加到cloudflare），然后保存</p>
+<p><a href="#R-image-53f8a4656f6b0a52a6d4387f335a8e19" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e5dba2ce374adb105c3b7fe355b72fb5fd473207_2_690x362.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53f8a4656f6b0a52a6d4387f335a8e19"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/e5dba2ce374adb105c3b7fe355b72fb5fd473207_2_690x362.png"></a></p>
+<p>之后启动该加载项，在日志选项卡里面你将看到如下信息</p>
+<p><a href="#R-image-bfa24174e347ea9b86811fe263d2a4a9" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/81635a3de25d8b41bf0ecbd780d4acf80a205b9b_2_690x325.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfa24174e347ea9b86811fe263d2a4a9"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/81635a3de25d8b41bf0ecbd780d4acf80a205b9b_2_690x325.jpeg"></a></p>
+<p>拷贝高亮所示的链接地址到浏览器地址栏，并访问。
+嗯，点你你需要用来远程访问homeassistant的域名并授权</p>
+<p><a href="#R-image-23ab662bbbbc350e81e20b7632bad91d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc_2_690x275.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23ab662bbbbc350e81e20b7632bad91d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc_2_690x275.png"></a></p>
+<p><a href="#R-image-62739c1804cb009c3de998286994b20d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d_2_690x167.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-62739c1804cb009c3de998286994b20d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d_2_690x167.png"></a></p>
+<p><a href="#R-image-025b41a61292c91910a2e982dde54a76" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4cc884a49914861d78edabd6e2b7382bf653e112_2_690x139.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-025b41a61292c91910a2e982dde54a76"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4cc884a49914861d78edabd6e2b7382bf653e112_2_690x139.png"></a></p>
+<p>接下来，还有一些事要做</p>
+<p>打开连接 <a href="https://one.dash.cloudflare.com/" rel="external" target="_self">https://one.dash.cloudflare.com/</a></p>
+<p>导航到左侧边栏 - Networks - Tunnels</p>
+<p><a href="#R-image-d04a5eaaf80529cb8ff73973fa9f128a" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c348bb3f2c2797b5d74c8fb875159ddafe531304_2_690x243.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d04a5eaaf80529cb8ff73973fa9f128a"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/c348bb3f2c2797b5d74c8fb875159ddafe531304_2_690x243.jpeg"></a></p>
+<p>拉到Homeassistant这条记录的最右边，有三个小点，点进去，Configure</p>
+<p><a href="#R-image-5c84cc782a39952181e123b0cc16477d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4adc7d14223d9a250a0d0885e7fe5564573d6803_2_690x244.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c84cc782a39952181e123b0cc16477d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4adc7d14223d9a250a0d0885e7fe5564573d6803_2_690x244.png"></a></p>
+<p>也许你需要点右边三小点，Edit进行编辑</p>
+<p><a href="#R-image-e7072a9ae2b377aea5055de146c7e5da" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0205a3d16cfdbcbdea4c711c03cd571168621645_2_690x292.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7072a9ae2b377aea5055de146c7e5da"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/0205a3d16cfdbcbdea4c711c03cd571168621645_2_690x292.jpeg"></a></p>
+<p>最后你可以确认下dns是不是已经自动配置好了</p>
+<p><a href="#R-image-5d476f9391540a314371d4b3be223a96" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/8b4aa7498406a60ce8d7cb017bb7775b1926e335_2_690x238.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5d476f9391540a314371d4b3be223a96"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/8b4aa7498406a60ce8d7cb017bb7775b1926e335_2_690x238.jpeg"></a></p>
+<p>接下来在回到HA盒子，安装加载项File Editor（如果还没安装的话）
+然后在/homeassistant/configuration.yaml中添加如下内容</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">http</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_x_forwarded_for</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">trusted_proxies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">172.30.33.0</span><span class="l">/24</span></span></span></code></pre></div><p><a href="#R-image-1d69fabfda6f934103b3f54eddfb119d" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/64e468b1b83fe3b9a0122105b58b389f6c07910d_2_690x383.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1d69fabfda6f934103b3f54eddfb119d"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/64e468b1b83fe3b9a0122105b58b389f6c07910d_2_690x383.jpeg"></a></p>
+<p>修改完后记得重启下盒子
+然后就可以愉快的远程访问啦</p>
+<p><a href="#R-image-3f6c1be2bec4eb76a47e681e2b4a2050" class="lightbox-link"><img alt="image" class="bg-white border lazy lightbox noshadow figure-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4e6b816376cee4395a5794dea3d6eda17aff3b61_2_563x500.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f6c1be2bec4eb76a47e681e2b4a2050"><img alt="image" class="bg-white border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://www.ha-box.xyz/uploads/default/optimized/1X/4e6b816376cee4395a5794dea3d6eda17aff3b61_2_563x500.png"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="./js/clipboard.min.js?1724750929" defer></script>
+    <script src="./js/perfect-scrollbar.min.js?1724750929" defer></script>
+    <script src="./js/theme.js?1724750929" defer></script>
+  </body>
+</html>

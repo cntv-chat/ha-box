@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>远程控制Homeassistant盒子 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/index.html</link>
+    <description>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！&#xA;话不多说，直接开干！&#xA;前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/%E5%85%8D%E8%B4%B9%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
