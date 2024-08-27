@@ -10,7 +10,7 @@
 # This will be used in HTML meta tags, the opengraph protocol and twitter
 # cards.
 # You can also set `author.email` if you want to publish this information.
-author.name = "Sören Weber"
+#author.name = "Sören Weber"
 
 # The social media image of your site.
 # Default: not set
@@ -23,8 +23,8 @@ images = [ "images/hero.png" ]
 # Default: not set
 # Configuration for the Open Graph protocol and Twitter Cards adhere to Hugo's
 # implementation. See the Hugo docs for possible values.
-social.facebook_admin = ""
-social.twitter = ""
+#social.facebook_admin = ""
+#social.twitter = ""
 
 ###############################################################################
 # Relearn Theme
@@ -316,7 +316,7 @@ include.errorlevel = "error"
 # printed. If set to `error` an error message is printed and the build is
 # aborted.
 # Please note that this can not resolve files inside of your `static` directory.
-image.errorlevel = "error"
+#image.errorlevel = "error"
 
 # Image effects.
 # See the documentation for how you can even add your own arbitrary effects to
@@ -325,13 +325,13 @@ image.errorlevel = "error"
 # given to the image. See the documentation for details.
 
 # Default: false
-imageEffects.border = true
+#imageEffects.border = true
 # Default: true
-imageEffects.lazy = true
+#imageEffects.lazy = true
 # Default: true
-imageEffects.lightbox = true
+#imageEffects.lightbox = true
 # Default: false
-imageEffects.shadow = false
+#imageEffects.shadow = false
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Links
