@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["无线网卡","wifi配置"]
 title = " 给HA Box插上无线WIFI的翅膀"
 weight = 1
 

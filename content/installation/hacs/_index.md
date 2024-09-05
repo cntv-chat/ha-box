@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["HACS安装","HACS激活"]
 title = "HACS安装激活"
 weight = 1
 

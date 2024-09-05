@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["远程控制","内网穿透","cloudflare tunnels"]
 title = "远程控制Homeassistant盒子"
 weight = 1
 

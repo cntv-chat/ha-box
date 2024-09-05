@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["米家","小米"]
 title = "将米家设备接入HomeAssistant"
 weight = 1
 

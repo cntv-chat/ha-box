@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["免费节点","cloudflare worker"]
 title = "搭建免费科学上网节点"
 weight = 1
 

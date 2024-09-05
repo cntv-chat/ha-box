@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["科学上网","cloudflare worker"]
 title = "Ha盒子配置科学上网"
 weight = 1
 

@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["Homeassistant Box","开箱","说明书"]
 title = " HA盒子使用说明书（开箱即用）"
 weight = 1
 
@@ -9,7 +9,7 @@ weight = 1
 
 ## 等待欢迎界面
 
-拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入[http://homeassistant.local:8123 79](http://homeassistant.local:8123/) 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入[http://ip:8123 12](http://ip:8123/)进行访问）
+拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入[http://homeassistant.local:8123](http://homeassistant.local:8123/) 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入[http://ip:8123](http://ip:8123/)进行访问）
 
 
 

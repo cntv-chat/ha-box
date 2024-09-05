@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.134.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta property="og:url" content="http://localhost:1313/network/linux-partition/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta property="og:description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta itemprop="description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta itemprop="wordCount" content="36">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Linux,无损分区">
+    <title>linux下无损扩容分区方法 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/network/linux-partition/index.html" rel="canonical" type="text/html" title="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <link href="../../network/linux-partition/index.xml" rel="alternate" type="application/rss+xml" title="linux下无损扩容分区方法 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1725508239" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1725508239" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1725508239" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1725508239" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1725508239" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1725508239" rel="stylesheet">
+    <link href="../../css/fonts.css?1725508239" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1725508239" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1725508239" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1725508239" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1725508239" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1725508239" rel="stylesheet">
+    <link href="../../css/print.css?1725508239" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1725508239" rel="stylesheet">
+    <script src="../../js/variant.js?1725508239"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../network/linux-partition/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">linux下无损扩容分区方法</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/docker-pull/index.html" title="从 Docker Hub 快速拉取镜像 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/linux/index.html">Linux</a></li>
+    <li><a class="term-link" href="../../tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.html">无损分区</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="linux下无损扩容分区方法">linux下无损扩容分区方法</h1>
+
+<p>此方法适用于非lvm情景。</p>
+<p>用到的命令：parted、resize2fs</p>
+<p><strong>特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！</strong></p>
+<p>先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。</p>
+<p>这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo parted</code></pre></div><p>这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>(parted)print /dev/sda</code></pre></div><p>假如对应的编号为4，使用命令resizepart改变扩容目标分区的结束点</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>(parted)resizepart 4 警告: 分区 /dev/sda4 正被使用。你确定要继续吗? 是/Yes/否/No? yes                                                          结束点？  [21GB]? 30GB</code></pre></div><p>回车，成功后输入quit退出parted 工具界面。</p>
+<p>这时目标分区的大小已经变为了30G，但文件系统还未扩展，所以扩展的部分并不能实际使用，接下来使用命令resize2fs扩容文件系统。</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo resize2fs /dev/sda4</code></pre></div><p>这时会把文件系统扩容到增加的空间上。</p>
+<p>扩容目标分区完成！</p>
+<p>可以使用</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>df -h sudo fdisk -l</code></pre></div><p>等命令查看。</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1725508239" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1725508239" defer></script>
+    <script src="../../js/theme.js?1725508239" defer></script>
+  </body>
+</html>
