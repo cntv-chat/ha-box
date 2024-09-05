@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>搭建免费科学上网节点 :: HaBox 技术支持站</title>
-    <link>http://localhost:41265/network/free-vless-node/index.html</link>
+    <link>http://localhost:1313/network/free-vless-node/index.html</link>
     <description>准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:41265/network/free-vless-node/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/network/free-vless-node/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

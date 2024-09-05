@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>安装维护 :: HaBox 技术支持站</title>
-    <link>http://localhost:41265/installation/index.html</link>
+    <link>http://localhost:1313/installation/index.html</link>
     <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:41265/installation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> HA盒子使用说明书（开箱即用）</title>
-      <link>http://localhost:41265/installation/instructions/index.html</link>
+      <link>http://localhost:1313/installation/instructions/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/installation/instructions/index.html</guid>
+      <guid>http://localhost:1313/installation/instructions/index.html</guid>
       <description>首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。&#xA;等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 79 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123 12进行访问）</description>
     </item>
     <item>
       <title> 给HA Box插上无线WIFI的翅膀</title>
-      <link>http://localhost:41265/installation/wifi/index.html</link>
+      <link>http://localhost:1313/installation/wifi/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/installation/wifi/index.html</guid>
+      <guid>http://localhost:1313/installation/wifi/index.html</guid>
       <description>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。</description>
     </item>
     <item>
       <title>HACS安装激活</title>
-      <link>http://localhost:41265/installation/hacs/index.html</link>
+      <link>http://localhost:1313/installation/hacs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/installation/hacs/index.html</guid>
+      <guid>http://localhost:1313/installation/hacs/index.html</guid>
       <description>一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。</description>
     </item>
   </channel>

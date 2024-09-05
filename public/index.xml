@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Relearn Theme :: HaBox 技术支持站</title>
-    <link>http://localhost:41265/index.html</link>
+    <link>http://localhost:1313/index.html</link>
     <description>A theme for Hugo designed for documentation.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:41265/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装维护</title>
-      <link>http://localhost:41265/installation/index.html</link>
+      <link>http://localhost:1313/installation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/installation/index.html</guid>
+      <guid>http://localhost:1313/installation/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     </item>
     <item>
       <title>设备接入</title>
-      <link>http://localhost:41265/access/index.html</link>
+      <link>http://localhost:1313/access/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/access/index.html</guid>
+      <guid>http://localhost:1313/access/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     </item>
     <item>
       <title>网络技术</title>
-      <link>http://localhost:41265/network/index.html</link>
+      <link>http://localhost:1313/network/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:41265/network/index.html</guid>
+      <guid>http://localhost:1313/network/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     </item>
   </channel>

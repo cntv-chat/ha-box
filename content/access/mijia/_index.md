@@ -5,7 +5,7 @@ weight = 1
 
 +++
 
-[HA Box使用说明书]({{% ref "/installation/instructions" %}})
+[HA Box使用说明书]({{% relref  "/installation/instructions" %}})
 
 [在HA Box 中安装HACS]({{% ref "/installation/HACS" %}})
 
