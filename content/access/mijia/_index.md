@@ -7,7 +7,7 @@ weight = 1
 
 [HA Box使用说明书]({{% relref  "/installation/instructions" %}})
 
-[在HA Box 中安装HACS]({{% ref "/installation/HACS" %}})
+[在HA Box 中安装HACS]({{% relref "/installation/HACS" %}})
 
 前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装
 

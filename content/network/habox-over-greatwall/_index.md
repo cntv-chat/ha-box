@@ -7,7 +7,7 @@ weight = 1
 
 前提，你已拥有可以用的梯子（节点），如果没有请参考：
 
-[搭建免费科学上网节点]({{% ref "/network/free-vless-node" %}} "搭建免费科学上网节点")
+[搭建免费科学上网节点]({{% relref "/network/free-vless-node" %}} "搭建免费科学上网节点")
 
 
 
