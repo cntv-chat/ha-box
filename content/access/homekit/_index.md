@@ -1,5 +1,5 @@
 +++
-tags = ["documentation"]
+tags = ["homekit","米家","homeassistant"]
 title = "HA Box桥接米家设备到HomeKit"
 weight = 1
 
