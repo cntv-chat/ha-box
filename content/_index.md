@@ -1,9 +1,10 @@
 +++
 archetype = "home"
-description = "A theme for Hugo designed for documentation."
-title = "Hugo Relearn Theme"
+description = "HaBox技术支持站"
+title = "Ha-Box技术支持站"
+
 +++
-欢迎来到HaBox技术支持站
+欢迎来到Ha-Box技术支持站
 
 
 
