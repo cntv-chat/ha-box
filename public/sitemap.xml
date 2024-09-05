@@ -1,48 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/installation/instructions/index.html</loc>
+    <loc>http://localhost:41265/installation/instructions/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/installation/wifi/index.html</loc>
+    <loc>http://localhost:41265/installation/wifi/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/access/homekit/index.html</loc>
+    <loc>http://localhost:41265/access/homekit/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/installation/hacs/index.html</loc>
+    <loc>http://localhost:41265/installation/hacs/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/habox-over-greatwall/index.html</loc>
+    <loc>http://localhost:41265/network/habox-over-greatwall/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/installation/index.html</loc>
+    <loc>http://localhost:41265/installation/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/free-vless-node/index.html</loc>
+    <loc>http://localhost:41265/network/free-vless-node/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/access/mijia/index.html</loc>
+    <loc>http://localhost:41265/access/mijia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/access/index.html</loc>
+    <loc>http://localhost:41265/access/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/index.html</loc>
+    <loc>http://localhost:41265/network/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/free-remote-control/index.html</loc>
+    <loc>http://localhost:41265/network/free-remote-control/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/index.html</loc>
+    <loc>http://localhost:41265/categories/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/documentation/index.html</loc>
+    <loc>http://localhost:41265/tags/documentation/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/index.html</loc>
+    <loc>http://localhost:41265/tags/homeassistant/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/index.html</loc>
+    <loc>http://localhost:41265/tags/homekit/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:41265/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:41265/tags/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:41265/tags/%E7%B1%B3%E5%AE%B6/index.html</loc>
   </url>
 </urlset>

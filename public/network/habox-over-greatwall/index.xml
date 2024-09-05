@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ha盒子配置科学上网 :: HaBox 技术支持站</title>
-    <link>http://localhost:1313/network/habox-over-greatwall/index.html</link>
-    <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）&#xA;安装完后，点启动，配置选项卡可以不用修改默认就行&#xA;打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。&#xA;导入节点&#xA;然后，选择，启动&#xA;此时，应该就可以用了。开个窗口测试一下 http://homeassistant.local:7681/ 进入后输入login 回车 输入curl www.</description>
+    <link>http://localhost:41265/network/habox-over-greatwall/index.html</link>
+    <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/network/habox-over-greatwall/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:41265/network/habox-over-greatwall/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
