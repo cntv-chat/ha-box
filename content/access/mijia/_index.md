@@ -19,7 +19,7 @@ weight = 1
 
 进入 HACS 页面，清除筛选方式（默认只显示已下载的）
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/70e2335f30d0ac09481483ab161fd31c8ccdae7d_2_690x304.jpeg)
+![image](https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg)
 
 
 
@@ -27,7 +27,7 @@ weight = 1
 
 然后在搜索框输入“xiaomi miot”，出来后点击它
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/7dbb3b2832a340b7144704101831281b78997f9a_2_690x268.png)
+![image](https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png)
 
 
 
@@ -35,11 +35,11 @@ weight = 1
 
 点击右下角DOWNLOAD进行下载
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/c2e5a0057e07c7c71caa918194f809e2caa43ed4_2_690x272.png)
+![image](https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png)
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/4052018b771c4df4176b353895c0596dcfb258a2_2_690x347.jpeg)
+![image](https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg)
 
 
 
@@ -58,7 +58,7 @@ weight = 1
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/6522b231a80bf78d487a8fc545347c4b350d2730_2_661x500.jpeg)
+![image](https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg)
 
 
 
@@ -66,11 +66,11 @@ weight = 1
 
 选择“账号集成”，登录小米账号获取设备信息。
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/cd71249cb01282859a521a8a373a6e5629323f92_2_690x344.jpeg)
+![image](https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg)
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/92f4e0e5a705997eb38b985073bb5c8fa47a881a_2_644x500.jpeg)
+![image](https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg)
 
 
 
@@ -82,7 +82,7 @@ weight = 1
 排除模式就是将设备列表中没有勾选色设备接入到Homeassistant
 包含模式就是将设备列表中已勾选的设备接入到Homeassistant
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/c403c5c6840ffcc7de4c78bdedd16c2ade91c357_2_690x441.jpeg)
+![image](https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg)
 
 
 
@@ -94,7 +94,7 @@ weight = 1
 
 回到概览，就可以看到我们刚才接入的设备了
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/55cbe342ce51cb278d4599e0061df76d510d5b0b_2_690x443.jpeg)
+![image](https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg)
 
 
 
@@ -102,7 +102,7 @@ weight = 1
 
 在配置 - 设备与服务中就能看到Xiaomi Miot Auto
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/ad4e3cd4220230604a9b3354a652d2566cc1a322_2_690x346.jpeg)
+![image](https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg)
 
 
 
@@ -112,5 +112,5 @@ weight = 1
 
 我们进入米家插座，就能看到很多信息，并且可以进行更丰富的控制和设置，更多高级的功能，期待你的发现和研究
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/103b0749a541718c1a75e8ecea1cb438338f0ee0_2_690x442.jpeg)
+![image](https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg)
 

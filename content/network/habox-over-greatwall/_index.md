@@ -13,7 +13,7 @@ weight = 1
 
 加载项商店搜索"加速"，安装它（实际上就是v2raya,很好用的工具）
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/070adbd5eb8a90dc0647ed13a5c1acd21d457be8_2_690x260.png)
+![image](https://pic.456766.xyz/typora/070adbd5eb8a90dc0647ed13a5c1acd21d457be8.png)
 
 
 
@@ -23,7 +23,7 @@ weight = 1
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/df3fc21234594a0b1260007e57f8a549aebe0075_2_690x347.png)
+![image](https://pic.456766.xyz/typora/df3fc21234594a0b1260007e57f8a549aebe0075.png)
 
 
 
@@ -33,7 +33,7 @@ weight = 1
 
 导入节点
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3_2_690x201.png)
+![image](https://pic.456766.xyz/typora/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3.png)
 
 
 
@@ -41,7 +41,7 @@ weight = 1
 
 然后，选择，启动
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/6039b77ac1aa021955fcb987013cbb0505db3e30_2_690x296.png)
+![image](https://pic.456766.xyz/typora/6039b77ac1aa021955fcb987013cbb0505db3e30.png)
 
 
 
@@ -54,7 +54,7 @@ weight = 1
 
 是不是看到google页面返回的网页源码了？
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/61122d3118036f0ece49f011ee703944e86ec39a_2_690x307.jpeg)
+![image](https://pic.456766.xyz/typora/61122d3118036f0ece49f011ee703944e86ec39a.jpeg)
 
 
 

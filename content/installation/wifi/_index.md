@@ -13,14 +13,12 @@ weight = 1
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/original/1X/71942a02d4e244aea0a832152b7a297e4b7e8c4a.jpeg)
-
 
 
 要配置无线网卡，你需要先连上网线，或者接上显示器和键盘。
 如果是已连上有线网络，那么在浏览器打开http://homeassistant.local:7681/ （或者用ip访问，比如http://192.168.3.209:7681/ ，请使用你HA Box实际的ip地址替换192.168.3.209），打开后你将看到如下界面
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/80151f8634398af9174d5c9dee81e241ef822a68_2_690x310.jpeg)
+![image](https://pic.456766.xyz/typora/80151f8634398af9174d5c9dee81e241ef822a68.jpeg)
 
 
 
@@ -38,7 +36,7 @@ weight = 1
 在#提示符下（root模式）输入：
 **`nmcli device wifi`**
 然后回车，将看到能扫描到的wifi信号
-![image](https://www.ha-box.xyz/uploads/default/original/1X/9acd43c46494811129589ab7a0e8e74e7fc38867.jpeg)
+![](https://pic.456766.xyz/202409040903689.jpeg)
 
 连接wifi的命令如下：
 
@@ -73,5 +71,5 @@ nmcli device wifi connect "YOUR_SSID" password "YOUR_WIFI_PASSWORD"
 
 
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134_2_596x499.jpeg)
+![image](https://pic.456766.xyz/typora/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134.jpeg)
 

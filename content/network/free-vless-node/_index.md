@@ -29,7 +29,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/b1c3498eee818656643b898a86c72fcd77eaabd3_2_690x259.png)
+![image](https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png)
 
 
 
@@ -39,7 +39,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/90241e3e480226358c120d6be86510c2587b268f_2_690x172.png)
+![notion image](https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png)
 
 
 
@@ -49,7 +49,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/619ee5212f9f721c3c60ba3ad41a855f02ccc158_2_690x239.png)
+![notion image](https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png)
 
 
 
@@ -57,7 +57,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77_2_690x226.jpeg)
+![notion image](https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg)
 
 
 
@@ -65,7 +65,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/73fd0ce7fd47d3e25d5035f6af78106fd531509a_2_690x258.png)
+![notion image](https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png)
 
 
 
@@ -75,7 +75,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 回到Cloudflare，导航到**Workers 和 Pages** 创建应用程序
 
-![image](https://www.ha-box.xyz/uploads/default/optimized/1X/6202273f3867236110d6a2a3e9d4a48ba7b52446_2_690x449.jpeg)
+![image](https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg)
 
 
 
@@ -83,7 +83,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0_2_690x287.png)
+![notion image](https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png)
 
 
 
@@ -91,7 +91,7 @@ https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/045bcecb3b15412597fef3db606a8de38b5b7c9e_2_672x500.png)
+![notion image](https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png)
 
 
 
@@ -101,7 +101,7 @@ Worker部署成功
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb_2_690x296.png)
+![notion image](https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png)
 
 
 
@@ -129,13 +129,13 @@ proxyIP*我测试了也可以不用改，空着就行*
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/42db9218a49c38b1e5fc04f5a965596776ad3be3_2_690x389.png)
+![notion image](https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png)
 
 
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/67c86bffc006e2047714fe596cd6d07f63abae6f_2_690x407.png)
+![image](https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png)
 
 
 
@@ -149,7 +149,7 @@ proxyIP*我测试了也可以不用改，空着就行*
 
 
 
-![notion image](https://www.ha-box.xyz/uploads/default/optimized/1X/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0_2_690x384.png)
+![image](https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png)
 
 
 
