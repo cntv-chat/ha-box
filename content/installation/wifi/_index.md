@@ -7,9 +7,7 @@ weight = 1
 
 由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。
 
-![image](https://www.ha-box.xyz/uploads/default/original/1X/f45429c03828801ccbd43f1dc3a847c7b7ff2fac.jpeg)
-
-
+![image](https://pic.456766.xyz/202409051036273.jpeg)
 
 
 
