@@ -8,11 +8,11 @@
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>从 Docker Hub 拉取镜像受阻？这些解决方案帮你轻松应对</title>
+      <title>从 Docker Hub 快速拉取镜像</title>
       <link>http://localhost:1313/network/docker-pull/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/network/docker-pull/index.html</guid>
-      <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）</description>
+      <description>最近一段时间 Docker 镜像一直是 Pull 不下来的状态，感觉除了挂🪜，想直连 Docker Hub 是几乎不可能的。更糟糕的是，很多原本可靠的国内镜像站，例如一些大厂和高校运营的，也陆续关停了，这对我们这些个人开发者和中小企业来说是挺难受的。之前，通过这些镜像站，我们可以快速、方便地获取所需的 Docker 镜像，现在这条路也不行了。感觉这次动作不小，以后想直接访问 Docker Hub 是不可能了。所以我们得想办法搭建自己的私有镜像仓库。</description>
     </item>
   </channel>
 </rss>

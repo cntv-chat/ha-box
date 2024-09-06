@@ -12,7 +12,7 @@
       <link>http://localhost:1313/access/homekit/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/access/homekit/index.html</guid>
-      <description>HA Box使用说明书&#xA;在HA Box 中安装HACS</description>
+      <description>HA Box使用说明书&#xA;在HA Box 中安装HACS&#xA;将米家设备接入HomeAssistant</description>
     </item>
   </channel>
 </rss>

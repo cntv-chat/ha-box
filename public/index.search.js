@@ -177,14 +177,6 @@ var relearn_search_index = [
     "uri": "/tags/docker%E9%95%9C%E5%83%8F/index.html"
   },
   {
-    "breadcrumb": "标签",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "标签 :: Documentation",
-    "uri": "/tags/documentation/index.html"
-  },
-  {
     "breadcrumb": "",
     "content": "欢迎来到Ha-Box技术支持站\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 Ha盒子配置科学上网 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 远程控制Homeassistant盒子 ",
     "description": "HaBox技术支持站",

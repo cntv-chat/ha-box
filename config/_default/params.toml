@@ -458,3 +458,11 @@ customOpenapiURL = "" # "https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"
 # aborted.
 # Please note that this can not resolve files inside of your `static` directory.
 #openapi.errorlevel = "error"
+
+## 配置 utteranc评论,教程参考 https://utteranc.es/
+[params.utteranc]
+  enable = true
+  repo = "cntv-chat/ha-box" ##换成自己得
+  issueTerm = "pathname"
+  theme = "github-light"
+

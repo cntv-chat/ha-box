@@ -8,10 +8,45 @@
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>标签 :: Documentation</title>
-      <link>http://localhost:1313/tags/documentation/index.html</link>
+      <title>标签 :: Cloudflare Tunnels</title>
+      <link>http://localhost:1313/tags/cloudflare-tunnels/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/documentation/index.html</guid>
+      <guid>http://localhost:1313/tags/cloudflare-tunnels/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: Cloudflare Worker</title>
+      <link>http://localhost:1313/tags/cloudflare-worker/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloudflare-worker/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: Docker</title>
+      <link>http://localhost:1313/tags/docker/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: Docker镜像</title>
+      <link>http://localhost:1313/tags/docker%E9%95%9C%E5%83%8F/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker%E9%95%9C%E5%83%8F/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: HACS安装</title>
+      <link>http://localhost:1313/tags/hacs%E5%AE%89%E8%A3%85/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hacs%E5%AE%89%E8%A3%85/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: HACS激活</title>
+      <link>http://localhost:1313/tags/hacs%E6%BF%80%E6%B4%BB/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hacs%E6%BF%80%E6%B4%BB/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -22,6 +57,13 @@
       <description></description>
     </item>
     <item>
+      <title>标签 :: Homeassistant Box</title>
+      <link>http://localhost:1313/tags/homeassistant-box/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/homeassistant-box/index.html</guid>
+      <description></description>
+    </item>
+    <item>
       <title>标签 :: Homekit</title>
       <link>http://localhost:1313/tags/homekit/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,10 +71,87 @@
       <description></description>
     </item>
     <item>
+      <title>标签 :: Linux</title>
+      <link>http://localhost:1313/tags/linux/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/linux/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: Wifi配置</title>
+      <link>http://localhost:1313/tags/wifi%E9%85%8D%E7%BD%AE/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wifi%E9%85%8D%E7%BD%AE/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 开箱</title>
+      <link>http://localhost:1313/tags/%E5%BC%80%E7%AE%B1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%BC%80%E7%AE%B1/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 科学上网</title>
+      <link>http://localhost:1313/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/index.html</guid>
+      <description></description>
+    </item>
+    <item>
       <title>标签 :: 米家</title>
       <link>http://localhost:1313/tags/%E7%B1%B3%E5%AE%B6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/%E7%B1%B3%E5%AE%B6/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 免费节点</title>
+      <link>http://localhost:1313/tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 内网穿透</title>
+      <link>http://localhost:1313/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 说明书</title>
+      <link>http://localhost:1313/tags/%E8%AF%B4%E6%98%8E%E4%B9%A6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E8%AF%B4%E6%98%8E%E4%B9%A6/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 无损分区</title>
+      <link>http://localhost:1313/tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 无线网卡</title>
+      <link>http://localhost:1313/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 小米</title>
+      <link>http://localhost:1313/tags/%E5%B0%8F%E7%B1%B3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E5%B0%8F%E7%B1%B3/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>标签 :: 远程控制</title>
+      <link>http://localhost:1313/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/index.html</guid>
       <description></description>
     </item>
   </channel>
