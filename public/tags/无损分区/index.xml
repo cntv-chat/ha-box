@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>无损分区 :: 标签 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux下无损扩容分区方法</title>
+      <link>http://localhost:1313/network/linux-partition/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/linux-partition/index.html</guid>
+      <description>此方法适用于非lvm情景。&#xA;用到的命令：parted、resize2fs&#xA;特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！&#xA;先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。&#xA;这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G</description>
+    </item>
+  </channel>
+</rss>

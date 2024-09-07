@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.134.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta property="og:url" content="http://localhost:1313/network/linux-partition/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta property="og:description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <meta itemprop="description" content="此方法适用于非lvm情景。
+用到的命令：parted、resize2fs
+特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
+先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+    <meta itemprop="wordCount" content="36">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Linux,无损分区">
+    <title>linux下无损扩容分区方法 :: HaBox 技术支持站</title>
+    <link href="../../network/linux-partition/index.xml" rel="alternate" type="application/rss+xml" title="linux下无损扩容分区方法 :: HaBox 技术支持站">
+    <link href="../../network/linux-partition/index.print.html" rel="alternate" type="text/html" title="linux下无损扩容分区方法 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1725709413" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1725709413" rel="stylesheet">
+    <link href="../../css/fonts.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1725709413" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1725709413" rel="stylesheet">
+    <link href="../../css/print.css?1725709413" rel="stylesheet" media="print">
+    <script src="../../js/variant.js?1725709413"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../network/linux-partition/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">linux下无损扩容分区方法</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/network/linux-partition/_index.md" target="_self" title="编辑 (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/linux-partition/index.print.html" title="打印整章 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/docker-pull/index.html" title="从 Docker Hub 快速拉取镜像 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/linux/index.html">Linux</a></li>
+    <li><a class="term-link" href="../../tags/%E6%97%A0%E6%8D%9F%E5%88%86%E5%8C%BA/index.html">无损分区</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="linux下无损扩容分区方法">linux下无损扩容分区方法</h1>
+
+<p>此方法适用于非lvm情景。</p>
+<p>用到的命令：parted、resize2fs</p>
+<p><strong>特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！</strong></p>
+<p>先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。</p>
+<p>这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo parted</code></pre></div><p>这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>(parted)print /dev/sda</code></pre></div><p>假如对应的编号为4，使用命令resizepart改变扩容目标分区的结束点</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>(parted)resizepart 4 警告: 分区 /dev/sda4 正被使用。你确定要继续吗? 是/Yes/否/No? yes                                                          结束点？  [21GB]? 30GB</code></pre></div><p>回车，成功后输入quit退出parted 工具界面。</p>
+<p>这时目标分区的大小已经变为了30G，但文件系统还未扩展，所以扩展的部分并不能实际使用，接下来使用命令resize2fs扩容文件系统。</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>sudo resize2fs /dev/sda4</code></pre></div><p>这时会把文件系统扩容到增加的空间上。</p>
+<p>扩容目标分区完成！</p>
+<p>可以使用</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>df -h sudo fdisk -l</code></pre></div><p>等命令查看。</p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo img,
+            #R-logo img * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo img {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 50.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo img {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="../../index.html">
+             <img src="../../images/logo.png">HA Box 
+          </a>
+
+        </div>
+
+        <search><form action="../../search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="搜索 (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-times" title="清除搜索"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en', 'zh'];
+        </script>
+        <script src="../../js/auto-complete.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.zh.min.js?1725709413" defer></script>
+        <script src="../../js/search.js?1725709413" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/installation/index.html" class=""><input type="checkbox" id="R-section-d532c08ef757367cd12653650690f4a3" aria-controls="R-subsections-d532c08ef757367cd12653650690f4a3"><label for="R-section-d532c08ef757367cd12653650690f4a3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单安装维护</span></label><a class="padding" href="../../installation/index.html">安装维护<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d532c08ef757367cd12653650690f4a3" class="morespace collapsible-menu">
+          <li data-nav-id="/installation/instructions/index.html" class=""><a class="padding" href="../../installation/instructions/index.html"> HA盒子使用说明书（开箱即用）<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/wifi/index.html" class=""><a class="padding" href="../../installation/wifi/index.html"> 给HA Box插上无线WIFI的翅膀<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/hacs/index.html" class=""><a class="padding" href="../../installation/hacs/index.html">HACS安装激活<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/access/index.html" class=""><input type="checkbox" id="R-section-73540edfdcd333aefa95874c40791ad9" aria-controls="R-subsections-73540edfdcd333aefa95874c40791ad9"><label for="R-section-73540edfdcd333aefa95874c40791ad9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单设备接入</span></label><a class="padding" href="../../access/index.html">设备接入<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-73540edfdcd333aefa95874c40791ad9" class="morespace collapsible-menu">
+          <li data-nav-id="/access/homekit/index.html" class=""><a class="padding" href="../../access/homekit/index.html">HA Box桥接米家设备到HomeKit<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/access/mijia/index.html" class=""><a class="padding" href="../../access/mijia/index.html">将米家设备接入HomeAssistant<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/network/index.html" class="parent "><input type="checkbox" id="R-section-45bc2156b004e8b8b20d1da2c598bd4d" aria-controls="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" checked><label for="R-section-45bc2156b004e8b8b20d1da2c598bd4d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单网络技术</span></label><a class="padding" href="../../network/index.html">网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" class="morespace collapsible-menu">
+          <li data-nav-id="/network/habox-over-greatwall/index.html" class=""><a class="padding" href="../../network/habox-over-greatwall/index.html">Ha盒子配置科学上网<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/linux-partition/index.html" class="active"><a class="padding" href="../../network/linux-partition/index.html">linux下无损扩容分区方法<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/docker-pull/index.html" class=""><a class="padding" href="../../network/docker-pull/index.html">从 Docker Hub 快速拉取镜像<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-vless-node/index.html" class=""><a class="padding" href="../../network/free-vless-node/index.html">搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-remote-control/index.html" class=""><a class="padding" href="../../network/free-remote-control/index.html">远程控制Homeassistant盒子<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">语言</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="../../network/linux-partition/index.html" lang="zh-cn" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">主题</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次  </span></p>
+<span id="busuanzi_container_site_uv">您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者</span>
+
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <script src="../../js/clipboard.min.js?1725709413" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1725709413" defer></script>
+    <script src="../../js/theme.js?1725709413" defer></script>
+
+
+  </body>
+</html>

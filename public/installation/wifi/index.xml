@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> 给HA Box插上无线WIFI的翅膀 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/installation/wifi/index.html</link>
+    <description>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块，因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用。</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/installation/wifi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

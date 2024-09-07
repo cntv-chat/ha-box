@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.134.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。">
+    <meta property="og:url" content="http://localhost:1313/network/free-vless-node/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta property="og:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta itemprop="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。">
+    <meta itemprop="wordCount" content="46">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="免费节点,Cloudflare Worker">
+    <title>搭建免费科学上网节点 :: HaBox 技术支持站</title>
+    <link href="../../network/free-vless-node/index.xml" rel="alternate" type="application/rss+xml" title="搭建免费科学上网节点 :: HaBox 技术支持站">
+    <link href="../../network/free-vless-node/index.print.html" rel="alternate" type="text/html" title="搭建免费科学上网节点 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1725709413" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1725709413" rel="stylesheet">
+    <link href="../../css/fonts.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1725709413" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1725709413" rel="stylesheet">
+    <link href="../../css/print.css?1725709413" rel="stylesheet" media="print">
+    <script src="../../js/variant.js?1725709413"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../network/free-vless-node/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#准备物料">准备物料</a></li>
+    <li><a href="#1域名一个">1)域名一个</a>
+      <ul>
+        <li><a href="#2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</a></li>
+        <li><a href="#3准备代码">3)准备代码</a></li>
+      </ul>
+    </li>
+    <li><a href="#在cloudflare添加网站">在Cloudflare添加网站</a></li>
+    <li><a href="#创建应用程序">创建应用程序</a></li>
+    <li><a href="#替换脚本代码">替换脚本代码</a></li>
+    <li><a href="#绑定域名">绑定域名</a></li>
+    <li><a href="#配置科学上网客户端">配置科学上网客户端</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">搭建免费科学上网节点</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/network/free-vless-node/_index.md" target="_self" title="编辑 (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/free-vless-node/index.print.html" title="打印整章 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/docker-pull/index.html" title="从 Docker Hub 快速拉取镜像 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/free-remote-control/index.html" title="远程控制Homeassistant盒子 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/cloudflare-worker/index.html">Cloudflare Worker</a></li>
+    <li><a class="term-link" href="../../tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.html">免费节点</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="搭建免费科学上网节点">搭建免费科学上网节点</h1>
+
+<h2 id="准备物料">准备物料</h2>
+<h2 id="1域名一个">1)域名一个</h2>
+<p>推荐到<a href="https://www.namesilo.com/" rel="external" target="_self">namesilo.com</a>注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。</p>
+<p>注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</p>
+<h3 id="2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</h3>
+<p>打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号</p>
+<h3 id="3准备代码">3)准备代码</h3>
+<p><a href="https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js" rel="external" target="_self">https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js</a></p>
+<p><a href="https://4i5i-my.sharepoint.com/:u:/g/personal/sosel_4i5i_onmicrosoft_com/EQr1zW3GUINKptRic9MlSKIBOmUXEukBXOzK6oq-ED0QQQ?e=cTDsBR" rel="external" target="_self">备用地址</a> （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</p>
+<h2 id="在cloudflare添加网站">在Cloudflare添加网站</h2>
+<p>登陆Cloudflare，然后添加网站，就是将你刚注册的域名添加到这里</p>
+<p><a href="#R-image-6b6b6d2e9f49b7985b2c1fdce1bad921" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b6b6d2e9f49b7985b2c1fdce1bad921"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png"></a></p>
+<p>然后选择<strong>免费</strong>的方案就行，如下图，然后<strong>继续</strong></p>
+<p><a href="#R-image-8ae86effa0ae3776d34fa2c17fd2914a" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ae86effa0ae3776d34fa2c17fd2914a"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png"></a></p>
+<p>此时我们先不添加DNS，先把域名解析服务器改到Cloudflare，点击左边栏 <strong>DNS</strong>，记下Cloudflare名称服务器地址，你看到的可能和我看到不一定一样，别弄错了。</p>
+<p><a href="#R-image-8973665c5bfcd63d8ab6e956170d31ef" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8973665c5bfcd63d8ab6e956170d31ef"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png"></a></p>
+<p>去域名注册平台后台https://www.namesilo.com/account_domains.php</p>
+<p><a href="#R-image-a466f374c14fb245b08805b80c242bfa" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a466f374c14fb245b08805b80c242bfa"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg"></a></p>
+<p>填入Cloudflare的名称服务器地址，然后提交（submit），名称服务器生效可能要等一段时间</p>
+<p><a href="#R-image-ba96affebd37186c3e30283d55fbec2f" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba96affebd37186c3e30283d55fbec2f"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png"></a></p>
+<h2 id="创建应用程序">创建应用程序</h2>
+<p>回到Cloudflare，导航到<strong>Workers 和 Pages</strong> 创建应用程序</p>
+<p><a href="#R-image-fb6c1a64223184dc3b6966c8404147d7" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fb6c1a64223184dc3b6966c8404147d7"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg"></a></p>
+<p><a href="#R-image-73306700859e368863a5d6d9a3f259b3" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73306700859e368863a5d6d9a3f259b3"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png"></a></p>
+<p>名称可以随意，完了点击部署按钮，代码先不管它</p>
+<p><a href="#R-image-b6d5983ed8822f7ddc54d883cf5976db" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b6d5983ed8822f7ddc54d883cf5976db"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png"></a></p>
+<p>Worker部署成功</p>
+<p><a href="#R-image-6529d0fe944b6676c329e4c3a13d93ba" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6529d0fe944b6676c329e4c3a13d93ba"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png"></a></p>
+<h2 id="替换脚本代码">替换脚本代码</h2>
+<p>点击编辑代码，将https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js代码复制过来，贴到编辑器里面替换原来的内容</p>
+<p>修改两个地方：</p>
+<p>1，第7行的userID，随便找个UUID替换，<a href="https://www.uuidgenerator.net/version4" rel="external" target="_self">点击这里获取一个 4</a>，注意用version4，否则会报UUID不合法。</p>
+<p>2，第9行的proxyIP，可以找前辈们提供的，随便在下面的列表中找一个</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.org</code></pre></div><p><em>userID不用改也行 ，userID记在小本本上以后要用</em></p>
+<p>proxyIP<em>我测试了也可以不用改，空着就行</em></p>
+<p><strong>保存并部署</strong>（按钮在屏幕右上角）</p>
+<h2 id="绑定域名">绑定域名</h2>
+<p><a href="#R-image-fe524a847470acd01382cfed92968878" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe524a847470acd01382cfed92968878"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png"></a></p>
+<p><a href="#R-image-4ff0a119c95cd3c28c4fb86b4543801d" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ff0a119c95cd3c28c4fb86b4543801d"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png"></a></p>
+<p>自定义域前缀可以随意，根据自己需要填写然后点击“添加自定义域”，等一会儿生效后就可以用了。。。</p>
+<h2 id="配置科学上网客户端">配置科学上网客户端</h2>
+<p>在浏览器地址栏输入你刚配置的自定义域+代码中配置的userID，得到相应的科学上网的配置参数</p>
+<p>比如：https://hi.cntv.chat/6efcf080-745f-42c0-a0e6-4b0f9a2f8f1c</p>
+<p><a href="#R-image-906a5f14a48eaa209e1e3aa01f94ba33" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-906a5f14a48eaa209e1e3aa01f94ba33"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png"></a></p>
+<p>复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG</p>
+<p>好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！</p>
+<p>若有不明白或遇到什么问题，请给我留言。</p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo img,
+            #R-logo img * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo img {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 50.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo img {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="../../index.html">
+             <img src="../../images/logo.png">HA Box 
+          </a>
+
+        </div>
+
+        <search><form action="../../search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="搜索 (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-times" title="清除搜索"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en', 'zh'];
+        </script>
+        <script src="../../js/auto-complete.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1725709413" defer></script>
+        <script src="../../js/lunr/lunr.zh.min.js?1725709413" defer></script>
+        <script src="../../js/search.js?1725709413" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/installation/index.html" class=""><input type="checkbox" id="R-section-d532c08ef757367cd12653650690f4a3" aria-controls="R-subsections-d532c08ef757367cd12653650690f4a3"><label for="R-section-d532c08ef757367cd12653650690f4a3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单安装维护</span></label><a class="padding" href="../../installation/index.html">安装维护<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d532c08ef757367cd12653650690f4a3" class="morespace collapsible-menu">
+          <li data-nav-id="/installation/instructions/index.html" class=""><a class="padding" href="../../installation/instructions/index.html"> HA盒子使用说明书（开箱即用）<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/wifi/index.html" class=""><a class="padding" href="../../installation/wifi/index.html"> 给HA Box插上无线WIFI的翅膀<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/hacs/index.html" class=""><a class="padding" href="../../installation/hacs/index.html">HACS安装激活<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/access/index.html" class=""><input type="checkbox" id="R-section-73540edfdcd333aefa95874c40791ad9" aria-controls="R-subsections-73540edfdcd333aefa95874c40791ad9"><label for="R-section-73540edfdcd333aefa95874c40791ad9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单设备接入</span></label><a class="padding" href="../../access/index.html">设备接入<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-73540edfdcd333aefa95874c40791ad9" class="morespace collapsible-menu">
+          <li data-nav-id="/access/homekit/index.html" class=""><a class="padding" href="../../access/homekit/index.html">HA Box桥接米家设备到HomeKit<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/access/mijia/index.html" class=""><a class="padding" href="../../access/mijia/index.html">将米家设备接入HomeAssistant<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/network/index.html" class="parent "><input type="checkbox" id="R-section-45bc2156b004e8b8b20d1da2c598bd4d" aria-controls="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" checked><label for="R-section-45bc2156b004e8b8b20d1da2c598bd4d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单网络技术</span></label><a class="padding" href="../../network/index.html">网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" class="morespace collapsible-menu">
+          <li data-nav-id="/network/habox-over-greatwall/index.html" class=""><a class="padding" href="../../network/habox-over-greatwall/index.html">Ha盒子配置科学上网<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/linux-partition/index.html" class=""><a class="padding" href="../../network/linux-partition/index.html">linux下无损扩容分区方法<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/docker-pull/index.html" class=""><a class="padding" href="../../network/docker-pull/index.html">从 Docker Hub 快速拉取镜像<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-vless-node/index.html" class="active"><a class="padding" href="../../network/free-vless-node/index.html">搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-remote-control/index.html" class=""><a class="padding" href="../../network/free-remote-control/index.html">远程控制Homeassistant盒子<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">语言</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="../../network/free-vless-node/index.html" lang="zh-cn" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">主题</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次  </span></p>
+<span id="busuanzi_container_site_uv">您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者</span>
+
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <script src="../../js/clipboard.min.js?1725709413" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1725709413" defer></script>
+    <script src="../../js/theme.js?1725709413" defer></script>
+
+
+  </body>
+</html>

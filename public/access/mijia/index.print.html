@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.134.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="HA Box使用说明书
+在HA Box 中安装HACS
+前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="将米家设备接入HomeAssistant :: HaBox 技术支持站">
+    <meta name="twitter:description" content="HA Box使用说明书
+在HA Box 中安装HACS
+前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装">
+    <meta property="og:url" content="http://localhost:1313/access/mijia/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="将米家设备接入HomeAssistant :: HaBox 技术支持站">
+    <meta property="og:description" content="HA Box使用说明书
+在HA Box 中安装HACS
+前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="将米家设备接入HomeAssistant :: HaBox 技术支持站">
+    <meta itemprop="description" content="HA Box使用说明书
+在HA Box 中安装HACS
+前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装">
+    <meta itemprop="wordCount" content="72">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="米家,小米">
+    <title>将米家设备接入HomeAssistant :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/access/mijia/index.html" rel="canonical" type="text/html" title="将米家设备接入HomeAssistant :: HaBox 技术支持站">
+    <link href="../../access/mijia/index.xml" rel="alternate" type="application/rss+xml" title="将米家设备接入HomeAssistant :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1725709413" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1725709413" rel="stylesheet">
+    <link href="../../css/fonts.css?1725709413" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1725709413" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1725709413" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1725709413" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1725709413" rel="stylesheet">
+    <link href="../../css/print.css?1725709413" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1725709413" rel="stylesheet">
+    <script src="../../js/variant.js?1725709413"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../access/mijia/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../access/index.html"><span itemprop="name">设备接入</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">将米家设备接入HomeAssistant</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../access/homekit/index.html" title="HA Box桥接米家设备到HomeKit (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/index.html" title="网络技术 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/%E7%B1%B3%E5%AE%B6/index.html">米家</a></li>
+    <li><a class="term-link" href="../../tags/%E5%B0%8F%E7%B1%B3/index.html">小米</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="将米家设备接入homeassistant">将米家设备接入HomeAssistant</h1>
+
+<p><a href="../../installation/instructions/index.html">HA Box使用说明书</a></p>
+<p><a href="../../installation/hacs/index.html">在HA Box 中安装HACS</a></p>
+<p>前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装</p>
+<h2 id="1将米家设备接入homeassistant">1将米家设备接入HomeAssistant</h2>
+<h3 id="1-安装-xiaomi-miot-atuo">1 安装 Xiaomi Miot Atuo</h3>
+<p>接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。</p>
+<p>进入 HACS 页面，清除筛选方式（默认只显示已下载的）</p>
+<p><a href="#R-image-522023efdc2d124ea2780fe414ea9fc2" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-522023efdc2d124ea2780fe414ea9fc2"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg"></a></p>
+<p>然后在搜索框输入“xiaomi miot”，出来后点击它</p>
+<p><a href="#R-image-d240b407a662b1dc8324d2739099e3a9" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d240b407a662b1dc8324d2739099e3a9"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png"></a></p>
+<p>点击右下角DOWNLOAD进行下载</p>
+<p><a href="#R-image-19bd90444d283f82d190f3be995f5dfb" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-19bd90444d283f82d190f3be995f5dfb"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png"></a></p>
+<p><a href="#R-image-3f493ec02914b4bac9b32aacdd5b6d0c" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f493ec02914b4bac9b32aacdd5b6d0c"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg"></a></p>
+<p>安装完集成之后需要重启 HomeAssistant。
+配置 → 系统 右上角有重启按钮</p>
+<h3 id="2-配置-xiaomi-miot-atuo">2 配置 Xiaomi Miot Atuo</h3>
+<p>接下来，我们配置 Xiaomi Miot Atuo 将米家设备接入HomeAssistant。<strong>注意，配置 Xiaomi Miot Atuo 前需要重启 HomeAssistant。</strong></p>
+<p>点击“设置”，选择“设备与服务”
+切换到 “设备” 选项卡， 然后点击右下角 “添加设备”
+然后输入“xiaomi”，然后选择&quot;Xiaomi Miot Auto&quot;</p>
+<p><a href="#R-image-cd0d83e61d1eabe1afa4dada1c22c6a8" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd0d83e61d1eabe1afa4dada1c22c6a8"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg"></a></p>
+<p>选择“账号集成”，登录小米账号获取设备信息。</p>
+<p><a href="#R-image-f2a6df2b93eef93e1a3806ed17799e9f" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f2a6df2b93eef93e1a3806ed17799e9f"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg"></a></p>
+<p><a href="#R-image-26849ecc03d72b79a0b9e67b8d998bdb" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-26849ecc03d72b79a0b9e67b8d998bdb"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg"></a></p>
+<p>按照配置指引完成剩余步骤，
+这里可以根据自身情况默认选择排除模式还是包含模式
+在设备列表中你想要接入 HomeAssistant 的设备。
+排除模式就是将设备列表中没有勾选色设备接入到Homeassistant
+包含模式就是将设备列表中已勾选的设备接入到Homeassistant</p>
+<p><a href="#R-image-074695410dc21abd7a206325d4d466c6" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-074695410dc21abd7a206325d4d466c6"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg"></a></p>
+<p>接下来就是设置设备所在区域。这样就算是将米家智能设&gt; 备接入进来了。</p>
+<blockquote>
+<p>上面有一句话：如果想集成网关子设备，请直接选择子设备接入，只接入网关不会自动集成子设备。自己体会，至此就算接入完成了。</p>
+</blockquote>
+<p>回到概览，就可以看到我们刚才接入的设备了</p>
+<p><a href="#R-image-23c08f65ad118a99f84e87ad8eb37ea3" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23c08f65ad118a99f84e87ad8eb37ea3"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg"></a></p>
+<p>在配置 - 设备与服务中就能看到Xiaomi Miot Auto</p>
+<p><a href="#R-image-60598155f34cd018bec974f885a9e03a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-60598155f34cd018bec974f885a9e03a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg"></a></p>
+<p>点进去就可以看到接入了多少个设备，多少个实体</p>
+<p>我们进入米家插座，就能看到很多信息，并且可以进行更丰富的控制和设置，更多高级的功能，期待你的发现和研究</p>
+<p><a href="#R-image-638261bd9e5cd9c2c8cdf408b6219f7b" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-638261bd9e5cd9c2c8cdf408b6219f7b"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg"></a></p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1725709413" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1725709413" defer></script>
+    <script src="../../js/theme.js?1725709413" defer></script>
+
+
+  </body>
+</html>

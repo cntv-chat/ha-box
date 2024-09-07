@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络技术 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/network/index.html</link>
+    <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ha盒子配置科学上网</title>
+      <link>http://localhost:1313/network/habox-over-greatwall/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/habox-over-greatwall/index.html</guid>
+      <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）</description>
+    </item>
+    <item>
+      <title>linux下无损扩容分区方法</title>
+      <link>http://localhost:1313/network/linux-partition/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/linux-partition/index.html</guid>
+      <description>此方法适用于非lvm情景。&#xA;用到的命令：parted、resize2fs&#xA;特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！&#xA;先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。&#xA;这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G</description>
+    </item>
+    <item>
+      <title>从 Docker Hub 快速拉取镜像</title>
+      <link>http://localhost:1313/network/docker-pull/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/docker-pull/index.html</guid>
+      <description>最近一段时间 Docker 镜像一直是 Pull 不下来的状态，感觉除了挂🪜，想直连 Docker Hub 是几乎不可能的。更糟糕的是，很多原本可靠的国内镜像站，例如一些大厂和高校运营的，也陆续关停了，这对我们这些个人开发者和中小企业来说是挺难受的。之前，通过这些镜像站，我们可以快速、方便地获取所需的 Docker 镜像，现在这条路也不行了。感觉这次动作不小，以后想直接访问 Docker Hub 是不可能了。所以我们得想办法搭建自己的私有镜像仓库。</description>
+    </item>
+    <item>
+      <title>搭建免费科学上网节点</title>
+      <link>http://localhost:1313/network/free-vless-node/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-vless-node/index.html</guid>
+      <description>准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</description>
+    </item>
+    <item>
+      <title>远程控制Homeassistant盒子</title>
+      <link>http://localhost:1313/network/free-remote-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-remote-control/index.html</guid>
+      <description>出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！&#xA;话不多说，直接开干！&#xA;前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</description>
+    </item>
+  </channel>
+</rss>
