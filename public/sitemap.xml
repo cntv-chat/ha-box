@@ -28,6 +28,9 @@
     <loc>http://localhost:1313/network/free-vless-node/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/box/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/access/mijia/index.html</loc>
   </url>
   <url>
