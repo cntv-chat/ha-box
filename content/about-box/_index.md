@@ -1,6 +1,6 @@
 +++
 archetype = "chapter"
-title = "关于HA盒子"
+title = "6 关于HA盒子"
 weight = 1
 
 +++

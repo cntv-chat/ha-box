@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>网络技术 :: HaBox 技术支持站</title>
+    <title>4 网络技术 :: HaBox 技术支持站</title>
     <link>http://localhost:1313/network/index.html</link>
     <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     <generator>Hugo</generator>

@@ -8,32 +8,46 @@
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>安装维护</title>
+      <title>1 安装维护</title>
       <link>http://localhost:1313/installation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/installation/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     </item>
     <item>
-      <title>关于HA盒子</title>
-      <link>http://localhost:1313/box/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/box/index.html</guid>
-      <description>我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：&#xA;我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了&#xA;但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。</description>
-    </item>
-    <item>
-      <title>设备接入</title>
+      <title>2 设备接入</title>
       <link>http://localhost:1313/access/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/access/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
     </item>
     <item>
-      <title>网络技术</title>
+      <title>3 智能控制</title>
+      <link>http://localhost:1313/automatic-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/automatic-control/index.html</guid>
+      <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    </item>
+    <item>
+      <title>4 网络技术</title>
       <link>http://localhost:1313/network/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/network/index.html</guid>
       <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    </item>
+    <item>
+      <title>5 视频教程</title>
+      <link>http://localhost:1313/video/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/video/index.html</guid>
+      <description>Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    </item>
+    <item>
+      <title>6 关于HA盒子</title>
+      <link>http://localhost:1313/about-box/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-box/index.html</guid>
+      <description>我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：&#xA;我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了&#xA;但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。</description>
     </item>
   </channel>
 </rss>

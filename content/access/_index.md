@@ -1,6 +1,6 @@
 +++
 archetype = "chapter"
-title = "设备接入"
+title = "2 设备接入"
 weight = 1
 +++
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HA Box桥接米家设备到HomeKit :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/access-%E5%89%AF%E6%9C%AC/homekit/index.html</link>
+    <description>HA Box使用说明书&#xA;在HA Box 中安装HACS&#xA;将米家设备接入HomeAssistant</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/access-%E5%89%AF%E6%9C%AC/homekit/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
