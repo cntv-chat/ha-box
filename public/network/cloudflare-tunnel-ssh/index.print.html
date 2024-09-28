@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="前提条件： 您已经将域名托管到cloudflare
+你使用我们提供的armbian盒子
+1 开机，获取ip地址 root密码root1234
+如果接有显示器，那么登陆后查看ip地址
+如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip
+2 创建tunnel 进入https://one.dash.cloudflare.com/">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="前提条件： 您已经将域名托管到cloudflare
+你使用我们提供的armbian盒子
+1 开机，获取ip地址 root密码root1234
+如果接有显示器，那么登陆后查看ip地址
+如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip
+2 创建tunnel 进入https://one.dash.cloudflare.com/">
+    <meta property="og:url" content="http://localhost:1313/network/cloudflare-tunnel-ssh/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
+    <meta property="og:description" content="前提条件： 您已经将域名托管到cloudflare
+你使用我们提供的armbian盒子
+1 开机，获取ip地址 root密码root1234
+如果接有显示器，那么登陆后查看ip地址
+如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip
+2 创建tunnel 进入https://one.dash.cloudflare.com/">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
+    <meta itemprop="description" content="前提条件： 您已经将域名托管到cloudflare
+你使用我们提供的armbian盒子
+1 开机，获取ip地址 root密码root1234
+如果接有显示器，那么登陆后查看ip地址
+如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip
+2 创建tunnel 进入https://one.dash.cloudflare.com/">
+    <meta itemprop="wordCount" content="104">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="Cloudflare Tunnel,Ssh内网穿透">
+    <title>Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/network/cloudflare-tunnel-ssh/index.html" rel="canonical" type="text/html" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
+    <link href="../../network/cloudflare-tunnel-ssh/index.xml" rel="alternate" type="application/rss+xml" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1727497742" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1727497742" rel="stylesheet">
+    <link href="../../css/fonts.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1727497742" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1727497742" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1727497742" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1727497742" rel="stylesheet">
+    <link href="../../css/print.css?1727497742" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1727497742" rel="stylesheet">
+    <script src="../../js/variant.js?1727497742"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3Jh9XF56OMu5x31r",ck:"3Jh9XF56OMu5x31r"})</script>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../network/cloudflare-tunnel-ssh/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">4 网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Cloudflare tunnel配置ssh连接</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/index.html" title="4 网络技术 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/cloudflare-tunnel/index.html">Cloudflare Tunnel</a></li>
+    <li><a class="term-link" href="../../tags/ssh%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html">Ssh内网穿透</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="cloudflare-tunnel配置ssh连接">Cloudflare tunnel配置ssh连接</h1>
+
+<h2 id="前提条件">前提条件：</h2>
+<p>您已经将域名托管到cloudflare</p>
+<p>你使用我们提供的armbian盒子</p>
+<h2 id="1-开机获取ip地址">1 开机，获取ip地址</h2>
+<p>root密码root1234</p>
+<p>如果接有显示器，那么登陆后查看ip地址</p>
+<p>如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip</p>
+<h2 id="2-创建tunnel">2 创建tunnel</h2>
+<p>进入https://one.dash.cloudflare.com/</p>
+<p>导航到<strong>Networks</strong> &gt; <strong>Tunnels</strong></p>
+<p>然后<strong>Create a tunnel</strong></p>
+<p>tunnel type就默认的cloudflare，然后next</p>
+<p><a href="#R-image-850bf7d1504194d8b564188989a5a7f2" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-850bf7d1504194d8b564188989a5a7f2"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
+<p>然后设置tunnel name,然后save tunnel</p>
+<h2 id="3-安装和配置cloudflared">3 安装和配置cloudflared</h2>
+<p>**Choose an operating system:**Debian</p>
+<p>**Choose an architecture:**arm64-bit</p>
+<p><a href="#R-image-4f56270915009613c27835a3d071979c" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4f56270915009613c27835a3d071979c"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
+<p>安装完成后，点击右下角save</p>
+<h2 id="4-配置public-hostname">4 配置Public Hostname</h2>
+<p>再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口<strong>Configure</strong></p>
+<p>切换到<strong>Public Hostname</strong></p>
+<p>Add a public hostname</p>
+<p><a href="#R-image-11f05f505d80db279fccf75e28c1a806" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11f05f505d80db279fccf75e28c1a806"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
+<p>同样，在<strong>Public hostnames</strong>列表也是点右边的3个小点进入配置</p>
+<h2 id="5-设置private-network">5 设置Private Network</h2>
+<p>切换到<strong>Private Network</strong></p>
+<p>CIDR：192.168.3.0/24</p>
+<p>Description：随便</p>
+<h2 id="6-回到ssh客户端">6 回到ssh客户端</h2>
+<p>ssh客户端的设备也要安装cloudflared</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code># 注意ssh客户端所在的系统平台，下面的代码是ubuntu,amd64架构
+curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+
+sudo dpkg -i cloudflared.deb</code></pre></div><p>然后修改~/.ssh/config文件，没有就创建一个，内容如下，我这里配了两个，根据自己情况设置</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>Host ssh.456766.xyz
+        ProxyCommand cloudflared access ssh --hostname %h
+
+Host ssh.ha-box.xyz
+        ProxyCommand cloudflared access ssh --hostname %h</code></pre></div><h2 id="7-ssh连接远程服务器">7 ssh连接远程服务器</h2>
+<p>开启一个终端，执行</p>
+<p>ssh <a href="mailto:root@ssh.ha-box.xyz" rel="external" target="_self">root@ssh.ha-box.xyz</a></p>
+<p>如果一切顺利，就可以看到下面的信息</p>
+<p>This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?</p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1727497742" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1727497742" defer></script>
+    <script src="../../js/theme.js?1727497742" defer></script>
+
+
+  </body>
+</html>

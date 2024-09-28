@@ -3,13 +3,14 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.134.1">
+    <meta name="generator" content="Hugo 0.135.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="description" content="此方法适用于非lvm情景。
 用到的命令：parted、resize2fs
 特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
 先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
-这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G
+sudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
@@ -18,7 +19,8 @@
 用到的命令：parted、resize2fs
 特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
 先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
-这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G
+sudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号">
     <meta property="og:url" content="http://localhost:1313/network/linux-partition/index.html">
     <meta property="og:site_name" content="HaBox 技术支持站">
     <meta property="og:title" content="linux下无损扩容分区方法 :: HaBox 技术支持站">
@@ -26,7 +28,8 @@
 用到的命令：parted、resize2fs
 特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
 先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
-这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G
+sudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号">
     <meta property="og:locale" content="zh_cn">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/hero.png">
@@ -35,7 +38,8 @@
 用到的命令：parted、resize2fs
 特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！
 先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。
-这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G">
+这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G
+sudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号">
     <meta itemprop="wordCount" content="36">
     <meta itemprop="image" content="http://localhost:1313/images/hero.png">
     <meta itemprop="keywords" content="Linux,无损分区">
@@ -43,18 +47,18 @@
     <link href="http://localhost:1313/network/linux-partition/index.html" rel="canonical" type="text/html" title="linux下无损扩容分区方法 :: HaBox 技术支持站">
     <link href="../../network/linux-partition/index.xml" rel="alternate" type="application/rss+xml" title="linux下无损扩容分区方法 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <link href="../../css/fontawesome-all.min.css?1726408843" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1726408843" rel="stylesheet"></noscript>
-    <link href="../../css/nucleus.css?1726408843" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1726408843" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1726408843" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1726408843" rel="stylesheet">
-    <link href="../../css/fonts.css?1726408843" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1726408843" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1726408843" rel="stylesheet">
-    <link href="../../css/theme-relearn-auto.css?1726408843" rel="stylesheet" id="R-variant-style">
-    <link href="../../css/chroma-relearn-auto.css?1726408843" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../../css/variant.css?1726408843" rel="stylesheet">
-    <link href="../../css/print.css?1726408843" rel="stylesheet" media="print">
-    <link href="../../css/format-print.css?1726408843" rel="stylesheet">
-    <script src="../../js/variant.js?1726408843"></script>
+    <link href="../../css/fontawesome-all.min.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1727497742" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1727497742" rel="stylesheet">
+    <link href="../../css/fonts.css?1727497742" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1727497742" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1727497742" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1727497742" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1727497742" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1727497742" rel="stylesheet">
+    <link href="../../css/print.css?1727497742" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1727497742" rel="stylesheet">
+    <script src="../../js/variant.js?1727497742"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -160,9 +164,9 @@
         </div>
       </main>
     </div>
-    <script src="../../js/clipboard.min.js?1726408843" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1726408843" defer></script>
-    <script src="../../js/theme.js?1726408843" defer></script>
+    <script src="../../js/clipboard.min.js?1727497742" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1727497742" defer></script>
+    <script src="../../js/theme.js?1727497742" defer></script>
 
 
   </body>

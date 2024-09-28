@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh内网穿透 :: 标签 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/tags/ssh%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/tags/ssh%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare tunnel配置ssh连接</title>
+      <link>http://localhost:1313/network/cloudflare-tunnel-ssh/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/cloudflare-tunnel-ssh/index.html</guid>
+      <description>前提条件： 您已经将域名托管到cloudflare&#xA;你使用我们提供的armbian盒子&#xA;1 开机，获取ip地址 root密码root1234&#xA;如果接有显示器，那么登陆后查看ip地址&#xA;如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip&#xA;2 创建tunnel 进入https://one.dash.cloudflare.com/</description>
+    </item>
+  </channel>
+</rss>

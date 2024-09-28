@@ -63,9 +63,20 @@ var relearn_search_index = [
     "uri": "/video/index.html"
   },
   {
+    "breadcrumb": "4 网络技术",
+    "content": "前提条件： 您已经将域名托管到cloudflare\n你使用我们提供的armbian盒子\n1 开机，获取ip地址 root密码root1234\n如果接有显示器，那么登陆后查看ip地址\n如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip\n2 创建tunnel 进入https://one.dash.cloudflare.com/\n导航到Networks \u003e Tunnels\n然后Create a tunnel\ntunnel type就默认的cloudflare，然后next\n然后设置tunnel name,然后save tunnel\n3 安装和配置cloudflared **Choose an operating system:**Debian\n**Choose an architecture:**arm64-bit\n安装完成后，点击右下角save\n4 配置Public Hostname 再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口Configure\n切换到Public Hostname\nAdd a public hostname\n同样，在Public hostnames列表也是点右边的3个小点进入配置\n5 设置Private Network 切换到Private Network\nCIDR：192.168.3.0/24\nDescription：随便\n6 回到ssh客户端 ssh客户端的设备也要安装cloudflared\n# 注意ssh客户端所在的系统平台，下面的代码是ubuntu,amd64架构 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb sudo dpkg -i cloudflared.deb然后修改~/.ssh/config文件，没有就创建一个，内容如下，我这里配了两个，根据自己情况设置\nHost ssh.456766.xyz ProxyCommand cloudflared access ssh --hostname %h Host ssh.ha-box.xyz ProxyCommand cloudflared access ssh --hostname %h7 ssh连接远程服务器 开启一个终端，执行\nssh root@ssh.ha-box.xyz\n如果一切顺利，就可以看到下面的信息\nThis key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])?",
+    "description": "前提条件： 您已经将域名托管到cloudflare\n你使用我们提供的armbian盒子\n1 开机，获取ip地址 root密码root1234\n如果接有显示器，那么登陆后查看ip地址\n如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip\n2 创建tunnel 进入https://one.dash.cloudflare.com/",
+    "tags": [
+      "Cloudflare Tunnel",
+      "Ssh内网穿透"
+    ],
+    "title": "Cloudflare tunnel配置ssh连接",
+    "uri": "/network/cloudflare-tunnel-ssh/index.html"
+  },
+  {
     "breadcrumb": "2 设备接入",
     "content": "HA Box使用说明书\n在HA Box 中安装HACS\n将米家设备接入HomeAssistant\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。\n首先，我们要添加 HomeKit Bridge 集成。点击“配置”，进入“设备与服务”页面。在“集成”选项下，点右下角“添加集成” 然后输入“homekit” 或者\"apple\"\n点击“Apple”\n点击添加“HomeKit Bridge 集成”，按照指引完成添加。\n需要注意是的，如果你有温湿度传感器，点击“要添加的域”下拉选项，记得勾选“Sensor”，这个选项默认是不勾选的。\n添加 HomeKit Bridge 集成成功后，点击界面左下角的通知按钮。查看 homekit 的配对二维码。\n打开“家庭”应用，点击左上角的“+”号，选择“添加配件”。扫描上个步骤的得到的二维码，点击“添加到家庭”。在加入过程中，可能会提示“未认证设备”，点击“仍要添加”。然后完成剩余步骤，逐个添加设备。完成后，你就能能用Siri控制你的智能设备了。\n大功告成！",
-    "description": "HA Box使用说明书\n在HA Box 中安装HACS\n将米家设备接入HomeAssistant",
+    "description": "HA Box使用说明书\n在HA Box 中安装HACS\n将米家设备接入HomeAssistant\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。",
     "tags": [
       "Homekit",
       "米家",
@@ -111,7 +122,7 @@ var relearn_search_index = [
   {
     "breadcrumb": "4 网络技术",
     "content": "此方法适用于非lvm情景。\n用到的命令：parted、resize2fs\n特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！\n先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。\n这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G\nsudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号\n(parted)print /dev/sda假如对应的编号为4，使用命令resizepart改变扩容目标分区的结束点\n(parted)resizepart 4 警告: 分区 /dev/sda4 正被使用。你确定要继续吗? 是/Yes/否/No? yes 结束点？ [21GB]? 30GB回车，成功后输入quit退出parted 工具界面。\n这时目标分区的大小已经变为了30G，但文件系统还未扩展，所以扩展的部分并不能实际使用，接下来使用命令resize2fs扩容文件系统。\nsudo resize2fs /dev/sda4这时会把文件系统扩容到增加的空间上。\n扩容目标分区完成！\n可以使用\ndf -h sudo fdisk -l等命令查看。",
-    "description": "此方法适用于非lvm情景。\n用到的命令：parted、resize2fs\n特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！\n先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。\n这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G",
+    "description": "此方法适用于非lvm情景。\n用到的命令：parted、resize2fs\n特别说明：此方法仅适用于分区扩容（包括根分区），对于缩容的情况不适用，切记！\n先确保需要扩容的目标分区后面有一段空白磁盘空间，然后使用磁盘分区工具parted先改变目标分区结束点。\n这里假设需要扩容的分区为/dev/sda4，文件系统为ext4，挂载在根节点上，原来的分区结束点为21G ，新结束点为30G\nsudo parted这时进入parted 工具界面下，先用print /dev/sda 查看磁盘分区信息和扩容目标分区的编号",
     "tags": [
       "Linux",
       "无损分区"
@@ -133,7 +144,7 @@ var relearn_search_index = [
   {
     "breadcrumb": "4 网络技术",
     "content": "准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js\n备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）\n在Cloudflare添加网站 登陆Cloudflare，然后添加网站，就是将你刚注册的域名添加到这里\n然后选择免费的方案就行，如下图，然后继续\n此时我们先不添加DNS，先把域名解析服务器改到Cloudflare，点击左边栏 DNS，记下Cloudflare名称服务器地址，你看到的可能和我看到不一定一样，别弄错了。\n去域名注册平台后台https://www.namesilo.com/account_domains.php\n填入Cloudflare的名称服务器地址，然后提交（submit），名称服务器生效可能要等一段时间\n创建应用程序 回到Cloudflare，导航到Workers 和 Pages 创建应用程序\n名称可以随意，完了点击部署按钮，代码先不管它\nWorker部署成功\n替换脚本代码 点击编辑代码，将https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js代码复制过来，贴到编辑器里面替换原来的内容\n修改两个地方：\n1，第7行的userID，随便找个UUID替换，点击这里获取一个 4，注意用version4，否则会报UUID不合法。\n2，第9行的proxyIP，可以找前辈们提供的，随便在下面的列表中找一个\ncdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.orguserID不用改也行 ，userID记在小本本上以后要用\nproxyIP我测试了也可以不用改，空着就行\n保存并部署（按钮在屏幕右上角）\n绑定域名 自定义域前缀可以随意，根据自己需要填写然后点击“添加自定义域”，等一会儿生效后就可以用了。。。\n配置科学上网客户端 在浏览器地址栏输入你刚配置的自定义域+代码中配置的userID，得到相应的科学上网的配置参数\n比如：https://hi.cntv.chat/6efcf080-745f-42c0-a0e6-4b0f9a2f8f1c\n复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG\n好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！\n若有不明白或遇到什么问题，请给我留言。",
-    "description": "准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。",
+    "description": "准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js\n备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）",
     "tags": [
       "免费节点",
       "Cloudflare Worker"
@@ -144,7 +155,7 @@ var relearn_search_index = [
   {
     "breadcrumb": "2 设备接入",
     "content": "HA Box使用说明书\n在HA Box 中安装HACS\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n1将米家设备接入HomeAssistant 1 安装 Xiaomi Miot Atuo 接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。\n进入 HACS 页面，清除筛选方式（默认只显示已下载的）\n然后在搜索框输入“xiaomi miot”，出来后点击它\n点击右下角DOWNLOAD进行下载\n安装完集成之后需要重启 HomeAssistant。 配置 → 系统 右上角有重启按钮\n2 配置 Xiaomi Miot Atuo 接下来，我们配置 Xiaomi Miot Atuo 将米家设备接入HomeAssistant。注意，配置 Xiaomi Miot Atuo 前需要重启 HomeAssistant。\n点击“设置”，选择“设备与服务” 切换到 “设备” 选项卡， 然后点击右下角 “添加设备” 然后输入“xiaomi”，然后选择\"Xiaomi Miot Auto\"\n选择“账号集成”，登录小米账号获取设备信息。\n按照配置指引完成剩余步骤， 这里可以根据自身情况默认选择排除模式还是包含模式 在设备列表中你想要接入 HomeAssistant 的设备。 排除模式就是将设备列表中没有勾选色设备接入到Homeassistant 包含模式就是将设备列表中已勾选的设备接入到Homeassistant\n接下来就是设置设备所在区域。这样就算是将米家智能设\u003e 备接入进来了。\n上面有一句话：如果想集成网关子设备，请直接选择子设备接入，只接入网关不会自动集成子设备。自己体会，至此就算接入完成了。\n回到概览，就可以看到我们刚才接入的设备了\n在配置 - 设备与服务中就能看到Xiaomi Miot Auto\n点进去就可以看到接入了多少个设备，多少个实体\n我们进入米家插座，就能看到很多信息，并且可以进行更丰富的控制和设置，更多高级的功能，期待你的发现和研究",
-    "description": "HA Box使用说明书\n在HA Box 中安装HACS\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装",
+    "description": "HA Box使用说明书\n在HA Box 中安装HACS\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n1将米家设备接入HomeAssistant 1 安装 Xiaomi Miot Atuo 接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。",
     "tags": [
       "米家",
       "小米"
@@ -171,6 +182,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "类别",
     "uri": "/categories/index.html"
+  },
+  {
+    "breadcrumb": "标签",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "标签 :: Cloudflare Tunnel",
+    "uri": "/tags/cloudflare-tunnel/index.html"
   },
   {
     "breadcrumb": "标签",
@@ -267,6 +286,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "标签 :: Linux",
     "uri": "/tags/linux/index.html"
+  },
+  {
+    "breadcrumb": "标签",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "标签 :: Ssh内网穿透",
+    "uri": "/tags/ssh%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html"
   },
   {
     "breadcrumb": "",
