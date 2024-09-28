@@ -70,7 +70,7 @@ Add a public hostname
 
 切换到**Private Network**
 
-CIDR：192.168.3.0/24
+CIDR：192.168.3.0/24  （根据自身情况填写）
 
 Description：随便
 
@@ -107,8 +107,10 @@ Host ssh.ha-box.xyz
 
 如果一切顺利，就可以看到下面的信息
 
+```
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
 
 
 
