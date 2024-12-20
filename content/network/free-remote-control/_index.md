@@ -45,11 +45,7 @@ weight = 1
 
 安装好之后，进入配置选项卡，配置第一项就行，值为要使用的域名（该域名已添加到cloudflare），然后保存
 
-![image](https://pic.456766.xyz/typora/e5dba2ce374adb105c3b7fe355b72fb5fd473207.png)
-
-
-
-
+![image-20241111170823259](https://pic.456766.xyz/typora/image-20241111170823259.png)
 
 之后启动该加载项，在日志选项卡里面你将看到如下信息
 

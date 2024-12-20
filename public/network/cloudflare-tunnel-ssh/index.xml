@@ -3,7 +3,7 @@
   <channel>
     <title>Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站</title>
     <link>http://localhost:1313/network/cloudflare-tunnel-ssh/index.html</link>
-    <description>前提条件： 您已经将域名托管到cloudflare&#xA;你使用我们提供的armbian盒子&#xA;1 开机，获取ip地址 root密码root1234&#xA;如果接有显示器，那么登陆后查看ip地址&#xA;如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip&#xA;2 创建tunnel 进入https://one.dash.cloudflare.com/</description>
+    <description>这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。&#xA;Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。&#xA;HTTP HTTPS UNIX TCP SSH RDP UNIX+TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/network/cloudflare-tunnel-ssh/index.xml" rel="self" type="application/rss+xml" />

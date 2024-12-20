@@ -6,13 +6,26 @@ weight = 1
 
 +++
 
+这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考[远程控制Homeassistant盒子]({{% relref "/network/free-remote-control" %}})。只是控制HA Box是通过http协议，而本文是使用ssh协议。
 
+Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。
+
+- HTTP
+- HTTPS
+- UNIX
+- TCP
+- SSH
+- RDP
+- UNIX+TLS
+- SMB
+- HTTP_STATUS
+- BASTION
 
 ## 前提条件：
 
 您已经将域名托管到cloudflare
 
-你使用我们提供的armbian盒子
+你使用我们提供的armbian盒子（目前已不再提供，实际上可以是任意一台电脑，Windows、Linux或者Mac OS）
 
 ## 1 开机，获取ip地址
 

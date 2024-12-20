@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 关于我们 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/about/index.html</link>
+    <description> IT老者，一事无成，闲来无事，喜欢折腾。&#xA;HA盒子，找我就行，包您满意，诚信经营。&#xA;大家好！ 我是Peter，一名已过不惑之年的IT工程师。目前有一份可以在家上班的工作，不用早晚挤公交地铁奔波于两点之间，节省了不少空闲 时间，感谢上帝的眷顾。&#xA;这两句打油诗是设置闲鱼介绍的时候设置的，贴到这里，姑且作为本站点和闲鱼账户之间的一个见证吧，因为我发现有 不少闲鱼卖家也把本站点放到了他们的商品介绍里面，作为他们提供技术支持的一个途径。&#xA;当然，这并没有什么不妥之处，信息共享是一件好事，同时也感谢这些卖家对本站的认可。只是希望大家能够鉴别，他们提供的盒子以及服务和本站没关系！&#xA;感谢冬瓜团队提供的Haos镜像，使得Homeassistant能够在物美价廉的众多盒子上运行，特别是运营商盒子，大大的推动了Homeassistant在中国大发展。&#xA;联系我们 【闲鱼】https://m.tb.cn/h.TVTzZg2?tk=eAvn3w5fPRE MF1643 「这是我的闲鱼号，快来看看吧～」 点击链接直接打开</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Hugo 0.140.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="description" content="最近一段时间 Docker 镜像一直是 Pull 不下来的状态，感觉除了挂🪜，想直连 Docker Hub 是几乎不可能的。更糟糕的是，很多原本可靠的国内镜像站，例如一些大厂和高校运营的，也陆续关停了，这对我们这些个人开发者和中小企业来说是挺难受的。之前，通过这些镜像站，我们可以快速、方便地获取所需的 Docker 镜像，现在这条路也不行了。感觉这次动作不小，以后想直接访问 Docker Hub 是不可能了。所以我们得想办法搭建自己的私有镜像仓库。">
     <meta name="author" content="">
@@ -27,17 +27,17 @@
     <link href="../../network/docker-pull/index.xml" rel="alternate" type="application/rss+xml" title="从 Docker Hub 快速拉取镜像 :: HaBox 技术支持站">
     <link href="../../network/docker-pull/index.print.html" rel="alternate" type="text/html" title="从 Docker Hub 快速拉取镜像 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <link href="../../css/fontawesome-all.min.css?1727498211" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1727498211" rel="stylesheet"></noscript>
-    <link href="../../css/nucleus.css?1727498211" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1727498211" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1727498211" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1727498211" rel="stylesheet">
-    <link href="../../css/fonts.css?1727498211" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1727498211" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1727498211" rel="stylesheet">
-    <link href="../../css/theme-relearn-auto.css?1727498211" rel="stylesheet" id="R-variant-style">
-    <link href="../../css/chroma-relearn-auto.css?1727498211" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../../css/variant.css?1727498211" rel="stylesheet">
-    <link href="../../css/print.css?1727498211" rel="stylesheet" media="print">
-    <script src="../../js/variant.js?1727498211"></script>
+    <link href="../../css/fontawesome-all.min.css?1734576343" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1734576343" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1734576343" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1734576343" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1734576343" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1734576343" rel="stylesheet">
+    <link href="../../css/fonts.css?1734576343" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1734576343" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1734576343" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1734576343" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1734576343" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1734576343" rel="stylesheet">
+    <link href="../../css/print.css?1734576343" rel="stylesheet" media="print">
+    <script src="../../js/variant.js?1734576343"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -196,60 +196,60 @@
 </span></span><span style="display:flex;"><span>registry:2</span></span></code></pre></div><h3 id="搭建-nexus">搭建 Nexus</h3>
 <p>可选择使用 Docker 命令搭建 <a href="https://link.segmentfault.com/?enc=tbYJWzjSyDQsTkkURfooAQ%3D%3D.QIipXcRsUxqp02x09FrfLCPrKyA3C9SNrkeQCydZtdnSd8CC0luc36yEaTIfkJ8C" rel="external" target="_self">Nexus</a>。</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>docker run -d -p <span style="color:#ae81ff">8081</span>:8081 --name nexus sonatype/nexus3</span></span></code></pre></div><p>或者使用 <a href="https://link.segmentfault.com/?enc=FZchBOKi1qtQY8v1bnXJjw%3D%3D.pGJQ82Ux9WQpeuAt8uqme7hqNpSrSEhuAqUV%2FqA%2F0XIg0LX7UAYua15dLu6eud4ZpuMQpwD5YOON%2FtiFc1AQ2A%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-31ac5e89db301f84b0e242d781cdaee8" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-31ac5e89db301f84b0e242d781cdaee8"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
+<p><a href="#R-image-5a87783867c4c808b644730aa2ebce39" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a87783867c4c808b644730aa2ebce39"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
 <p>搭建完成后正常登录 Nexus 页面，根据页面引导配置 Docker 相关的存储 Repository 及代理 Repository 即可。</p>
 <h3 id="搭建-harbor">搭建 Harbor</h3>
 <p>可参考 <a href="https://link.segmentfault.com/?enc=gArRPFlTwahPHAZVYax5eQ%3D%3D.nEIXf3i42IPUpjQpS0rCTWWuYuZuTijmAc5tYh0b0JQ6Rpq%2FgSXPBgpsoxHhenn2" rel="external" target="_self">Harbor文档 </a>搭建或者使用 <a href="https://link.segmentfault.com/?enc=Y8%2FkX9dQK4wkXs1osqCq2Q%3D%3D.Y4NBA%2Fwcm2hd3jymDG3IHKxzC%2BwC7C2hOmQohmPoWdDa6NnnhnrlgpZirSzWOz3yAO6WgEWO0ylpmxJECRtUIw%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-5fb80231b40d06bbbfad6137f4e65fe6" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5fb80231b40d06bbbfad6137f4e65fe6"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
+<p><a href="#R-image-c03e3def7b9a4f73c3ef4a753f1e53a6" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c03e3def7b9a4f73c3ef4a753f1e53a6"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
 <h2 id="可用的镜像代理">可用的镜像代理</h2>
 <p>最近十来天我尝试了很多镜像加速站，整理了以下镜像站目前是可用状态，但可能随时会遇到不可用、关停、访问比较慢的状态，建议同时配置多个镜像源。</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">提供商</th>
-          <th style="text-align: left">地址</th>
-          <th style="text-align: left"></th>
+          <th>提供商</th>
+          <th>地址</th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">DaoCloud</td>
-          <td style="text-align: left"><a href="https://link.segmentfault.com/?enc=FSVjLEsAl%2BdE5y3PPpNn8A%3D%3D.YeXBE%2BxvQ2xpkz0ywiznVXQZgniCO%2F0UAWWsB8Hz0Ew%3D" rel="external" target="_self">https://docker.m.daocloud.io</a></td>
-          <td style="text-align: left"></td>
+          <td>DaoCloud</td>
+          <td><a href="https://link.segmentfault.com/?enc=FSVjLEsAl%2BdE5y3PPpNn8A%3D%3D.YeXBE%2BxvQ2xpkz0ywiznVXQZgniCO%2F0UAWWsB8Hz0Ew%3D" rel="external" target="_self">https://docker.m.daocloud.io</a></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">阿里云</td>
-          <td style="text-align: left">https://&lt;your_code&gt;.mirror.aliyuncs.com</td>
-          <td style="text-align: left">登录阿里云分配</td>
+          <td>阿里云</td>
+          <td>https://&lt;your_code&gt;.mirror.aliyuncs.com</td>
+          <td>登录阿里云分配</td>
       </tr>
       <tr>
-          <td style="text-align: left">Docker镜像代理</td>
-          <td style="text-align: left"><a href="https://link.segmentfault.com/?enc=wA9sAMd44Ba%2Bi30i4AX3FA%3D%3D.CIFcbiu06gjjTJAWrPMEZBf%2FwCqfboXDjh%2F4%2FPMmdgo%3D" rel="external" target="_self">https://dockerproxy.com</a></td>
-          <td style="text-align: left">看运气</td>
+          <td>Docker镜像代理</td>
+          <td><a href="https://link.segmentfault.com/?enc=wA9sAMd44Ba%2Bi30i4AX3FA%3D%3D.CIFcbiu06gjjTJAWrPMEZBf%2FwCqfboXDjh%2F4%2FPMmdgo%3D" rel="external" target="_self">https://dockerproxy.com</a></td>
+          <td>看运气</td>
       </tr>
       <tr>
-          <td style="text-align: left">百度云</td>
-          <td style="text-align: left"><a href="https://link.segmentfault.com/?enc=uAfmeE%2FpgUjanDGQSRa9%2BQ%3D%3D.6DfuXOO%2BwVfSCE8RpPZ1IDN%2FSil9v%2Bp9629FU8D34pE%3D" rel="external" target="_self">https://mirror.baidubce.com</a></td>
-          <td style="text-align: left"></td>
+          <td>百度云</td>
+          <td><a href="https://link.segmentfault.com/?enc=uAfmeE%2FpgUjanDGQSRa9%2BQ%3D%3D.6DfuXOO%2BwVfSCE8RpPZ1IDN%2FSil9v%2Bp9629FU8D34pE%3D" rel="external" target="_self">https://mirror.baidubce.com</a></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">南京大学</td>
-          <td style="text-align: left"><a href="https://link.segmentfault.com/?enc=5TaR9nfjwb%2Ba5BhvoDCvWA%3D%3D.r5H9%2FnalPnIXdJ5CTEr7fhUShCdG%2FMmshkQK47MBrUk%3D" rel="external" target="_self">https://docker.nju.edu.cn</a></td>
-          <td style="text-align: left"></td>
+          <td>南京大学</td>
+          <td><a href="https://link.segmentfault.com/?enc=5TaR9nfjwb%2Ba5BhvoDCvWA%3D%3D.r5H9%2FnalPnIXdJ5CTEr7fhUShCdG%2FMmshkQK47MBrUk%3D" rel="external" target="_self">https://docker.nju.edu.cn</a></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">中科院</td>
-          <td style="text-align: left"><a href="https://link.segmentfault.com/?enc=cpT%2F3jwu8dEoJH47fNtChA%3D%3D.nol19sC4qbKlJ%2BaLFcEkhzXWkFjdmZ9mzR6fg4gCOKY%3D" rel="external" target="_self">https://mirror.iscas.ac.cn</a></td>
-          <td style="text-align: left"></td>
+          <td>中科院</td>
+          <td><a href="https://link.segmentfault.com/?enc=cpT%2F3jwu8dEoJH47fNtChA%3D%3D.nol19sC4qbKlJ%2BaLFcEkhzXWkFjdmZ9mzR6fg4gCOKY%3D" rel="external" target="_self">https://mirror.iscas.ac.cn</a></td>
+          <td></td>
       </tr>
   </tbody>
 </table>
 <h2 id="福利">福利</h2>
 <p>近期 Rainbond 社区也接受到许多用户反馈 Docker 镜像拉不下来，不能构建、打包了，因此 Rainbond 也搭建了个镜像加速服务，采用 <code>CloudFlare + 国外服务器 Nginx 反代</code>的方案为 Rainbond 社区的用户们提供镜像加速服务。</p>
-<p><a href="#R-image-f62ae439773f542d4d025f6bd28b3527" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f62ae439773f542d4d025f6bd28b3527"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
+<p><a href="#R-image-c305f2211636a43b32d200da1eab3c4b" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c305f2211636a43b32d200da1eab3c4b"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
 <p>目前速度挺快的（未来不好说</p>
 <h3 id="使用方法">使用方法</h3>
 <p>1.直接获取 Docker Hub 镜像</p>
@@ -356,13 +356,13 @@
         <script>
           var contentLangs=['en', 'zh'];
         </script>
-        <script src="../../js/auto-complete.js?1727498211" defer></script>
-        <script src="../../js/lunr/lunr.min.js?1727498211" defer></script>
-        <script src="../../js/lunr/lunr.stemmer.support.min.js?1727498211" defer></script>
-        <script src="../../js/lunr/lunr.multi.min.js?1727498211" defer></script>
-        <script src="../../js/lunr/lunr.en.min.js?1727498211" defer></script>
-        <script src="../../js/lunr/lunr.zh.min.js?1727498211" defer></script>
-        <script src="../../js/search.js?1727498211" defer></script>
+        <script src="../../js/auto-complete.js?1734576343" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1734576343" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1734576343" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1734576343" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1734576343" defer></script>
+        <script src="../../js/lunr/lunr.zh.min.js?1734576343" defer></script>
+        <script src="../../js/search.js?1734576343" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -370,15 +370,15 @@
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/installation/index.html" class=""><input type="checkbox" id="R-section-d532c08ef757367cd12653650690f4a3" aria-controls="R-subsections-d532c08ef757367cd12653650690f4a3"><label for="R-section-d532c08ef757367cd12653650690f4a3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单1 安装维护</span></label><a class="padding" href="../../installation/index.html">1 安装维护<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d532c08ef757367cd12653650690f4a3" class="morespace collapsible-menu">
+          <li data-nav-id="/installation/index.html" class=""><input type="checkbox" id="R-section-c7d2c74d7b93b238c2b4b636995f66f9" aria-controls="R-subsections-c7d2c74d7b93b238c2b4b636995f66f9"><label for="R-section-c7d2c74d7b93b238c2b4b636995f66f9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单1 安装维护</span></label><a class="padding" href="../../installation/index.html">1 安装维护<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c7d2c74d7b93b238c2b4b636995f66f9" class="morespace collapsible-menu">
           <li data-nav-id="/installation/instructions/index.html" class=""><a class="padding" href="../../installation/instructions/index.html"> HA盒子使用说明书（开箱即用）<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/installation/wifi/index.html" class=""><a class="padding" href="../../installation/wifi/index.html"> 给HA Box插上无线WIFI的翅膀<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/installation/hacs/index.html" class=""><a class="padding" href="../../installation/hacs/index.html">HACS安装激活<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/access/index.html" class=""><input type="checkbox" id="R-section-73540edfdcd333aefa95874c40791ad9" aria-controls="R-subsections-73540edfdcd333aefa95874c40791ad9"><label for="R-section-73540edfdcd333aefa95874c40791ad9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单2 设备接入</span></label><a class="padding" href="../../access/index.html">2 设备接入<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-73540edfdcd333aefa95874c40791ad9" class="morespace collapsible-menu">
+          <li data-nav-id="/access/index.html" class=""><input type="checkbox" id="R-section-8a2548568bbc2b59f59b2efe93b2b97f" aria-controls="R-subsections-8a2548568bbc2b59f59b2efe93b2b97f"><label for="R-section-8a2548568bbc2b59f59b2efe93b2b97f"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单2 设备接入</span></label><a class="padding" href="../../access/index.html">2 设备接入<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-8a2548568bbc2b59f59b2efe93b2b97f" class="morespace collapsible-menu">
           <li data-nav-id="/access/homekit/index.html" class=""><a class="padding" href="../../access/homekit/index.html">HA Box桥接米家设备到HomeKit<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/access/mijia/index.html" class=""><a class="padding" href="../../access/mijia/index.html">将米家设备接入HomeAssistant<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/automatic-control/index.html" class=""><a class="padding" href="../../automatic-control/index.html">3 智能控制<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/network/index.html" class="parent "><input type="checkbox" id="R-section-45bc2156b004e8b8b20d1da2c598bd4d" aria-controls="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" checked><label for="R-section-45bc2156b004e8b8b20d1da2c598bd4d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单4 网络技术</span></label><a class="padding" href="../../network/index.html">4 网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-45bc2156b004e8b8b20d1da2c598bd4d" class="morespace collapsible-menu">
+          <li data-nav-id="/network/index.html" class="parent "><input type="checkbox" id="R-section-30d33bf08e663016953c1238fd6c9aad" aria-controls="R-subsections-30d33bf08e663016953c1238fd6c9aad" checked><label for="R-section-30d33bf08e663016953c1238fd6c9aad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单4 网络技术</span></label><a class="padding" href="../../network/index.html">4 网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-30d33bf08e663016953c1238fd6c9aad" class="morespace collapsible-menu">
           <li data-nav-id="/network/cloudflare-tunnel-ssh/index.html" class=""><a class="padding" href="../../network/cloudflare-tunnel-ssh/index.html">Cloudflare tunnel配置ssh连接<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/network/habox-over-greatwall/index.html" class=""><a class="padding" href="../../network/habox-over-greatwall/index.html">Ha盒子配置科学上网<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/network/linux-partition/index.html" class=""><a class="padding" href="../../network/linux-partition/index.html">linux下无损扩容分区方法<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -456,10 +456,13 @@
       </div>
     </aside>
 
-    <script src="../../js/clipboard.min.js?1727498211" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1727498211" defer></script>
-    <script src="../../js/theme.js?1727498211" defer></script>
+    <script src="../../js/clipboard.min.js?1734576343" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1734576343" defer></script>
+    <script src="../../js/theme.js?1734576343" defer></script>
 
 
   </body>
 </html>
+
+
+
