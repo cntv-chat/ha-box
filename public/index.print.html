@@ -5,44 +5,40 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.140.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：
-我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2&#43;16G的配置可以说刚刚好，能够满足大部分的需求，接入200&#43;设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。">
+    <meta name="description" content=" 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
-    <meta name="twitter:title" content="Homeassistant盒子介绍 :: HaBox 技术支持站">
-    <meta name="twitter:description" content="我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：
-我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2&#43;16G的配置可以说刚刚好，能够满足大部分的需求，接入200&#43;设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。">
+    <meta name="twitter:title" content="Homeassistant使用教程 :: HaBox 技术支持站">
+    <meta name="twitter:description" content=" 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ">
     <meta property="og:url" content="http://localhost:1313/index.html">
     <meta property="og:site_name" content="HaBox 技术支持站">
-    <meta property="og:title" content="Homeassistant盒子介绍 :: HaBox 技术支持站">
-    <meta property="og:description" content="我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：
-我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2&#43;16G的配置可以说刚刚好，能够满足大部分的需求，接入200&#43;设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。">
+    <meta property="og:title" content="Homeassistant使用教程 :: HaBox 技术支持站">
+    <meta property="og:description" content=" 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ">
     <meta property="og:locale" content="zh_cn">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/hero.png">
-    <meta itemprop="name" content="Homeassistant盒子介绍 :: HaBox 技术支持站">
-    <meta itemprop="description" content="我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：
-我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2&#43;16G的配置可以说刚刚好，能够满足大部分的需求，接入200&#43;设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。">
-    <meta itemprop="wordCount" content="297">
+    <meta itemprop="name" content="Homeassistant使用教程 :: HaBox 技术支持站">
+    <meta itemprop="description" content=" 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ">
+    <meta itemprop="wordCount" content="18">
     <meta itemprop="image" content="http://localhost:1313/images/hero.png">
     <meta itemprop="keywords" content="Homeassistant,HA Box,Homeassistant盒子">
-    <title>Homeassistant盒子介绍 :: HaBox 技术支持站</title>
-    <link href="http://localhost:1313/index.html" rel="canonical" type="text/html" title="Homeassistant盒子介绍 :: HaBox 技术支持站">
-    <link href="./index.xml" rel="alternate" type="application/rss+xml" title="Homeassistant盒子介绍 :: HaBox 技术支持站"><link rel="icon" href="./images/favicon.png" type="image/png">
+    <title>Homeassistant使用教程 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/index.html" rel="canonical" type="text/html" title="Homeassistant使用教程 :: HaBox 技术支持站">
+    <link href="./index.xml" rel="alternate" type="application/rss+xml" title="Homeassistant使用教程 :: HaBox 技术支持站"><link rel="icon" href="./images/favicon.png" type="image/png">
 
-    <link href="./css/fontawesome-all.min.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fontawesome-all.min.css?1734749095" rel="stylesheet"></noscript>
-    <link href="./css/nucleus.css?1734749095" rel="stylesheet">
-    <link href="./css/auto-complete.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/auto-complete.css?1734749095" rel="stylesheet"></noscript>
-    <link href="./css/perfect-scrollbar.min.css?1734749095" rel="stylesheet">
-    <link href="./css/fonts.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fonts.css?1734749095" rel="stylesheet"></noscript>
-    <link href="./css/theme.css?1734749095" rel="stylesheet">
-    <link href="./css/theme-relearn-auto.css?1734749095" rel="stylesheet" id="R-variant-style">
-    <link href="./css/chroma-relearn-auto.css?1734749095" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="./css/variant.css?1734749095" rel="stylesheet">
-    <link href="./css/print.css?1734749095" rel="stylesheet" media="print">
-    <link href="./css/format-print.css?1734749095" rel="stylesheet">
-    <script src="./js/variant.js?1734749095"></script>
+    <link href="./css/fontawesome-all.min.css?1734749252" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fontawesome-all.min.css?1734749252" rel="stylesheet"></noscript>
+    <link href="./css/nucleus.css?1734749252" rel="stylesheet">
+    <link href="./css/auto-complete.css?1734749252" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/auto-complete.css?1734749252" rel="stylesheet"></noscript>
+    <link href="./css/perfect-scrollbar.min.css?1734749252" rel="stylesheet">
+    <link href="./css/fonts.css?1734749252" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="./css/fonts.css?1734749252" rel="stylesheet"></noscript>
+    <link href="./css/theme.css?1734749252" rel="stylesheet">
+    <link href="./css/theme-relearn-auto.css?1734749252" rel="stylesheet" id="R-variant-style">
+    <link href="./css/chroma-relearn-auto.css?1734749252" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="./css/variant.css?1734749252" rel="stylesheet">
+    <link href="./css/print.css?1734749252" rel="stylesheet" media="print">
+    <link href="./css/format-print.css?1734749252" rel="stylesheet">
+    <script src="./js/variant.js?1734749252"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='.';
@@ -100,247 +96,8 @@
 </div>
             </header>
 
-<h1 id="homeassistant盒子介绍">Homeassistant盒子介绍</h1>
+<h1 id="homeassistant使用教程">Homeassistant使用教程</h1>
 
-<p>我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：</p>
-<ol>
-<li>我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子</li>
-<li>运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高</li>
-<li>晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题</li>
-</ol>
-<p>安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。</p>
-<p><a href="#R-image-b2bf3d680f4498bed37b5153877eab37" class="lightbox-link"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2bf3d680f4498bed37b5153877eab37"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png"></a></p>
-<p>当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！</p>
-<p>但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。</p>
-<p>先看看大家容易混淆的s905l3和s905l3a芯片的对比</p>
-<p><a href="#R-image-cf23241f10d77deb211cbab5a1a28ded" class="lightbox-link"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf23241f10d77deb211cbab5a1a28ded"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png"></a></p>
-<h2 id="specification-comparison">Specification comparison:</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Processor</th>
-          <th><strong>Amlogic S905L3</strong></th>
-          <th><strong>Amlogic S905L3A</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Market (main)</td>
-          <td>TV Box</td>
-          <td>TV Box</td>
-      </tr>
-      <tr>
-          <td>ISA</td>
-          <td>ARMv8-A (64-bit)</td>
-          <td>ARMv8-A (64-bit)</td>
-      </tr>
-      <tr>
-          <td>Microarchitecture</td>
-          <td>Cortex-A53</td>
-          <td>Cortex-A53</td>
-      </tr>
-      <tr>
-          <td>Family</td>
-          <td>S9</td>
-          <td>S9</td>
-      </tr>
-      <tr>
-          <td>Part number(s), S-Spec</td>
-          <td>S905L3</td>
-          <td>S905L3A</td>
-      </tr>
-      <tr>
-          <td>Release date</td>
-          <td>2022 Q4</td>
-          <td>2022 Q3</td>
-      </tr>
-      <tr>
-          <td>Lithography</td>
-          <td>28 nm HKMG</td>
-          <td>12 nm</td>
-      </tr>
-      <tr>
-          <td>Cores</td>
-          <td>4</td>
-          <td>4</td>
-      </tr>
-      <tr>
-          <td>Threads</td>
-          <td>4</td>
-          <td>4</td>
-      </tr>
-      <tr>
-          <td>Base frequency</td>
-          <td>2,0 GHz</td>
-          <td>1,8 GHz</td>
-      </tr>
-      <tr>
-          <td>Turbo frequency</td>
-          <td>-</td>
-          <td>-</td>
-      </tr>
-      <tr>
-          <td>High performance cores</td>
-          <td>4x ARM Cortex-A53 @ 2,0 GHz</td>
-          <td>4x ARM Cortex-A53 @ 1,8 GHz</td>
-      </tr>
-      <tr>
-          <td>Cache memory</td>
-          <td>1 MB</td>
-          <td>1 MB</td>
-      </tr>
-      <tr>
-          <td>Max memory capacity</td>
-          <td>4 GB</td>
-          <td>4 GB</td>
-      </tr>
-      <tr>
-          <td>Memory types</td>
-          <td>LPDDR2/3, DDR3/4</td>
-          <td>DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200</td>
-      </tr>
-      <tr>
-          <td>TDP</td>
-          <td>5 W</td>
-          <td>5 W</td>
-      </tr>
-      <tr>
-          <td>GPU integrated graphics</td>
-          <td><a href="https://gadgetversus.com/graphics-card/arm-mali-450-mp5-specs/" rel="external" target="_self">ARM Mali-450 MP5</a></td>
-          <td><a href="https://gadgetversus.com/graphics-card/arm-mali-g31-mp2-specs/" rel="external" target="_self">ARM Mali-G31 MP2</a></td>
-      </tr>
-      <tr>
-          <td>GPU execution units</td>
-          <td>5</td>
-          <td>2</td>
-      </tr>
-      <tr>
-          <td>GPU shading units</td>
-          <td>80</td>
-          <td>32</td>
-      </tr>
-      <tr>
-          <td>GPU clock</td>
-          <td>750 MHz</td>
-          <td>850 MHz</td>
-      </tr>
-      <tr>
-          <td>GPU FP32 floating point</td>
-          <td>59,5 GFLOPS</td>
-          <td>20,8 GFLOPS</td>
-      </tr>
-      <tr>
-          <td>Socket</td>
-          <td>SoC</td>
-          <td>SoC</td>
-      </tr>
-      <tr>
-          <td>Drystone MIPS</td>
-          <td>18 400 DMIPS</td>
-          <td>16 560 DMIPS</td>
-      </tr>
-      <tr>
-          <td>Crypto engine</td>
-          <td>-</td>
-          <td>AES, DES, TDES, TRNG</td>
-      </tr>
-      <tr>
-          <td>Security</td>
-          <td>-</td>
-          <td>TrustZone, Secure boot</td>
-      </tr>
-      <tr>
-          <td>Max display resolution</td>
-          <td>4K@60fps</td>
-          <td>4K@75fps</td>
-      </tr>
-      <tr>
-          <td>Video decoding</td>
-          <td>H.265, H.264, 1080p@60fps VP9 4K@60fps</td>
-          <td>H.265 4K@75fps, H.264 4K@30fps</td>
-      </tr>
-      <tr>
-          <td>Video encoding</td>
-          <td>-</td>
-          <td>H.265/H.264 1080p@60fps</td>
-      </tr>
-      <tr>
-          <td>Modem</td>
-          <td>10/100M Ethernet</td>
-          <td>10/100/1000 MAC, 10/100 PHY</td>
-      </tr>
-      <tr>
-          <td>Connectivity</td>
-          <td>USB 2.0, HDMI 2.0</td>
-          <td>USB 2.0, USB 3.0, HDMI 2.1</td>
-      </tr>
-      <tr>
-          <td>Wi-Fi</td>
-          <td>Wi-Fi 802.11 a/b/g/n/ac</td>
-          <td>Wi-Fi/IEEE 802.11 a/b/g/n/ас</td>
-      </tr>
-      <tr>
-          <td>Bluetooth</td>
-          <td>Bluetooth 4.2</td>
-          <td>Bluetooth 4.1</td>
-      </tr>
-      <tr>
-          <td>Audio</td>
-          <td>-</td>
-          <td>DAC, SPDIF, I2S, PDM</td>
-      </tr>
-      <tr>
-          <td>AnTuTu</td>
-          <td>35 294</td>
-          <td>46 026</td>
-      </tr>
-      <tr>
-          <td>(Android) Geekbench 4 single core</td>
-          <td>550</td>
-          <td>755</td>
-      </tr>
-      <tr>
-          <td>(Android) Geekbench 4 multi-core</td>
-          <td>1 578</td>
-          <td>2 062</td>
-      </tr>
-      <tr>
-          <td>(Android) Geekbench 5 single core</td>
-          <td>105</td>
-          <td>130</td>
-      </tr>
-      <tr>
-          <td>(Android) Geekbench 5 multi-core</td>
-          <td>266</td>
-          <td>434</td>
-      </tr>
-      <tr>
-          <td>(SGEMM) GFLOPS Performance</td>
-          <td>4,18 GFLOPS</td>
-          <td>5,45 GFLOPS</td>
-      </tr>
-      <tr>
-          <td>(Multi-core / watt performance) Performance / watt ratio</td>
-          <td>316 pts / W</td>
-          <td>412 pts / W</td>
-      </tr>
-  </tbody>
-</table>
-<p>详细的对比数据，请访问 <a href="https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/" rel="external" target="_self">https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/</a></p>
-<p>下面是M401A的几张图片</p>
-<p><a href="#R-image-9e6188553d5375bdb61a861a8cb2c37f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e6188553d5375bdb61a861a8cb2c37f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png"></a></p>
-<p><a href="#R-image-639bbc2441f35fb2f3345d3c7620cc81" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-639bbc2441f35fb2f3345d3c7620cc81"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png"></a></p>
-<p><a href="#R-image-309c6190be8154732cf382739b4a8651" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-309c6190be8154732cf382739b4a8651"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png"></a></p>
-<p><a href="#R-image-3dfdbcc3b7088dfe20c9e5d325918245" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3dfdbcc3b7088dfe20c9e5d325918245"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png"></a></p>
-<p><a href="#R-image-00d126261f0986c2207c81e55d793d6d" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00d126261f0986c2207c81e55d793d6d"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png"></a></p>
-<p>偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）</p>
 <ul>
 <li>安装维护
 <ul>
@@ -395,7 +152,7 @@
           </article>
 
           <section>
-            <h1 class="a11y-only">Homeassistant盒子介绍 的子部分</h1>
+            <h1 class="a11y-only">Homeassistant使用教程 的子部分</h1>
           <article class="chapter">
             <header class="headline">
             </header>
@@ -451,38 +208,38 @@
 <p>首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。</p>
 <h2 id="等待欢迎界面">等待欢迎界面</h2>
 <p>拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入<a href="http://homeassistant.local:8123/" rel="external" target="_self">http://homeassistant.local:8123</a> 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入<a href="http://ip:8123/" rel="external" target="_self">http://ip:8123</a>进行访问）</p>
-<p><a href="#R-image-6ca9650764870a2eae210adb4754b2d0" class="lightbox-link"><img alt="202406190942917" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406190942917.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ca9650764870a2eae210adb4754b2d0"><img alt="202406190942917" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406190942917.png"></a></p>
+<p><a href="#R-image-4c0de041e6b00392cbd2b6784ecb986e" class="lightbox-link"><img alt="202406190942917" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406190942917.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c0de041e6b00392cbd2b6784ecb986e"><img alt="202406190942917" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406190942917.png"></a></p>
 <h2 id="基本设置">基本设置</h2>
 <h3 id="创建用户">创建用户</h3>
-<p><a href="#R-image-507faeb8ac8c14d9b8c6d5558f1e1899" class="lightbox-link"><img alt="202406211526015" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211526015.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-507faeb8ac8c14d9b8c6d5558f1e1899"><img alt="202406211526015" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211526015.png"></a></p>
+<p><a href="#R-image-6adddc9f9e2a4ca92a4505dc06b89d69" class="lightbox-link"><img alt="202406211526015" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211526015.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6adddc9f9e2a4ca92a4505dc06b89d69"><img alt="202406211526015" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211526015.png"></a></p>
 <h3 id="选择家的位置">选择家的位置</h3>
 <p>这个地方如果搜索不到，您可以通过缩放地图，拖动地图中的位置图标到家所在的位置，然后是设置国家选项（如果是通过搜索找到的位置，就没有这个选项，系统自动设置了）</p>
-<p><a href="#R-image-53ddfb1bc72cfa9cf91c7472c387e490" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e44a5581acae451ff0707c4d898449c3e4e7b897.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-53ddfb1bc72cfa9cf91c7472c387e490"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e44a5581acae451ff0707c4d898449c3e4e7b897.png"></a></p>
-<p><a href="#R-image-c5fec139a4f66a17269a616822e69728" class="lightbox-link"><img alt="202406211633570" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211633570.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5fec139a4f66a17269a616822e69728"><img alt="202406211633570" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211633570.png"></a></p>
+<p><a href="#R-image-4e6f84a5638272726639643c32612d1a" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e44a5581acae451ff0707c4d898449c3e4e7b897.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e6f84a5638272726639643c32612d1a"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e44a5581acae451ff0707c4d898449c3e4e7b897.png"></a></p>
+<p><a href="#R-image-6192b3df9c578d7f184ec92d1c22bbbe" class="lightbox-link"><img alt="202406211633570" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211633570.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6192b3df9c578d7f184ec92d1c22bbbe"><img alt="202406211633570" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211633570.png"></a></p>
 <h3 id="信息收集">信息收集</h3>
 <p>接下来是收集数据，建议不选，然后是自动发现家里的智能设备，直接点完成即可。</p>
-<p><a href="#R-image-aeb95eb6e680748a364b01007398cc3a" class="lightbox-link"><img alt="202406211635332" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635332.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-aeb95eb6e680748a364b01007398cc3a"><img alt="202406211635332" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635332.png"></a></p>
-<p><a href="#R-image-a0cc670d3e53010db10fb9480cee930b" class="lightbox-link"><img alt="202406211635546" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635546.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0cc670d3e53010db10fb9480cee930b"><img alt="202406211635546" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635546.png"></a></p>
+<p><a href="#R-image-0022739d224d4514791d9ce7f8349241" class="lightbox-link"><img alt="202406211635332" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635332.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0022739d224d4514791d9ce7f8349241"><img alt="202406211635332" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635332.png"></a></p>
+<p><a href="#R-image-f7abafb7207e1ca86bc36eac162b0e61" class="lightbox-link"><img alt="202406211635546" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635546.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7abafb7207e1ca86bc36eac162b0e61"><img alt="202406211635546" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211635546.png"></a></p>
 <h3 id="正式进入后台">正式进入后台</h3>
-<p><a href="#R-image-cc7c60828856df032bad98b537eca419" class="lightbox-link"><img alt="202406211637388" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211637388.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc7c60828856df032bad98b537eca419"><img alt="202406211637388" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211637388.png"></a></p>
+<p><a href="#R-image-e6226ae607b373444b48b228757aae51" class="lightbox-link"><img alt="202406211637388" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211637388.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6226ae607b373444b48b228757aae51"><img alt="202406211637388" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/202406211637388.png"></a></p>
 <h3 id="升级和修复">升级和修复</h3>
 <p>您可能会发现左侧配置选项边上有如上图所示的数字提示，点进去</p>
 <p>该升级升级，该修复修复</p>
-<p><a href="#R-image-60c84326d54c3cbb9606e97a5481e794" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c664e0a2fa27ba6fc97a773560ed5975a97b49.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-60c84326d54c3cbb9606e97a5481e794"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c664e0a2fa27ba6fc97a773560ed5975a97b49.png"></a></p>
-<p><a href="#R-image-5710756c99dfc13e27c07f1353b8d804" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5710756c99dfc13e27c07f1353b8d804"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54.png"></a></p>
-<p><a href="#R-image-0b1e1cb1d775b5c4c73e4d6aaebcdde2" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/f152df71ed02d594e08f2d4b0bc31e6186aa8d08.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0b1e1cb1d775b5c4c73e4d6aaebcdde2"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/f152df71ed02d594e08f2d4b0bc31e6186aa8d08.png"></a></p>
-<p><a href="#R-image-9a94ddbf4dd1d37c3cb7068adebdcc52" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a94ddbf4dd1d37c3cb7068adebdcc52"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3.png"></a></p>
+<p><a href="#R-image-68154f3b28671cdfc7facb642c6d9e63" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c664e0a2fa27ba6fc97a773560ed5975a97b49.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68154f3b28671cdfc7facb642c6d9e63"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c664e0a2fa27ba6fc97a773560ed5975a97b49.png"></a></p>
+<p><a href="#R-image-d7faab687a6b7bc1cbc91ac816ff0680" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7faab687a6b7bc1cbc91ac816ff0680"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/0310e4b87dacb4a2aecd2cb2b5d1247dbe2acf54.png"></a></p>
+<p><a href="#R-image-cd3d4d0456ab132d8a104a3866da5deb" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/f152df71ed02d594e08f2d4b0bc31e6186aa8d08.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd3d4d0456ab132d8a104a3866da5deb"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/f152df71ed02d594e08f2d4b0bc31e6186aa8d08.png"></a></p>
+<p><a href="#R-image-f5597e5eef1cc37adc658b6c389365db" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5597e5eef1cc37adc658b6c389365db"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/eb2058a97322851ba59fcfe3be5cd3aaa18b84f3.png"></a></p>
 <h3 id="结束语">结束语</h3>
 <p>到此，您基本上就可以根据自身情况进行设备的接入和控制了，请持续关注我们，我们将持续发布使用HomeAssistant盒子相关的使用说明！</p>
 
@@ -527,12 +284,12 @@
 <h1 id="给ha-box插上无线wifi的翅膀"> 给HA Box插上无线WIFI的翅膀</h1>
 
 <p>由于我们选用的HA Box盒子是基于M401A,UNT403A,CM311-1A，都没有带无线模块（带无线模块的盒子又不适合做Haomeassistant Box），因此我们采购了一些USB无线网卡802.11n，该网卡可以在HA Box下使用，但是之智能连2.4G网络，如果你2.4G网络没打开，请先在路由器上打开它。</p>
-<p><a href="#R-image-75b391b9d60d7a87582396735b264cd8" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409051036273.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-75b391b9d60d7a87582396735b264cd8"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409051036273.jpeg"></a></p>
+<p><a href="#R-image-036dc80de94340137d06ead4919bfa47" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409051036273.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-036dc80de94340137d06ead4919bfa47"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409051036273.jpeg"></a></p>
 <p>要配置无线网卡，你需要先连上网线，或者接上显示器和键盘。
 如果是已连上有线网络，那么在浏览器打开http://homeassistant.local:7681/ （或者用ip访问，比如http://192.168.3.209:7681/ ，请使用你HA Box实际的ip地址替换192.168.3.209），打开后你将看到如下界面</p>
-<p><a href="#R-image-5bb7d1f867bd0a35df5728a9b90ff6b6" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/80151f8634398af9174d5c9dee81e241ef822a68.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bb7d1f867bd0a35df5728a9b90ff6b6"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/80151f8634398af9174d5c9dee81e241ef822a68.jpeg"></a></p>
+<p><a href="#R-image-923a1c0106a9d43e09d2e43d1206fcb5" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/80151f8634398af9174d5c9dee81e241ef822a68.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-923a1c0106a9d43e09d2e43d1206fcb5"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/80151f8634398af9174d5c9dee81e241ef822a68.jpeg"></a></p>
 <p>当然，如果你没有连有线网络，但是接连显示器和键盘，同样在显示器上你也将看到类似的界面。</p>
 <p>在ha&gt;提示符下输入“<strong>login</strong>”然后回车，进入root模式下。</p>
 <p>输入 “<strong>ip a</strong>”回车，你将会发现有如下的网卡信息，这就是刚插上的无线网卡了</p>
@@ -543,8 +300,8 @@
 在#提示符下（root模式）输入：
 <strong><code>nmcli device wifi</code></strong>
 然后回车，将看到能扫描到的wifi信号
-<a href="#R-image-028a488d62a744983d773ab7d65f9d93" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409040903689.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-028a488d62a744983d773ab7d65f9d93"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409040903689.jpeg"></a></p>
+<a href="#R-image-29eeaa23fe6a79b99aca1aab5445c5fd" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409040903689.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-29eeaa23fe6a79b99aca1aab5445c5fd"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409040903689.jpeg"></a></p>
 <p>连接wifi的命令如下：</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>nmcli device wifi connect <span style="color:#e6db74">&#34;YOUR_SSID&#34;</span> password <span style="color:#e6db74">&#34;YOUR_WIFI_PASSWORD&#34;</span></span></span></code></pre></div><p>当你看到返回下面的信息时，说明连接成功连。需要注意的是该网卡只支持2.4G频段的wifi信号，如果你家wifi没有支持2.4G频段的信号，将连接失败。</p>
 <blockquote>
@@ -569,8 +326,8 @@ valid_lft forever preferred_lft forever</p>
 <blockquote>
 <p>http://192.168.3.210:8123/onboarding.html</p>
 </blockquote>
-<p><a href="#R-image-792efaf8c6ea1c820fd171e83ba9e7e8" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-792efaf8c6ea1c820fd171e83ba9e7e8"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134.jpeg"></a></p>
+<p><a href="#R-image-a3c52d28fa9e15242950d240819b7a2e" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3c52d28fa9e15242950d240819b7a2e"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e12f5e8e1ebb3fc6d7e9f66a9630f115c7226134.jpeg"></a></p>
 
 <script
   id="utteranc"
@@ -621,35 +378,35 @@ valid_lft forever preferred_lft forever</p>
 </blockquote>
 <p>由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。</p>
 <p>配置 - 设备与服务 ，在集成选项卡右下角点<strong>添加集成</strong>按钮</p>
-<p><a href="#R-image-2f9bf685fe3316c96f18ba1fdfb5334f" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/646e80ca68cea28649631171ebf4b080391deba2.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f9bf685fe3316c96f18ba1fdfb5334f"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/646e80ca68cea28649631171ebf4b080391deba2.jpeg"></a></p>
-<p><a href="#R-image-bfaa54e7c7dffd756d59cc9d918530cd" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7f8475698172de98cb56982a9863f0dacdef74f3.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfaa54e7c7dffd756d59cc9d918530cd"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7f8475698172de98cb56982a9863f0dacdef74f3.jpeg"></a></p>
+<p><a href="#R-image-96cea85de99b888af4a819eadae8c9f1" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/646e80ca68cea28649631171ebf4b080391deba2.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96cea85de99b888af4a819eadae8c9f1"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/646e80ca68cea28649631171ebf4b080391deba2.jpeg"></a></p>
+<p><a href="#R-image-41dc7f6ceffa42c2fbfa77d24615f5d2" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7f8475698172de98cb56982a9863f0dacdef74f3.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-41dc7f6ceffa42c2fbfa77d24615f5d2"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7f8475698172de98cb56982a9863f0dacdef74f3.jpeg"></a></p>
 <p>在弹出窗口搜索HACS，你将看到HACS已经在列表里，然后点击它（整行随便点就行，右边的几个图标只是告诉你HACS的一些功能）</p>
-<p><a href="#R-image-8ff2801f694481c1f7ddd3f063a39baf" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ff2801f694481c1f7ddd3f063a39baf"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9.jpeg"></a></p>
+<p><a href="#R-image-2682c96eafce49fb755f42d40e663e86" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2682c96eafce49fb755f42d40e663e86"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7ef42a94fe5db252b248df68d3b63a40a7c8f5b9.jpeg"></a></p>
 <p>全勾选上，然后提交</p>
-<p><a href="#R-image-29025adfe9560cb11c1faf9f0df15da9" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ee51e28640e1ccf768c04cec998f9325200c7452.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-29025adfe9560cb11c1faf9f0df15da9"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ee51e28640e1ccf768c04cec998f9325200c7452.jpeg"></a></p>
+<p><a href="#R-image-fa6b0bfec755f4de6f8fa4be0fa0096a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ee51e28640e1ccf768c04cec998f9325200c7452.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa6b0bfec755f4de6f8fa4be0fa0096a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ee51e28640e1ccf768c04cec998f9325200c7452.jpeg"></a></p>
 <p>接下来是打开链接，进到github.com有个授权的动作</p>
-<p><a href="#R-image-57f6f2f949e0a6f9acdaf186bd90105f" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d6a02518146386e9793c52f4200598aa7e8e9a6d.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-57f6f2f949e0a6f9acdaf186bd90105f"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d6a02518146386e9793c52f4200598aa7e8e9a6d.jpeg"></a></p>
+<p><a href="#R-image-f18056fb937b08c42f9aee56b2e08317" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d6a02518146386e9793c52f4200598aa7e8e9a6d.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f18056fb937b08c42f9aee56b2e08317"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d6a02518146386e9793c52f4200598aa7e8e9a6d.jpeg"></a></p>
 <p>不出以外的话，你将看到这个页面，复制刚才弹窗给你的验证码，直接鼠标全选上复制过去直接粘贴，然后点 Continue 继续</p>
-<p><a href="#R-image-45a2772d974deccb351557e4bf4e34c4" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/096b8d5fab1cbb4372edccd400f22dbf5b22579c.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-45a2772d974deccb351557e4bf4e34c4"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/096b8d5fab1cbb4372edccd400f22dbf5b22579c.png"></a></p>
+<p><a href="#R-image-aaf9bb35ade077b9cc4e06d6be015f37" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/096b8d5fab1cbb4372edccd400f22dbf5b22579c.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aaf9bb35ade077b9cc4e06d6be015f37"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/096b8d5fab1cbb4372edccd400f22dbf5b22579c.png"></a></p>
 <p>有时候会因为种种原因出现下面这个弹窗提示<strong>cloud_not_register</strong>,网络问题直接关闭从头再来多试几次</p>
 <p>如果出现下面这个页面说明你刚才的验证码没输错，可以点击Authorize hacs授权了</p>
-<p><a href="#R-image-6d975c5110d3d40b51054f588eefc207" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/f0c8d06fa2176e0832ba8532c56e1b013a2499e7.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d975c5110d3d40b51054f588eefc207"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/f0c8d06fa2176e0832ba8532c56e1b013a2499e7.jpeg"></a></p>
+<p><a href="#R-image-0423b8f06adc43533ad5aac5ccfd5e87" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/f0c8d06fa2176e0832ba8532c56e1b013a2499e7.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0423b8f06adc43533ad5aac5ccfd5e87"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/f0c8d06fa2176e0832ba8532c56e1b013a2499e7.jpeg"></a></p>
 <p>OK,到这里说明已经配置成功了，可以关闭这个页面了。</p>
-<p><a href="#R-image-fadf68980c898acddf517d527a624468" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a7f6b1024805fa524a0d85d853081d3c184facda.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fadf68980c898acddf517d527a624468"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a7f6b1024805fa524a0d85d853081d3c184facda.png"></a></p>
+<p><a href="#R-image-e1c5d8e9c06c8992e9686dbf2918f4b4" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a7f6b1024805fa524a0d85d853081d3c184facda.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e1c5d8e9c06c8992e9686dbf2918f4b4"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a7f6b1024805fa524a0d85d853081d3c184facda.png"></a></p>
 <p>返回到Homeassistant,HACS已经配置成功，并自动发现了家里的一些设备，可以对区域进行配置，告诉HACS这个设备是在客厅还是在卧室或者别的房间。当然你也可以直接点关闭或完成。</p>
-<p><a href="#R-image-71770e0164f09a6e310b7256b5749189" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/eabec53c489ed0f40401fe3d59537fbed6f7d9ec.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-71770e0164f09a6e310b7256b5749189"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/eabec53c489ed0f40401fe3d59537fbed6f7d9ec.png"></a></p>
+<p><a href="#R-image-336e0e97345355ed080dc1633e18e152" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/eabec53c489ed0f40401fe3d59537fbed6f7d9ec.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-336e0e97345355ed080dc1633e18e152"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/eabec53c489ed0f40401fe3d59537fbed6f7d9ec.png"></a></p>
 <p>看，左侧已经出现HACS的连接，集成里面已配置列表已经有HACS了。</p>
-<p><a href="#R-image-2b5444d051575077bfebe01caa05049c" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c535214811638b31d0ebea7cf29975b2ca6e11.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2b5444d051575077bfebe01caa05049c"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c535214811638b31d0ebea7cf29975b2ca6e11.jpeg"></a></p>
+<p><a href="#R-image-99ad4b11ea8b867dab0099fe71c4cb52" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c535214811638b31d0ebea7cf29975b2ca6e11.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-99ad4b11ea8b867dab0099fe71c4cb52"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d2c535214811638b31d0ebea7cf29975b2ca6e11.jpeg"></a></p>
 <p>此时你可能需要重启一下HA Box缓解一下激动的心情了</p>
 
 <script
@@ -695,25 +452,25 @@ valid_lft forever preferred_lft forever</p>
 <p>前提，你已拥有可以用的梯子（节点），如果没有请参考：</p>
 <p><a href="./network/free-vless-node/index.html" title="搭建免费科学上网节点">搭建免费科学上网节点</a></p>
 <p>加载项商店搜索&quot;加速&quot;，安装它（实际上就是v2raya,很好用的工具）</p>
-<p><a href="#R-image-dfc2d59fd7197a879ba67ab6b2b2b2f3" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/070adbd5eb8a90dc0647ed13a5c1acd21d457be8.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfc2d59fd7197a879ba67ab6b2b2b2f3"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/070adbd5eb8a90dc0647ed13a5c1acd21d457be8.png"></a></p>
+<p><a href="#R-image-1bc3ab665ab29f6004edf909700255b0" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/070adbd5eb8a90dc0647ed13a5c1acd21d457be8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1bc3ab665ab29f6004edf909700255b0"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/070adbd5eb8a90dc0647ed13a5c1acd21d457be8.png"></a></p>
 <p>安装完后，点启动，配置选项卡可以不用修改默认就行</p>
-<p><a href="#R-image-381ef783540125a5f07874a98c1105ca" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/df3fc21234594a0b1260007e57f8a549aebe0075.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-381ef783540125a5f07874a98c1105ca"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/df3fc21234594a0b1260007e57f8a549aebe0075.png"></a></p>
+<p><a href="#R-image-dc699d38d45128300f634362209ec67f" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/df3fc21234594a0b1260007e57f8a549aebe0075.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc699d38d45128300f634362209ec67f"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/df3fc21234594a0b1260007e57f8a549aebe0075.png"></a></p>
 <p>打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。</p>
 <p>导入节点</p>
-<p><a href="#R-image-781c2bc435973c9c0e6a41e067776c7a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-781c2bc435973c9c0e6a41e067776c7a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3.png"></a></p>
+<p><a href="#R-image-8850bfc7d7170116c28a0cfb51e87224" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8850bfc7d7170116c28a0cfb51e87224"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/35f8c5d6d06e839c5d250ccfcda52ad6d65360c3.png"></a></p>
 <p>然后，选择，启动</p>
-<p><a href="#R-image-329fa8de1026e60bcf86d5e9cccf0518" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6039b77ac1aa021955fcb987013cbb0505db3e30.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-329fa8de1026e60bcf86d5e9cccf0518"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6039b77ac1aa021955fcb987013cbb0505db3e30.png"></a></p>
+<p><a href="#R-image-56c3447f5edd3328b922201d3d94b81a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6039b77ac1aa021955fcb987013cbb0505db3e30.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56c3447f5edd3328b922201d3d94b81a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6039b77ac1aa021955fcb987013cbb0505db3e30.png"></a></p>
 <p>此时，应该就可以用了。开个窗口测试一下
 <code>http://homeassistant.local:7681/</code>
 进入后输入login 回车
 输入curl <a href="https://www.google.com" rel="external" target="_self">www.google.com</a>回车</p>
 <p>是不是看到google页面返回的网页源码了？</p>
-<p><a href="#R-image-5f036d3ea23e2dbb69f5444e2b9b8ae9" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/61122d3118036f0ece49f011ee703944e86ec39a.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f036d3ea23e2dbb69f5444e2b9b8ae9"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/61122d3118036f0ece49f011ee703944e86ec39a.jpeg"></a></p>
+<p><a href="#R-image-3c61e2420c8e8e8e8aa9f712df1085a1" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/61122d3118036f0ece49f011ee703944e86ec39a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c61e2420c8e8e8e8aa9f712df1085a1"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/61122d3118036f0ece49f011ee703944e86ec39a.jpeg"></a></p>
 <p>如果不行，请检查是不是节点或者订阅连接有问题</p>
 <p>关于 v2raya的其他配置，请自行bing。</p>
 <p>其他电脑想要科学上网，也可以修改网络配置，将网关设置为HA盒子的ip地址，也能通过HA盒子实现科学上网的梦想，实现上网自由。</p>
@@ -770,58 +527,58 @@ valid_lft forever preferred_lft forever</p>
 <h2 id="在homeassistant安装cloudflared加载项">在homeassistant安装Cloudflared加载项</h2>
 <p>仓库地址：<code>https://github.com/brenner-tobias/addon-cloudflared</code>
 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库</p>
-<p><a href="#R-image-926a04cf833e3343d753b0b388a35a78" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/cda7a9c64acc4809d8466fe304777fea93f45e0c.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-926a04cf833e3343d753b0b388a35a78"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/cda7a9c64acc4809d8466fe304777fea93f45e0c.png"></a></p>
+<p><a href="#R-image-99243a929c8421677127a2444c03d8b5" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/cda7a9c64acc4809d8466fe304777fea93f45e0c.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-99243a929c8421677127a2444c03d8b5"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/cda7a9c64acc4809d8466fe304777fea93f45e0c.png"></a></p>
 <p>输入 <code>https://github.com/brenner-tobias/ha-addons</code>
 然后点添加</p>
-<p><a href="#R-image-9a6f15e953e5637f70ed059070a568cb" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409042015658.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a6f15e953e5637f70ed059070a568cb"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409042015658.png"></a></p>
+<p><a href="#R-image-b87e3fd9aa5c19e3f80e0822611eb0d6" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409042015658.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b87e3fd9aa5c19e3f80e0822611eb0d6"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409042015658.png"></a></p>
 <p>添加不成功，这……，需要考虑换个时间再试，或者科学上网</p>
-<p><a href="#R-image-92c16ef7dddbf86c5554704a4a4f60cc" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-92c16ef7dddbf86c5554704a4a4f60cc"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a.jpeg"></a></p>
+<p><a href="#R-image-d984d81fbcaaa4cc1f8bbce0d7b83a4f" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d984d81fbcaaa4cc1f8bbce0d7b83a4f"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/e376bf93b9fe52bdc9b0bcf5d044a071156e8d5a.jpeg"></a></p>
 <p>添加成功后，关闭对话框
 重新进入加载项商店，搜索cloudflared，就能看到加载项Cloudflared，点它然后安装
-<a href="#R-image-de0e81231ba147d6dc94bd0b98ec7dd6" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-de0e81231ba147d6dc94bd0b98ec7dd6"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png"></a></p>
+<a href="#R-image-8e39d052b31638bbd3437e6a846e051c" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e39d052b31638bbd3437e6a846e051c"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ef12e66234650b425c567041b7a0baea787a08a9.png"></a></p>
 <p>安装好之后，进入配置选项卡，配置第一项就行，值为要使用的域名（该域名已添加到cloudflare），然后保存</p>
-<p><a href="#R-image-9c1370b00e326d607d00f815affb017d" class="lightbox-link"><img alt="image-20241111170823259" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241111170823259.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c1370b00e326d607d00f815affb017d"><img alt="image-20241111170823259" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241111170823259.png"></a></p>
+<p><a href="#R-image-5dc68cc8fd13e85d9040c80418829e32" class="lightbox-link"><img alt="image-20241111170823259" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241111170823259.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5dc68cc8fd13e85d9040c80418829e32"><img alt="image-20241111170823259" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241111170823259.png"></a></p>
 <p>之后启动该加载项，在日志选项卡里面你将看到如下信息</p>
-<p><a href="#R-image-85d469b130668605fa1f4c8dacb0f795" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/81635a3de25d8b41bf0ecbd780d4acf80a205b9b.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-85d469b130668605fa1f4c8dacb0f795"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/81635a3de25d8b41bf0ecbd780d4acf80a205b9b.jpeg"></a></p>
+<p><a href="#R-image-fdaa03db85dc95173b3a42aac4224f87" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/81635a3de25d8b41bf0ecbd780d4acf80a205b9b.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fdaa03db85dc95173b3a42aac4224f87"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/81635a3de25d8b41bf0ecbd780d4acf80a205b9b.jpeg"></a></p>
 <p>拷贝高亮所示的链接地址到浏览器地址栏，并访问。
 嗯，点你你需要用来远程访问homeassistant的域名并授权</p>
-<p><a href="#R-image-3e23f763b413bc18368198e2ec7158d2" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e23f763b413bc18368198e2ec7158d2"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc.png"></a></p>
-<p><a href="#R-image-61340f4131ab4877cb85992fd602b475" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-61340f4131ab4877cb85992fd602b475"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d.png"></a></p>
-<p><a href="#R-image-2b38aeebc41cca69261365586ad0be3f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4cc884a49914861d78edabd6e2b7382bf653e112.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2b38aeebc41cca69261365586ad0be3f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4cc884a49914861d78edabd6e2b7382bf653e112.png"></a></p>
+<p><a href="#R-image-d88f76ab0d64483060589f7942c0cbe0" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d88f76ab0d64483060589f7942c0cbe0"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/5299cf9db6074dd5a987b7fd1a09eabf25e2e2dc.png"></a></p>
+<p><a href="#R-image-eb1ca815fd24951390814d87c2e3fc26" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb1ca815fd24951390814d87c2e3fc26"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2f6ccf280e55f2353c3c5bcdfb123f294e229f7d.png"></a></p>
+<p><a href="#R-image-381982030ff4abeafc6feebff3102b9f" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4cc884a49914861d78edabd6e2b7382bf653e112.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-381982030ff4abeafc6feebff3102b9f"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4cc884a49914861d78edabd6e2b7382bf653e112.png"></a></p>
 <p>接下来，还有一些事要做</p>
 <p>打开连接 <a href="https://one.dash.cloudflare.com/" rel="external" target="_self">https://one.dash.cloudflare.com/</a></p>
 <p>导航到左侧边栏 - Networks - Tunnels</p>
-<p><a href="#R-image-16acb8925638d60412df0bc41034ccba" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c348bb3f2c2797b5d74c8fb875159ddafe531304.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-16acb8925638d60412df0bc41034ccba"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c348bb3f2c2797b5d74c8fb875159ddafe531304.jpeg"></a></p>
+<p><a href="#R-image-028f949b8b6449a4fab54bbb89633369" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c348bb3f2c2797b5d74c8fb875159ddafe531304.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-028f949b8b6449a4fab54bbb89633369"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c348bb3f2c2797b5d74c8fb875159ddafe531304.jpeg"></a></p>
 <p>拉到Homeassistant这条记录的最右边，有三个小点，点进去，Configure</p>
-<p><a href="#R-image-900162948d0c68bae5d7e8b6ae573101" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4adc7d14223d9a250a0d0885e7fe5564573d6803.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-900162948d0c68bae5d7e8b6ae573101"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4adc7d14223d9a250a0d0885e7fe5564573d6803.png"></a></p>
+<p><a href="#R-image-35a703e62c2631ec8a767169fb29fff6" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4adc7d14223d9a250a0d0885e7fe5564573d6803.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-35a703e62c2631ec8a767169fb29fff6"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4adc7d14223d9a250a0d0885e7fe5564573d6803.png"></a></p>
 <p>也许你需要点右边三小点，Edit进行编辑</p>
-<p><a href="#R-image-d9e86363c3f8d0dd20943456dfe7610e" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/0205a3d16cfdbcbdea4c711c03cd571168621645.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d9e86363c3f8d0dd20943456dfe7610e"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/0205a3d16cfdbcbdea4c711c03cd571168621645.jpeg"></a></p>
+<p><a href="#R-image-e78c3830c666f9a1cfd6031b794b4490" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/0205a3d16cfdbcbdea4c711c03cd571168621645.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e78c3830c666f9a1cfd6031b794b4490"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/0205a3d16cfdbcbdea4c711c03cd571168621645.jpeg"></a></p>
 <p>最后你可以确认下dns是不是已经自动配置好了</p>
-<p><a href="#R-image-296d7ccb4fbe2f9168288ef46119cf30" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/8b4aa7498406a60ce8d7cb017bb7775b1926e335.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-296d7ccb4fbe2f9168288ef46119cf30"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/8b4aa7498406a60ce8d7cb017bb7775b1926e335.jpeg"></a></p>
+<p><a href="#R-image-44d277719275e6207aa445f35351ed8d" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/8b4aa7498406a60ce8d7cb017bb7775b1926e335.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44d277719275e6207aa445f35351ed8d"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/8b4aa7498406a60ce8d7cb017bb7775b1926e335.jpeg"></a></p>
 <p>接下来在回到HA盒子，安装加载项File Editor（如果还没安装的话）
 然后在/homeassistant/configuration.yaml中添加如下内容</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">http</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">use_x_forwarded_for</span>: <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">trusted_proxies</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">172.30.33.0</span><span style="color:#ae81ff">/24</span></span></span></code></pre></div><p><a href="#R-image-2d5cd0af4a8b245c8e8ec52cd76db9bd" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/64e468b1b83fe3b9a0122105b58b389f6c07910d.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2d5cd0af4a8b245c8e8ec52cd76db9bd"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/64e468b1b83fe3b9a0122105b58b389f6c07910d.jpeg"></a></p>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">172.30.33.0</span><span style="color:#ae81ff">/24</span></span></span></code></pre></div><p><a href="#R-image-6e994d6c6a8a29295d0aa732904a126b" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/64e468b1b83fe3b9a0122105b58b389f6c07910d.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e994d6c6a8a29295d0aa732904a126b"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/64e468b1b83fe3b9a0122105b58b389f6c07910d.jpeg"></a></p>
 <p>修改完后记得重启下盒子
 然后就可以愉快的远程访问啦</p>
-<p><a href="#R-image-8499a1da87cd01c0aa7def797c66b17c" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4e6b816376cee4395a5794dea3d6eda17aff3b61.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8499a1da87cd01c0aa7def797c66b17c"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4e6b816376cee4395a5794dea3d6eda17aff3b61.png"></a></p>
+<p><a href="#R-image-2543cdac04bcb2151818f7f75b644509" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4e6b816376cee4395a5794dea3d6eda17aff3b61.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2543cdac04bcb2151818f7f75b644509"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4e6b816376cee4395a5794dea3d6eda17aff3b61.png"></a></p>
 
 <script
   id="utteranc"
@@ -911,27 +668,27 @@ valid_lft forever preferred_lft forever</p>
 <p>接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。</p>
 <p>首先，我们要添加 HomeKit Bridge 集成。点击“配置”，进入“设备与服务”页面。在“集成”选项下，点右下角“添加集成”
 然后输入“homekit” 或者&quot;apple&quot;</p>
-<p><a href="#R-image-01bfdcca6f2319cb4c4209dcddfccb2a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2405b767378b89b3a841ce13334d05cfc9061cf4.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-01bfdcca6f2319cb4c4209dcddfccb2a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2405b767378b89b3a841ce13334d05cfc9061cf4.jpeg"></a></p>
+<p><a href="#R-image-1c47812f9df96c8887afab1b91be34eb" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2405b767378b89b3a841ce13334d05cfc9061cf4.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1c47812f9df96c8887afab1b91be34eb"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2405b767378b89b3a841ce13334d05cfc9061cf4.jpeg"></a></p>
 <p>点击“Apple”</p>
-<p><a href="#R-image-345590d16b70a877322e8bf83bb51f0a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a0787982f4a5381754deb552770fda923788b729.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-345590d16b70a877322e8bf83bb51f0a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a0787982f4a5381754deb552770fda923788b729.jpeg"></a></p>
+<p><a href="#R-image-93dd2822bda00188a17dd7d70d22e584" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a0787982f4a5381754deb552770fda923788b729.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-93dd2822bda00188a17dd7d70d22e584"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a0787982f4a5381754deb552770fda923788b729.jpeg"></a></p>
 <p>点击添加“HomeKit Bridge 集成”，按照指引完成添加。</p>
 <p>需要注意是的，如果你有温湿度传感器，点击“要添加的域”下拉选项，记得勾选“Sensor”，这个选项默认是不勾选的。</p>
-<p><a href="#R-image-ca9c733e51cb0091fb43ea185fb64364" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca9c733e51cb0091fb43ea185fb64364"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a.jpeg"></a></p>
+<p><a href="#R-image-788e0c20df882afbbe5d5977aba1c32c" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-788e0c20df882afbbe5d5977aba1c32c"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b7f3383a80e1a1f04f3b092af7b8d0054d1eaa2a.jpeg"></a></p>
 <p>添加 HomeKit Bridge 集成成功后，点击界面左下角的通知按钮。查看 homekit 的配对二维码。</p>
-<p><a href="#R-image-993c35dc0b72cf504f2cb2ad44175bca" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b08589161582a58e794c2cb626c3ec44e2299ce0.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-993c35dc0b72cf504f2cb2ad44175bca"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b08589161582a58e794c2cb626c3ec44e2299ce0.jpeg"></a></p>
-<p><a href="#R-image-e3a02353a44b571b728aef44a7ac5de1" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/3718c6668fa3b68c066162da84fe46579fd3c855.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e3a02353a44b571b728aef44a7ac5de1"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/3718c6668fa3b68c066162da84fe46579fd3c855.jpeg"></a></p>
+<p><a href="#R-image-2747a379e497523189664d3164215285" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b08589161582a58e794c2cb626c3ec44e2299ce0.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2747a379e497523189664d3164215285"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b08589161582a58e794c2cb626c3ec44e2299ce0.jpeg"></a></p>
+<p><a href="#R-image-bfe34784b9ad62c8d21b61723270148a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/3718c6668fa3b68c066162da84fe46579fd3c855.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfe34784b9ad62c8d21b61723270148a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/3718c6668fa3b68c066162da84fe46579fd3c855.jpeg"></a></p>
 <p>打开“家庭”应用，点击左上角的“+”号，选择“添加配件”。扫描上个步骤的得到的二维码，点击“添加到家庭”。在加入过程中，可能会提示“未认证设备”，点击“仍要添加”。然后完成剩余步骤，逐个添加设备。完成后，你就能能用Siri控制你的智能设备了。</p>
-<p><a href="#R-image-268182f59657a12167b8270bb44df2e1" class="lightbox-link"><img alt="桥接homekit6.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-268182f59657a12167b8270bb44df2e1"><img alt="桥接homekit6.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce.jpeg"></a></p>
-<p><a href="#R-image-c7b1cf8faf9398966ef3786e41ff95c1" class="lightbox-link"><img alt="桥接homekit7.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d9897e682d94ac340ab1a1aff6821f0dd09b2144.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c7b1cf8faf9398966ef3786e41ff95c1"><img alt="桥接homekit7.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d9897e682d94ac340ab1a1aff6821f0dd09b2144.jpeg"></a></p>
-<p><a href="#R-image-2480b99930b68b5396d7c770091e8197" class="lightbox-link"><img alt="桥接homekit8.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a07d8ff1e7af35d33193fdba56efa787ba360d89.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2480b99930b68b5396d7c770091e8197"><img alt="桥接homekit8.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a07d8ff1e7af35d33193fdba56efa787ba360d89.jpeg"></a></p>
+<p><a href="#R-image-b8a6be3656de0874a168e7b804b97ea3" class="lightbox-link"><img alt="桥接homekit6.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8a6be3656de0874a168e7b804b97ea3"><img alt="桥接homekit6.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/46651d4a69934aadba8c46c32b8d84a2ac6ce8ce.jpeg"></a></p>
+<p><a href="#R-image-e8c537c599e3fe2c02b40cc3d88edafa" class="lightbox-link"><img alt="桥接homekit7.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d9897e682d94ac340ab1a1aff6821f0dd09b2144.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e8c537c599e3fe2c02b40cc3d88edafa"><img alt="桥接homekit7.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d9897e682d94ac340ab1a1aff6821f0dd09b2144.jpeg"></a></p>
+<p><a href="#R-image-d747f50564e4845983cc7a6f70fcb9f2" class="lightbox-link"><img alt="桥接homekit8.png" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a07d8ff1e7af35d33193fdba56efa787ba360d89.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d747f50564e4845983cc7a6f70fcb9f2"><img alt="桥接homekit8.png" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a07d8ff1e7af35d33193fdba56efa787ba360d89.jpeg"></a></p>
 <p>大功告成！</p>
 
 <script
@@ -981,16 +738,16 @@ valid_lft forever preferred_lft forever</p>
 <h3 id="1-安装-xiaomi-miot-atuo">1 安装 Xiaomi Miot Atuo</h3>
 <p>接下来，我们需要安装 “Xiaomi Miot Atuo” 集成以将米家设备接入HomeAssistant。</p>
 <p>进入 HACS 页面，清除筛选方式（默认只显示已下载的）</p>
-<p><a href="#R-image-d37c36fca766e30029df7334e1562643" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d37c36fca766e30029df7334e1562643"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg"></a></p>
+<p><a href="#R-image-4905a66ced72f5f74ecb2b47a2f7c3bc" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4905a66ced72f5f74ecb2b47a2f7c3bc"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/70e2335f30d0ac09481483ab161fd31c8ccdae7d.jpeg"></a></p>
 <p>然后在搜索框输入“xiaomi miot”，出来后点击它</p>
-<p><a href="#R-image-60bf5803bc4cc4a87a0c075412ac5c25" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-60bf5803bc4cc4a87a0c075412ac5c25"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png"></a></p>
+<p><a href="#R-image-5e12a1186e909c115c3bfc205333bcc9" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e12a1186e909c115c3bfc205333bcc9"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/7dbb3b2832a340b7144704101831281b78997f9a.png"></a></p>
 <p>点击右下角DOWNLOAD进行下载</p>
-<p><a href="#R-image-417c79f2144347d6f458336edb46eede" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-417c79f2144347d6f458336edb46eede"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png"></a></p>
-<p><a href="#R-image-2bd4de0d1a5607049e0a116f62f04e9d" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2bd4de0d1a5607049e0a116f62f04e9d"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg"></a></p>
+<p><a href="#R-image-0fba113772820ee7a53fb2e1a6c2b924" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fba113772820ee7a53fb2e1a6c2b924"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c2e5a0057e07c7c71caa918194f809e2caa43ed4.png"></a></p>
+<p><a href="#R-image-efd30ef826e5240b5c67465451aa7ed5" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-efd30ef826e5240b5c67465451aa7ed5"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/4052018b771c4df4176b353895c0596dcfb258a2.jpeg"></a></p>
 <p>安装完集成之后需要重启 HomeAssistant。
 配置 → 系统 右上角有重启按钮</p>
 <h3 id="2-配置-xiaomi-miot-atuo">2 配置 Xiaomi Miot Atuo</h3>
@@ -998,34 +755,34 @@ valid_lft forever preferred_lft forever</p>
 <p>点击“设置”，选择“设备与服务”
 切换到 “设备” 选项卡， 然后点击右下角 “添加设备”
 然后输入“xiaomi”，然后选择&quot;Xiaomi Miot Auto&quot;</p>
-<p><a href="#R-image-b643193819841504998e46635d6b71dc" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b643193819841504998e46635d6b71dc"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg"></a></p>
+<p><a href="#R-image-ffe9487f6b7fdaaaa0e0c9b9d29484f0" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ffe9487f6b7fdaaaa0e0c9b9d29484f0"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6522b231a80bf78d487a8fc545347c4b350d2730.jpeg"></a></p>
 <p>选择“账号集成”，登录小米账号获取设备信息。</p>
-<p><a href="#R-image-42c29dd587747f4fc33f3e66df55ebfe" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-42c29dd587747f4fc33f3e66df55ebfe"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg"></a></p>
-<p><a href="#R-image-5efe09a235b35ceb06d977b2d94a12c6" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5efe09a235b35ceb06d977b2d94a12c6"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg"></a></p>
+<p><a href="#R-image-29eb87082e5e96be8cf1b405a833044d" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-29eb87082e5e96be8cf1b405a833044d"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/cd71249cb01282859a521a8a373a6e5629323f92.jpeg"></a></p>
+<p><a href="#R-image-8e76064e657d1f78e95e27ba3df25c16" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e76064e657d1f78e95e27ba3df25c16"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/92f4e0e5a705997eb38b985073bb5c8fa47a881a.jpeg"></a></p>
 <p>按照配置指引完成剩余步骤，
 这里可以根据自身情况默认选择排除模式还是包含模式
 在设备列表中你想要接入 HomeAssistant 的设备。
 排除模式就是将设备列表中没有勾选色设备接入到Homeassistant
 包含模式就是将设备列表中已勾选的设备接入到Homeassistant</p>
-<p><a href="#R-image-dcdb73fb6eca99818648bbdb7df9df6d" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dcdb73fb6eca99818648bbdb7df9df6d"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg"></a></p>
+<p><a href="#R-image-f325fceef9b4a79eb666737cc8da8801" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f325fceef9b4a79eb666737cc8da8801"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/c403c5c6840ffcc7de4c78bdedd16c2ade91c357.jpeg"></a></p>
 <p>接下来就是设置设备所在区域。这样就算是将米家智能设&gt; 备接入进来了。</p>
 <blockquote>
 <p>上面有一句话：如果想集成网关子设备，请直接选择子设备接入，只接入网关不会自动集成子设备。自己体会，至此就算接入完成了。</p>
 </blockquote>
 <p>回到概览，就可以看到我们刚才接入的设备了</p>
-<p><a href="#R-image-91085cedbd5b9269941058618573e721" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-91085cedbd5b9269941058618573e721"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg"></a></p>
+<p><a href="#R-image-f6db31dda9b7146567ea97eee39671f1" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f6db31dda9b7146567ea97eee39671f1"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/55cbe342ce51cb278d4599e0061df76d510d5b0b.jpeg"></a></p>
 <p>在配置 - 设备与服务中就能看到Xiaomi Miot Auto</p>
-<p><a href="#R-image-50e736a3fd546f590bec48504ed8fffb" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-50e736a3fd546f590bec48504ed8fffb"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg"></a></p>
+<p><a href="#R-image-ac18f4c5a4bf495f4dc7967b7627d735" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac18f4c5a4bf495f4dc7967b7627d735"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/ad4e3cd4220230604a9b3354a652d2566cc1a322.jpeg"></a></p>
 <p>点进去就可以看到接入了多少个设备，多少个实体</p>
 <p>我们进入米家插座，就能看到很多信息，并且可以进行更丰富的控制和设置，更多高级的功能，期待你的发现和研究</p>
-<p><a href="#R-image-023eb98328e9c6768c7b226a398a10d9" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-023eb98328e9c6768c7b226a398a10d9"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg"></a></p>
+<p><a href="#R-image-b4588ddc3ef66aeabdf7e87069af2a68" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4588ddc3ef66aeabdf7e87069af2a68"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/103b0749a541718c1a75e8ecea1cb438338f0ee0.jpeg"></a></p>
 
 <script
   id="utteranc"
@@ -1133,21 +890,21 @@ valid_lft forever preferred_lft forever</p>
 <p>导航到<strong>Networks</strong> &gt; <strong>Tunnels</strong></p>
 <p>然后<strong>Create a tunnel</strong></p>
 <p>tunnel type就默认的cloudflare，然后next</p>
-<p><a href="#R-image-d47d4638d1c5445405e3c24b38c1ab16" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d47d4638d1c5445405e3c24b38c1ab16"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
+<p><a href="#R-image-11ea6d0006346137425e0aa6ab76f4f9" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11ea6d0006346137425e0aa6ab76f4f9"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
 <p>然后设置tunnel name,然后save tunnel</p>
 <h2 id="3-安装和配置cloudflared">3 安装和配置cloudflared</h2>
 <p>**Choose an operating system:**Debian</p>
 <p>**Choose an architecture:**arm64-bit</p>
-<p><a href="#R-image-d263acc5a17ec96a7ea49f71ab05bf59" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d263acc5a17ec96a7ea49f71ab05bf59"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
+<p><a href="#R-image-80341c57bc2b398f4610475a4eaacebb" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80341c57bc2b398f4610475a4eaacebb"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
 <p>安装完成后，点击右下角save</p>
 <h2 id="4-配置public-hostname">4 配置Public Hostname</h2>
 <p>再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口<strong>Configure</strong></p>
 <p>切换到<strong>Public Hostname</strong></p>
 <p>Add a public hostname</p>
-<p><a href="#R-image-47962d21b169a3900b2f581108d4fcf0" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-47962d21b169a3900b2f581108d4fcf0"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
+<p><a href="#R-image-362a59538ace70205d997a819db9cd1a" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-362a59538ace70205d997a819db9cd1a"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
 <p>同样，在<strong>Public hostnames</strong>列表也是点右边的3个小点进入配置</p>
 <h2 id="5-设置private-network">5 设置Private Network</h2>
 <p>切换到<strong>Private Network</strong></p>
@@ -1320,13 +1077,13 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 </span></span><span style="display:flex;"><span>registry:2</span></span></code></pre></div><h3 id="搭建-nexus">搭建 Nexus</h3>
 <p>可选择使用 Docker 命令搭建 <a href="https://link.segmentfault.com/?enc=tbYJWzjSyDQsTkkURfooAQ%3D%3D.QIipXcRsUxqp02x09FrfLCPrKyA3C9SNrkeQCydZtdnSd8CC0luc36yEaTIfkJ8C" rel="external" target="_self">Nexus</a>。</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>docker run -d -p <span style="color:#ae81ff">8081</span>:8081 --name nexus sonatype/nexus3</span></span></code></pre></div><p>或者使用 <a href="https://link.segmentfault.com/?enc=FZchBOKi1qtQY8v1bnXJjw%3D%3D.pGJQ82Ux9WQpeuAt8uqme7hqNpSrSEhuAqUV%2FqA%2F0XIg0LX7UAYua15dLu6eud4ZpuMQpwD5YOON%2FtiFc1AQ2A%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-ddb808218474d8c6f8ba52628d20dd40" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddb808218474d8c6f8ba52628d20dd40"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
+<p><a href="#R-image-f84e280c11bc3f28200e6d23ce0043a8" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f84e280c11bc3f28200e6d23ce0043a8"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
 <p>搭建完成后正常登录 Nexus 页面，根据页面引导配置 Docker 相关的存储 Repository 及代理 Repository 即可。</p>
 <h3 id="搭建-harbor">搭建 Harbor</h3>
 <p>可参考 <a href="https://link.segmentfault.com/?enc=gArRPFlTwahPHAZVYax5eQ%3D%3D.nEIXf3i42IPUpjQpS0rCTWWuYuZuTijmAc5tYh0b0JQ6Rpq%2FgSXPBgpsoxHhenn2" rel="external" target="_self">Harbor文档 </a>搭建或者使用 <a href="https://link.segmentfault.com/?enc=Y8%2FkX9dQK4wkXs1osqCq2Q%3D%3D.Y4NBA%2Fwcm2hd3jymDG3IHKxzC%2BwC7C2hOmQohmPoWdDa6NnnhnrlgpZirSzWOz3yAO6WgEWO0ylpmxJECRtUIw%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-b55352ab1901e460957a166016e2efbe" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b55352ab1901e460957a166016e2efbe"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
+<p><a href="#R-image-f1cfec8b149ae4294f100c57fc7ae35a" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1cfec8b149ae4294f100c57fc7ae35a"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
 <h2 id="可用的镜像代理">可用的镜像代理</h2>
 <p>最近十来天我尝试了很多镜像加速站，整理了以下镜像站目前是可用状态，但可能随时会遇到不可用、关停、访问比较慢的状态，建议同时配置多个镜像源。</p>
 <table>
@@ -1372,8 +1129,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 </table>
 <h2 id="福利">福利</h2>
 <p>近期 Rainbond 社区也接受到许多用户反馈 Docker 镜像拉不下来，不能构建、打包了，因此 Rainbond 也搭建了个镜像加速服务，采用 <code>CloudFlare + 国外服务器 Nginx 反代</code>的方案为 Rainbond 社区的用户们提供镜像加速服务。</p>
-<p><a href="#R-image-c609f80e646f9082dc911ce956ca9726" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c609f80e646f9082dc911ce956ca9726"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
+<p><a href="#R-image-a2b6f6d34662ca864f6bddc1299aa90d" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2b6f6d34662ca864f6bddc1299aa90d"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
 <p>目前速度挺快的（未来不好说</p>
 <h3 id="使用方法">使用方法</h3>
 <p>1.直接获取 Docker Hub 镜像</p>
@@ -1437,32 +1194,32 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 <p><a href="https://4i5i-my.sharepoint.com/:u:/g/personal/sosel_4i5i_onmicrosoft_com/EQr1zW3GUINKptRic9MlSKIBOmUXEukBXOzK6oq-ED0QQQ?e=cTDsBR" rel="external" target="_self">备用地址</a> （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</p>
 <h2 id="在cloudflare添加网站">在Cloudflare添加网站</h2>
 <p>登陆Cloudflare，然后添加网站，就是将你刚注册的域名添加到这里</p>
-<p><a href="#R-image-353f793ff92221aae01d267591d370ec" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-353f793ff92221aae01d267591d370ec"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png"></a></p>
+<p><a href="#R-image-d93e3ca51f086c7636980627da08f9ad" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d93e3ca51f086c7636980627da08f9ad"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/b1c3498eee818656643b898a86c72fcd77eaabd3.png"></a></p>
 <p>然后选择<strong>免费</strong>的方案就行，如下图，然后<strong>继续</strong></p>
-<p><a href="#R-image-b0068a64cac6208dd827ece6e38b5b57" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0068a64cac6208dd827ece6e38b5b57"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png"></a></p>
+<p><a href="#R-image-da367105cb5243fa13068e62f1c6b53e" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-da367105cb5243fa13068e62f1c6b53e"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/90241e3e480226358c120d6be86510c2587b268f.png"></a></p>
 <p>此时我们先不添加DNS，先把域名解析服务器改到Cloudflare，点击左边栏 <strong>DNS</strong>，记下Cloudflare名称服务器地址，你看到的可能和我看到不一定一样，别弄错了。</p>
-<p><a href="#R-image-9668a748c3c72b347a77cd03b87262db" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9668a748c3c72b347a77cd03b87262db"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png"></a></p>
+<p><a href="#R-image-09e3773e101c61cc04c553a9e2ad637f" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-09e3773e101c61cc04c553a9e2ad637f"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/619ee5212f9f721c3c60ba3ad41a855f02ccc158.png"></a></p>
 <p>去域名注册平台后台https://www.namesilo.com/account_domains.php</p>
-<p><a href="#R-image-d2f0d41cab5cfcd2ee4db42226d75a02" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2f0d41cab5cfcd2ee4db42226d75a02"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg"></a></p>
+<p><a href="#R-image-3bba27833e66ba8c7f46234bc0e7ee4a" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3bba27833e66ba8c7f46234bc0e7ee4a"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/deaa5b81ad3bc0b61f0a99b1b3309a98d8ef4a77.jpeg"></a></p>
 <p>填入Cloudflare的名称服务器地址，然后提交（submit），名称服务器生效可能要等一段时间</p>
-<p><a href="#R-image-eb51138b7cc5bce8fdb79204bffff20b" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb51138b7cc5bce8fdb79204bffff20b"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png"></a></p>
+<p><a href="#R-image-381c7cc44aa4dbf6e80e9288fb46e50d" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-381c7cc44aa4dbf6e80e9288fb46e50d"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/73fd0ce7fd47d3e25d5035f6af78106fd531509a.png"></a></p>
 <h2 id="创建应用程序">创建应用程序</h2>
 <p>回到Cloudflare，导航到<strong>Workers 和 Pages</strong> 创建应用程序</p>
-<p><a href="#R-image-d5264801b8dcad762f631dea7439ce53" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5264801b8dcad762f631dea7439ce53"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg"></a></p>
-<p><a href="#R-image-69d529678dc157e1708d2c0d0fb76620" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-69d529678dc157e1708d2c0d0fb76620"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png"></a></p>
+<p><a href="#R-image-bcb34ad1ec7994ec8022b92527640039" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcb34ad1ec7994ec8022b92527640039"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/6202273f3867236110d6a2a3e9d4a48ba7b52446.jpeg"></a></p>
+<p><a href="#R-image-1f2381bec3c6c2bf92998c0d50de7983" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f2381bec3c6c2bf92998c0d50de7983"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/04affed533e6f7184b4c7420b8e3e3f2cb46e6b0.png"></a></p>
 <p>名称可以随意，完了点击部署按钮，代码先不管它</p>
-<p><a href="#R-image-2f9510c12d8359fbe580adc8a2790db7" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f9510c12d8359fbe580adc8a2790db7"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png"></a></p>
+<p><a href="#R-image-74feb339db2fc61f0a8876848f289dfb" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-74feb339db2fc61f0a8876848f289dfb"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/045bcecb3b15412597fef3db606a8de38b5b7c9e.png"></a></p>
 <p>Worker部署成功</p>
-<p><a href="#R-image-a698669dda74f8dc386bde6b8bf0f0fd" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a698669dda74f8dc386bde6b8bf0f0fd"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png"></a></p>
+<p><a href="#R-image-c772a36375ef0381537a13ac78da8548" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c772a36375ef0381537a13ac78da8548"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/d592ffaed5f33e6bc9bdadb89267e73e87d09aeb.png"></a></p>
 <h2 id="替换脚本代码">替换脚本代码</h2>
 <p>点击编辑代码，将https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js代码复制过来，贴到编辑器里面替换原来的内容</p>
 <p>修改两个地方：</p>
@@ -1472,16 +1229,16 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 <p>proxyIP<em>我测试了也可以不用改，空着就行</em></p>
 <p><strong>保存并部署</strong>（按钮在屏幕右上角）</p>
 <h2 id="绑定域名">绑定域名</h2>
-<p><a href="#R-image-154f3958ecbc3a0fff22e1e08b53de74" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-154f3958ecbc3a0fff22e1e08b53de74"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png"></a></p>
-<p><a href="#R-image-4eb7a88428fdd58cbd6756adb0a6b17a" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4eb7a88428fdd58cbd6756adb0a6b17a"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png"></a></p>
+<p><a href="#R-image-579e1ddf831214d84873434429773dd8" class="lightbox-link"><img alt="notion image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-579e1ddf831214d84873434429773dd8"><img alt="notion image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/42db9218a49c38b1e5fc04f5a965596776ad3be3.png"></a></p>
+<p><a href="#R-image-75ca65bca690b510515422af147ad3d3" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-75ca65bca690b510515422af147ad3d3"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/67c86bffc006e2047714fe596cd6d07f63abae6f.png"></a></p>
 <p>自定义域前缀可以随意，根据自己需要填写然后点击“添加自定义域”，等一会儿生效后就可以用了。。。</p>
 <h2 id="配置科学上网客户端">配置科学上网客户端</h2>
 <p>在浏览器地址栏输入你刚配置的自定义域+代码中配置的userID，得到相应的科学上网的配置参数</p>
 <p>比如：https://hi.cntv.chat/6efcf080-745f-42c0-a0e6-4b0f9a2f8f1c</p>
-<p><a href="#R-image-7736fa542a3701b1c8f6927a1ad628a5" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7736fa542a3701b1c8f6927a1ad628a5"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png"></a></p>
+<p><a href="#R-image-35e13013ed0400ebd05eb1838fc9f188" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-35e13013ed0400ebd05eb1838fc9f188"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/a762dcabf2d2ef2fd003f3bec59942c9ae2d21f0.png"></a></p>
 <p>复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG</p>
 <p>好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！</p>
 <p>若有不明白或遇到什么问题，请给我留言。</p>
@@ -1532,8 +1289,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 <p>在ha提示符后面执行</p>
 </li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</code></pre></div><p><a href="#R-image-d0ea015110f9f8ed97f30065f6ab8733" class="lightbox-link"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0ea015110f9f8ed97f30065f6ab8733"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</code></pre></div><p><a href="#R-image-d2b841dfb02b83b23226a3298dcdb425" class="lightbox-link"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2b841dfb02b83b23226a3298dcdb425"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png"></a></p>
 <p>再回到<a href="http://homeassistant.local:8123" rel="external" target="_self">http://homeassistant.local:8123</a>登陆即可</p>
 <h3 id="想清除homeassistant-box-账户信息怎么弄">想清除Homeassistant Box 账户信息怎么弄？</h3>
 <p>如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息</p>
@@ -1545,13 +1302,13 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 <p>在ha提示符后输入login回车</p>
 </li>
 </ol>
-<p><a href="#R-image-351574458dc554d934ee2284a7176f6b" class="lightbox-link"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-351574458dc554d934ee2284a7176f6b"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png"></a></p>
+<p><a href="#R-image-4c27352b20c51333b7694f298174047b" class="lightbox-link"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c27352b20c51333b7694f298174047b"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png"></a></p>
 <ol start="3">
 <li>在#提示符下执行，注意是大写字母C</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>ha-install -C</code></pre></div><p><a href="#R-image-cd0b8c65dc6ab1654a9ecfd0d90fd0f7" class="lightbox-link"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd0b8c65dc6ab1654a9ecfd0d90fd0f7"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>ha-install -C</code></pre></div><p><a href="#R-image-73185e8dd1cd731e704e8cc4934948ed" class="lightbox-link"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73185e8dd1cd731e704e8cc4934948ed"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png"></a></p>
 <p>再回到<a href="http://homeassistant.local:8123" rel="external" target="_self">http://homeassistant.local:8123</a>登陆即可</p>
 <h3 id="重置homeassistant盒子恢复出厂设置">重置Homeassistant盒子，恢复出厂设置</h3>
 <ol>
@@ -1566,8 +1323,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
 </li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>rm -rf /mnt/data/supervisor/homeassistant/.storage/
-reboot</code></pre></div><p><a href="#R-image-d7ab605c9173fd84211d6fc48ab2fe45" class="lightbox-link"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7ab605c9173fd84211d6fc48ab2fe45"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png"></a></p>
+reboot</code></pre></div><p><a href="#R-image-f3733864c4829881a62131f7864ce106" class="lightbox-link"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f3733864c4829881a62131f7864ce106"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png"></a></p>
 <h3 id="侧边栏没有supervisor菜单项">侧边栏没有supervisor菜单项</h3>
 <ol>
 <li>
@@ -1582,10 +1339,10 @@ reboot</code></pre></div><p><a href="#R-image-d7ab605c9173fd84211d6fc48ab2fe45" 
 </ol>
 <h3 id="connect-no-route-to-host">connect: no route to host</h3>
 <p>Get “http://supervisor/network/info“: dial tcp 172.30.32.2:80: connect: no route to host</p>
-<p><a href="#R-image-5783830d4076ad9dd990501bb92c77f8" class="lightbox-link"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5783830d4076ad9dd990501bb92c77f8"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png"></a></p>
-<p><a href="#R-image-333b76bc5efd3e056856e7d411cab20a" class="lightbox-link"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-333b76bc5efd3e056856e7d411cab20a"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png"></a></p>
+<p><a href="#R-image-7fed879ee7c1643c8a925d5aa3477889" class="lightbox-link"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fed879ee7c1643c8a925d5aa3477889"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png"></a></p>
+<p><a href="#R-image-a0858c7072af83e0606536bfb8655d0b" class="lightbox-link"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0858c7072af83e0606536bfb8655d0b"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png"></a></p>
 <ol>
 <li>
 <p>访问<a href="http://homeassistant.local:7681/" rel="external" target="_self">http://homeassistant.local:7681</a></p>
@@ -1657,11 +1414,11 @@ wgturbo apply -D</code></pre></div>
 <h2 id="联系我们"><strong>联系我们</strong></h2>
 <p>【闲鱼】<a href="https://m.tb.cn/h.TVTzZg2?tk=eAvn3w5fPRE" rel="external" target="_self">https://m.tb.cn/h.TVTzZg2?tk=eAvn3w5fPRE</a> MF1643 「这是我的闲鱼号，快来看看吧～」
 点击链接直接打开</p>
-<p><a href="#R-image-52221d5bda19631f83986c965935d499" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/8EDE0AC1B382FAC66C5DD0BA2DB28F1A-462x1024.jpg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52221d5bda19631f83986c965935d499"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/8EDE0AC1B382FAC66C5DD0BA2DB28F1A-462x1024.jpg"></a></p>
+<p><a href="#R-image-38384a5e03c11a4647658a8901d29edb" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/8EDE0AC1B382FAC66C5DD0BA2DB28F1A-462x1024.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-38384a5e03c11a4647658a8901d29edb"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/8EDE0AC1B382FAC66C5DD0BA2DB28F1A-462x1024.jpg"></a></p>
 <p>QQ群</p>
-<p><a href="#R-image-c4d6a41616969ed1de5e161998e6bcc5" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/qrcode_1733795762228-574x1024.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c4d6a41616969ed1de5e161998e6bcc5"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/qrcode_1733795762228-574x1024.png"></a></p>
+<p><a href="#R-image-3fcbd3a1d96647f0336f7bc783121f68" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/qrcode_1733795762228-574x1024.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fcbd3a1d96647f0336f7bc783121f68"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/qrcode_1733795762228-574x1024.png"></a></p>
 
 <script
   id="utteranc"
@@ -1713,13 +1470,13 @@ wgturbo apply -D</code></pre></div>
 <li>晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题</li>
 </ol>
 <p>安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。</p>
-<p><a href="#R-image-cf4575b136e6e20c4481b36acdb898e5" class="lightbox-link"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf4575b136e6e20c4481b36acdb898e5"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png"></a></p>
+<p><a href="#R-image-2a1edd3ba7012c91cdb218479dfe9727" class="lightbox-link"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a1edd3ba7012c91cdb218479dfe9727"><img alt="image-20240911155228150" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240911155228150.png"></a></p>
 <p>当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！</p>
 <p>但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。</p>
 <p>先看看大家容易混淆的s905l3和s905l3a芯片的对比</p>
-<p><a href="#R-image-e340e747967619a2377a6acefbef8f94" class="lightbox-link"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e340e747967619a2377a6acefbef8f94"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png"></a></p>
+<p><a href="#R-image-aaae584bfaeb45aa13d2ae5853eb0302" class="lightbox-link"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aaae584bfaeb45aa13d2ae5853eb0302"><img alt="image-20240908214739930" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240908214739930.png"></a></p>
 <h2 id="specification-comparison">Specification comparison:</h2>
 <table>
   <thead>
@@ -1934,16 +1691,16 @@ wgturbo apply -D</code></pre></div>
 </table>
 <p>详细的对比数据，请访问 <a href="https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/" rel="external" target="_self">https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/</a></p>
 <p>下面是M401A的几张图片</p>
-<p><a href="#R-image-7bb359d96c0bc53eb6866fcb5a135a3c" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7bb359d96c0bc53eb6866fcb5a135a3c"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png"></a></p>
-<p><a href="#R-image-e8375323c7445101025118cc4c66d0bb" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e8375323c7445101025118cc4c66d0bb"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png"></a></p>
-<p><a href="#R-image-c3a105224c65c8225d8d48d8e78b8a88" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3a105224c65c8225d8d48d8e78b8a88"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png"></a></p>
-<p><a href="#R-image-caef356554dc39ec48a6915c005c69e4" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-caef356554dc39ec48a6915c005c69e4"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png"></a></p>
-<p><a href="#R-image-895c77b5d4440cabb24e13e6f37ace86" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-895c77b5d4440cabb24e13e6f37ace86"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png"></a></p>
+<p><a href="#R-image-61a1e73029da07f5028e30208ec4a8d5" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-61a1e73029da07f5028e30208ec4a8d5"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117187.png"></a></p>
+<p><a href="#R-image-7e648f7d2051114f0e16e5c0ded6c305" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e648f7d2051114f0e16e5c0ded6c305"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072117451.png"></a></p>
+<p><a href="#R-image-77d9dec5e7fa1151dca5a1a7ade66a35" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-77d9dec5e7fa1151dca5a1a7ade66a35"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072118487.png"></a></p>
+<p><a href="#R-image-c29cf78616f90f0dcb4d7fd86a098fb9" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c29cf78616f90f0dcb4d7fd86a098fb9"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119320.png"></a></p>
+<p><a href="#R-image-2ff39efb0ec0379f98a304064b277e4b" class="lightbox-link"><img class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ff39efb0ec0379f98a304064b277e4b"><img class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202409072119549.png"></a></p>
 <p>偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）</p>
 <ul>
 <li>安装维护
@@ -2006,26 +1763,26 @@ wgturbo apply -D</code></pre></div>
 
 <p>新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存</p>
 <p>有需要的老铁们请联系我</p>
-<p><a href="#R-image-82bb1b936c34f68f8d37854f4e8667ef" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211022595.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-82bb1b936c34f68f8d37854f4e8667ef"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211022595.jpeg"></a></p>
-<p><a href="#R-image-8ab46ed59ff15dae30e0c0782ea98af9" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021570.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ab46ed59ff15dae30e0c0782ea98af9"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021570.jpeg"></a></p>
-<p><a href="#R-image-3066c6a9ab35ab487af7800ca63487fe" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211022793.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3066c6a9ab35ab487af7800ca63487fe"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211022793.jpeg"></a></p>
-<p><a href="#R-image-6cc6a3ce26f251f69cd18a6cc9878ea6" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021915.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6cc6a3ce26f251f69cd18a6cc9878ea6"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021915.jpeg"></a></p>
-<p><a href="#R-image-f52f514f13f2ecc62559cf99c52d61e5" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211027120.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f52f514f13f2ecc62559cf99c52d61e5"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211027120.jpeg"></a></p>
-<p><a href="#R-image-573a7638531bbf317c7ffc50705400dc" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021644.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-573a7638531bbf317c7ffc50705400dc"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021644.jpeg"></a></p>
-<p><a href="#R-image-73c7b8c7f644058040257fc27fd1e2d6" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028035.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-73c7b8c7f644058040257fc27fd1e2d6"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028035.jpeg"></a></p>
-<p><a href="#R-image-acf7b57f1c9759d372a1afd53c7ef49f" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021896.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-acf7b57f1c9759d372a1afd53c7ef49f"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021896.jpeg"></a></p>
-<p><a href="#R-image-a9aaeca55649c635d4141ce91f6b088c" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028898.jpeg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9aaeca55649c635d4141ce91f6b088c"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028898.jpeg"></a></p>
-<p><a href="#R-image-f5763aa8f048f41f02d6abb1fae42d81" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028123.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5763aa8f048f41f02d6abb1fae42d81"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028123.png"></a></p>
+<p><a href="#R-image-30e827c8a46c18535cbdf9c67e7b0f2d" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211022595.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30e827c8a46c18535cbdf9c67e7b0f2d"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211022595.jpeg"></a></p>
+<p><a href="#R-image-946433abd551d31ea5022cff3f5855ef" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021570.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-946433abd551d31ea5022cff3f5855ef"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021570.jpeg"></a></p>
+<p><a href="#R-image-2ac4166689bbc3c8e10c55bd8ad6db16" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211022793.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ac4166689bbc3c8e10c55bd8ad6db16"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211022793.jpeg"></a></p>
+<p><a href="#R-image-003622dce19a6e1e54310cf677988f23" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021915.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-003622dce19a6e1e54310cf677988f23"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021915.jpeg"></a></p>
+<p><a href="#R-image-c8a71180a35c0443a9065b4442e5be55" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211027120.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8a71180a35c0443a9065b4442e5be55"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211027120.jpeg"></a></p>
+<p><a href="#R-image-d432d04b2e9fcbeaa0661be7f61864fb" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021644.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d432d04b2e9fcbeaa0661be7f61864fb"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021644.jpeg"></a></p>
+<p><a href="#R-image-38dc1f5cd29e8b7342d6540d61d15c02" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028035.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-38dc1f5cd29e8b7342d6540d61d15c02"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028035.jpeg"></a></p>
+<p><a href="#R-image-d311c870e64072d976d9954d220b0ad6" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211021896.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d311c870e64072d976d9954d220b0ad6"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211021896.jpeg"></a></p>
+<p><a href="#R-image-0bc4cbc4b5d4c192b541504bab07d4bc" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028898.jpeg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0bc4cbc4b5d4c192b541504bab07d4bc"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028898.jpeg"></a></p>
+<p><a href="#R-image-0c1eedb8600ca63aeab3ffc5f5aa0ec1" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412211028123.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c1eedb8600ca63aeab3ffc5f5aa0ec1"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412211028123.png"></a></p>
 
 <script
   id="utteranc"
@@ -2060,9 +1817,9 @@ wgturbo apply -D</code></pre></div>
         </div>
       </main>
     </div>
-    <script src="./js/clipboard.min.js?1734749095" defer></script>
-    <script src="./js/perfect-scrollbar.min.js?1734749095" defer></script>
-    <script src="./js/theme.js?1734749095" defer></script>
+    <script src="./js/clipboard.min.js?1734749252" defer></script>
+    <script src="./js/perfect-scrollbar.min.js?1734749252" defer></script>
+    <script src="./js/theme.js?1734749252" defer></script>
 
 
   </body>
