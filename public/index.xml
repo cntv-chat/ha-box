@@ -33,7 +33,7 @@
       <link>http://localhost:1313/faq/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/faq/index.html</guid>
-      <description>[TOC]&#xA;Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），&#xA;在ha提示符后面执行&#xA;authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</description>
+      <description>[TOC]&#xA;Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），&#xA;在ha提示符后面执行&#xA;authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; </description>
     </item>
     <item>
       <title>5 关于我们</title>

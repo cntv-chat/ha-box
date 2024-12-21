@@ -48,8 +48,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": "[TOC]\nHomeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后面执行\nauthentication reset --username \"用户名\" --password \"新密码\"\n再回到http://homeassistant.local:8123登陆即可\n想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后输入login回车\n在#提示符下执行，注意是大写字母C ha-install -C 再回到http://homeassistant.local:8123登陆即可\n重置Homeassistant盒子，恢复出厂设置 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后输入login回车\n删除隐藏目录，没有任何提示，删除后执行reboot重启，命令：\nrm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot 侧边栏没有supervisor菜单项 访问http://homeassistant.local:7681\n输入login回车，进入root模式\n输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c\nconnect: no route to host Get “http://supervisor/network/info“: dial tcp 172.30.32.2:80: connect: no route to host\n访问http://homeassistant.local:7681\nha提示符下输入login回车，执行下面的命令\nwget -O - http://ota.wghaos.com/su7 | bash -Home Assistant CLI not starting! Jump into emergency console 这个问题是之前政府大力打击docker的时候常出现的问题，现在应该很少见了\n访问http://homeassistant.local:7681\n输入login回车进入root模式\n提示符下执行下面三条命令\nwgturbo docker.io fastgh wgturbo ghcr.io fastgh wgturbo apply -D",
-    "description": "[TOC]\nHomeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后面执行\nauthentication reset --username \"用户名\" --password \"新密码\"",
+    "content": "[TOC]\nHomeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后面执行\nauthentication reset --username \"用户名\" --password \"新密码\" 再回到http://homeassistant.local:8123登陆即可\n想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后输入login回车\n在#提示符下执行，注意是大写字母C ha-install -C 再回到http://homeassistant.local:8123登陆即可\n重置Homeassistant盒子，恢复出厂设置 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后输入login回车\n删除隐藏目录，没有任何提示，删除后执行reboot重启，命令：\nrm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot 侧边栏没有supervisor菜单项 访问http://homeassistant.local:7681\n输入login回车，进入root模式\n输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c\nconnect: no route to host Get “http://supervisor/network/info“: dial tcp 172.30.32.2:80: connect: no route to host\n访问http://homeassistant.local:7681\nha提示符下输入login回车，执行下面的命令\nwget -O - http://ota.wghaos.com/su7 | bash -Home Assistant CLI not starting! Jump into emergency console 这个问题是之前政府大力打击docker的时候常出现的问题，现在应该很少见了\n访问http://homeassistant.local:7681\n输入login回车进入root模式\n提示符下执行下面三条命令\nwgturbo docker.io fastgh wgturbo ghcr.io fastgh wgturbo apply -D",
+    "description": "[TOC]\nHomeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），\n在ha提示符后面执行\nauthentication reset --username \"用户名\" --password \"新密码\" ",
     "tags": [],
     "title": "4 常见问题",
     "uri": "/faq/index.html"
@@ -97,7 +97,7 @@ var relearn_search_index = [
     "uri": "/installation/hacs/index.html"
   },
   {
-    "breadcrumb": "3 网络技术",
+    "breadcrumb": "1 安装维护",
     "content": "前提，你已拥有可以用的梯子（节点），如果没有请参考：\n搭建免费科学上网节点\n加载项商店搜索\"加速\"，安装它（实际上就是v2raya,很好用的工具）\n安装完后，点启动，配置选项卡可以不用修改默认就行\n打开WEB UI，初次进入需要设置用户名密码，设置后请记好了。\n导入节点\n然后，选择，启动\n此时，应该就可以用了。开个窗口测试一下 http://homeassistant.local:7681/ 进入后输入login 回车 输入curl www.google.com回车\n是不是看到google页面返回的网页源码了？\n如果不行，请检查是不是节点或者订阅连接有问题\n关于 v2raya的其他配置，请自行bing。\n其他电脑想要科学上网，也可以修改网络配置，将网关设置为HA盒子的ip地址，也能通过HA盒子实现科学上网的梦想，实现上网自由。",
     "description": "前提，你已拥有可以用的梯子（节点），如果没有请参考：\n搭建免费科学上网节点\n加载项商店搜索\"加速\"，安装它（实际上就是v2raya,很好用的工具）",
     "tags": [
@@ -105,11 +105,11 @@ var relearn_search_index = [
       "Cloudflare Worker"
     ],
     "title": "Ha盒子配置科学上网",
-    "uri": "/network/habox-over-greatwall/index.html"
+    "uri": "/installation/habox-over-greatwall/index.html"
   },
   {
     "breadcrumb": "",
-    "content": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。\n当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！\n但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。\n先看看大家容易混淆的s905l3和s905l3a芯片的对比\nSpecification comparison: Processor Amlogic S905L3 Amlogic S905L3A Market (main) TV Box TV Box ISA ARMv8-A (64-bit) ARMv8-A (64-bit) Microarchitecture Cortex-A53 Cortex-A53 Family S9 S9 Part number(s), S-Spec S905L3 S905L3A Release date 2022 Q4 2022 Q3 Lithography 28 nm HKMG 12 nm Cores 4 4 Threads 4 4 Base frequency 2,0 GHz 1,8 GHz Turbo frequency - - High performance cores 4x ARM Cortex-A53 @ 2,0 GHz 4x ARM Cortex-A53 @ 1,8 GHz Cache memory 1 MB 1 MB Max memory capacity 4 GB 4 GB Memory types LPDDR2/3, DDR3/4 DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200 TDP 5 W 5 W GPU integrated graphics ARM Mali-450 MP5 ARM Mali-G31 MP2 GPU execution units 5 2 GPU shading units 80 32 GPU clock 750 MHz 850 MHz GPU FP32 floating point 59,5 GFLOPS 20,8 GFLOPS Socket SoC SoC Drystone MIPS 18 400 DMIPS 16 560 DMIPS Crypto engine - AES, DES, TDES, TRNG Security - TrustZone, Secure boot Max display resolution 4K@60fps 4K@75fps Video decoding H.265, H.264, 1080p@60fps VP9 4K@60fps H.265 4K@75fps, H.264 4K@30fps Video encoding - H.265/H.264 1080p@60fps Modem 10/100M Ethernet 10/100/1000 MAC, 10/100 PHY Connectivity USB 2.0, HDMI 2.0 USB 2.0, USB 3.0, HDMI 2.1 Wi-Fi Wi-Fi 802.11 a/b/g/n/ac Wi-Fi/IEEE 802.11 a/b/g/n/ас Bluetooth Bluetooth 4.2 Bluetooth 4.1 Audio - DAC, SPDIF, I2S, PDM AnTuTu 35 294 46 026 (Android) Geekbench 4 single core 550 755 (Android) Geekbench 4 multi-core 1 578 2 062 (Android) Geekbench 5 single core 105 130 (Android) Geekbench 5 multi-core 266 434 (SGEMM) GFLOPS Performance 4,18 GFLOPS 5,45 GFLOPS (Multi-core / watt performance) Performance / watt ratio 316 pts / W 412 pts / W 详细的对比数据，请访问 https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/\n下面是M401A的几张图片\n偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 Ha盒子配置科学上网 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 远程控制Homeassistant盒子 ",
+    "content": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。\n当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！\n但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。\n先看看大家容易混淆的s905l3和s905l3a芯片的对比\nSpecification comparison: Processor Amlogic S905L3 Amlogic S905L3A Market (main) TV Box TV Box ISA ARMv8-A (64-bit) ARMv8-A (64-bit) Microarchitecture Cortex-A53 Cortex-A53 Family S9 S9 Part number(s), S-Spec S905L3 S905L3A Release date 2022 Q4 2022 Q3 Lithography 28 nm HKMG 12 nm Cores 4 4 Threads 4 4 Base frequency 2,0 GHz 1,8 GHz Turbo frequency - - High performance cores 4x ARM Cortex-A53 @ 2,0 GHz 4x ARM Cortex-A53 @ 1,8 GHz Cache memory 1 MB 1 MB Max memory capacity 4 GB 4 GB Memory types LPDDR2/3, DDR3/4 DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200 TDP 5 W 5 W GPU integrated graphics ARM Mali-450 MP5 ARM Mali-G31 MP2 GPU execution units 5 2 GPU shading units 80 32 GPU clock 750 MHz 850 MHz GPU FP32 floating point 59,5 GFLOPS 20,8 GFLOPS Socket SoC SoC Drystone MIPS 18 400 DMIPS 16 560 DMIPS Crypto engine - AES, DES, TDES, TRNG Security - TrustZone, Secure boot Max display resolution 4K@60fps 4K@75fps Video decoding H.265, H.264, 1080p@60fps VP9 4K@60fps H.265 4K@75fps, H.264 4K@30fps Video encoding - H.265/H.264 1080p@60fps Modem 10/100M Ethernet 10/100/1000 MAC, 10/100 PHY Connectivity USB 2.0, HDMI 2.0 USB 2.0, USB 3.0, HDMI 2.1 Wi-Fi Wi-Fi 802.11 a/b/g/n/ac Wi-Fi/IEEE 802.11 a/b/g/n/ас Bluetooth Bluetooth 4.2 Bluetooth 4.1 Audio - DAC, SPDIF, I2S, PDM AnTuTu 35 294 46 026 (Android) Geekbench 4 single core 550 755 (Android) Geekbench 4 multi-core 1 578 2 062 (Android) Geekbench 5 single core 105 130 (Android) Geekbench 5 multi-core 266 434 (SGEMM) GFLOPS Performance 4,18 GFLOPS 5,45 GFLOPS (Multi-core / watt performance) Performance / watt ratio 316 pts / W 412 pts / W 详细的对比数据，请访问 https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/\n下面是M401A的几张图片\n偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ",
     "description": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。",
     "tags": [
       "Homeassistant",
@@ -118,6 +118,18 @@ var relearn_search_index = [
     ],
     "title": "Homeassistant盒子介绍",
     "uri": "/index.html"
+  },
+  {
+    "breadcrumb": "5 关于我们",
+    "content": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。\n当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！\n但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。\n先看看大家容易混淆的s905l3和s905l3a芯片的对比\nSpecification comparison: Processor Amlogic S905L3 Amlogic S905L3A Market (main) TV Box TV Box ISA ARMv8-A (64-bit) ARMv8-A (64-bit) Microarchitecture Cortex-A53 Cortex-A53 Family S9 S9 Part number(s), S-Spec S905L3 S905L3A Release date 2022 Q4 2022 Q3 Lithography 28 nm HKMG 12 nm Cores 4 4 Threads 4 4 Base frequency 2,0 GHz 1,8 GHz Turbo frequency - - High performance cores 4x ARM Cortex-A53 @ 2,0 GHz 4x ARM Cortex-A53 @ 1,8 GHz Cache memory 1 MB 1 MB Max memory capacity 4 GB 4 GB Memory types LPDDR2/3, DDR3/4 DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200 TDP 5 W 5 W GPU integrated graphics ARM Mali-450 MP5 ARM Mali-G31 MP2 GPU execution units 5 2 GPU shading units 80 32 GPU clock 750 MHz 850 MHz GPU FP32 floating point 59,5 GFLOPS 20,8 GFLOPS Socket SoC SoC Drystone MIPS 18 400 DMIPS 16 560 DMIPS Crypto engine - AES, DES, TDES, TRNG Security - TrustZone, Secure boot Max display resolution 4K@60fps 4K@75fps Video decoding H.265, H.264, 1080p@60fps VP9 4K@60fps H.265 4K@75fps, H.264 4K@30fps Video encoding - H.265/H.264 1080p@60fps Modem 10/100M Ethernet 10/100/1000 MAC, 10/100 PHY Connectivity USB 2.0, HDMI 2.0 USB 2.0, USB 3.0, HDMI 2.1 Wi-Fi Wi-Fi 802.11 a/b/g/n/ac Wi-Fi/IEEE 802.11 a/b/g/n/ас Bluetooth Bluetooth 4.2 Bluetooth 4.1 Audio - DAC, SPDIF, I2S, PDM AnTuTu 35 294 46 026 (Android) Geekbench 4 single core 550 755 (Android) Geekbench 4 multi-core 1 578 2 062 (Android) Geekbench 5 single core 105 130 (Android) Geekbench 5 multi-core 266 434 (SGEMM) GFLOPS Performance 4,18 GFLOPS 5,45 GFLOPS (Multi-core / watt performance) Performance / watt ratio 316 pts / W 412 pts / W 详细的对比数据，请访问 https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/\n下面是M401A的几张图片\n偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ",
+    "description": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。",
+    "tags": [
+      "Homeassistant",
+      "HA Box",
+      "Homeassistant盒子"
+    ],
+    "title": "Homeassistant盒子介绍",
+    "uri": "/about/homeassistant-box-introduction/index.html"
   },
   {
     "breadcrumb": "3 网络技术",
@@ -164,7 +176,15 @@ var relearn_search_index = [
     "uri": "/access/mijia/index.html"
   },
   {
-    "breadcrumb": "3 网络技术",
+    "breadcrumb": "5 关于我们",
+    "content": "新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存\n有需要的老铁们请联系我",
+    "description": "新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存\n有需要的老铁们请联系我",
+    "tags": [],
+    "title": "新到一批Homeassistant盒子，几乎没有瑕疵",
+    "uri": "/about/brand-new-boxes-arrived/index.html"
+  },
+  {
+    "breadcrumb": "1 安装维护",
     "content": "出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！\n话不多说，直接开干！\n前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库\n输入 https://github.com/brenner-tobias/ha-addons 然后点添加\n添加不成功，这……，需要考虑换个时间再试，或者科学上网\n添加成功后，关闭对话框 重新进入加载项商店，搜索cloudflared，就能看到加载项Cloudflared，点它然后安装 安装好之后，进入配置选项卡，配置第一项就行，值为要使用的域名（该域名已添加到cloudflare），然后保存\n之后启动该加载项，在日志选项卡里面你将看到如下信息\n拷贝高亮所示的链接地址到浏览器地址栏，并访问。 嗯，点你你需要用来远程访问homeassistant的域名并授权\n接下来，还有一些事要做\n打开连接 https://one.dash.cloudflare.com/\n导航到左侧边栏 - Networks - Tunnels\n拉到Homeassistant这条记录的最右边，有三个小点，点进去，Configure\n也许你需要点右边三小点，Edit进行编辑\n最后你可以确认下dns是不是已经自动配置好了\n接下来在回到HA盒子，安装加载项File Editor（如果还没安装的话） 然后在/homeassistant/configuration.yaml中添加如下内容\nhttp: use_x_forwarded_for: true trusted_proxies: - 172.30.33.0/24 修改完后记得重启下盒子 然后就可以愉快的远程访问啦",
     "description": "出门在外，怎样通过网络控制家里的Homeassistant盒子，这是很多购买HA盒子的朋友关心的问题，那么请跟随我的脚步，来看看我们怎么实现！\n话不多说，直接开干！\n前提条件： 你在cloudflare已经注册了账户 你已经注册了域名并且已将DNS解析服务器修改为Cloudflare提供的服务器地址 你已经拥有哈HA 盒子 在homeassistant安装Cloudflared加载项 仓库地址：https://github.com/brenner-tobias/addon-cloudflared 进入加载项商店（配置-加载项-加载项商店），点右上角三个小点，然后点仓库",
     "tags": [
@@ -173,7 +193,7 @@ var relearn_search_index = [
       "Cloudflare Tunnels"
     ],
     "title": "远程控制Homeassistant盒子",
-    "uri": "/network/free-remote-control/index.html"
+    "uri": "/installation/free-remote-control/index.html"
   },
   {
     "breadcrumb": "",

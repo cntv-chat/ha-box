@@ -13,13 +13,13 @@
     <loc>http://localhost:1313/access/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/automatic-control/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/network/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/video/index.html</loc>
+    <loc>http://localhost:1313/faq/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/network/cloudflare-tunnel-ssh/index.html</loc>
@@ -31,10 +31,13 @@
     <loc>http://localhost:1313/installation/hacs/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/habox-over-greatwall/index.html</loc>
+    <loc>http://localhost:1313/installation/habox-over-greatwall/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/homeassistant-box-introduction/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/network/linux-partition/index.html</loc>
@@ -49,7 +52,10 @@
     <loc>http://localhost:1313/access/mijia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/network/free-remote-control/index.html</loc>
+    <loc>http://localhost:1313/about/brand-new-boxes-arrived/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/installation/free-remote-control/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

@@ -18,7 +18,9 @@ weight = 1
 
 2. 在ha提示符后面执行
 
-`authentication reset --username "用户名" --password "新密码"`
+```
+authentication reset --username "用户名" --password "新密码"
+```
 
 ![image-20241220095851655](https://pic.456766.xyz/typora/image-20241220095851655.png)
 

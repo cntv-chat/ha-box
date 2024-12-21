@@ -35,18 +35,18 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
     <link href="http://localhost:1313/network/cloudflare-tunnel-ssh/index.html" rel="canonical" type="text/html" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
     <link href="../../network/cloudflare-tunnel-ssh/index.xml" rel="alternate" type="application/rss+xml" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <link href="../../css/fontawesome-all.min.css?1734743286" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1734743286" rel="stylesheet"></noscript>
-    <link href="../../css/nucleus.css?1734743286" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1734743286" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1734743286" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1734743286" rel="stylesheet">
-    <link href="../../css/fonts.css?1734743286" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1734743286" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1734743286" rel="stylesheet">
-    <link href="../../css/theme-relearn-auto.css?1734743286" rel="stylesheet" id="R-variant-style">
-    <link href="../../css/chroma-relearn-auto.css?1734743286" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../../css/variant.css?1734743286" rel="stylesheet">
-    <link href="../../css/print.css?1734743286" rel="stylesheet" media="print">
-    <link href="../../css/format-print.css?1734743286" rel="stylesheet">
-    <script src="../../js/variant.js?1734743286"></script>
+    <link href="../../css/fontawesome-all.min.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1734749095" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1734749095" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1734749095" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1734749095" rel="stylesheet">
+    <link href="../../css/fonts.css?1734749095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1734749095" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1734749095" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1734749095" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1734749095" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1734749095" rel="stylesheet">
+    <link href="../../css/print.css?1734749095" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1734749095" rel="stylesheet">
+    <script src="../../js/variant.js?1734749095"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -86,7 +86,7 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/index.html" title="3 网络技术 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/linux-partition/index.html" title="linux下无损扩容分区方法 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
 
 <h1 id="cloudflare-tunnel配置ssh连接">Cloudflare tunnel配置ssh连接</h1>
 
-<p>这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考<a href="../../network/free-remote-control/index.html">远程控制Homeassistant盒子</a>。只是控制HA Box是通过http协议，而本文是使用ssh协议。</p>
+<p>这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考<a href="../../installation/free-remote-control/index.html">远程控制Homeassistant盒子</a>。只是控制HA Box是通过http协议，而本文是使用ssh协议。</p>
 <p>Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。</p>
 <ul>
 <li>HTTP</li>
@@ -133,21 +133,21 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
 <p>导航到<strong>Networks</strong> &gt; <strong>Tunnels</strong></p>
 <p>然后<strong>Create a tunnel</strong></p>
 <p>tunnel type就默认的cloudflare，然后next</p>
-<p><a href="#R-image-3063f3bbf3013cd8c40b6c219d817c48" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3063f3bbf3013cd8c40b6c219d817c48"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
+<p><a href="#R-image-d47d4638d1c5445405e3c24b38c1ab16" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d47d4638d1c5445405e3c24b38c1ab16"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
 <p>然后设置tunnel name,然后save tunnel</p>
 <h2 id="3-安装和配置cloudflared">3 安装和配置cloudflared</h2>
 <p>**Choose an operating system:**Debian</p>
 <p>**Choose an architecture:**arm64-bit</p>
-<p><a href="#R-image-2e030be445f3e05de8a5661860314bfd" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e030be445f3e05de8a5661860314bfd"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
+<p><a href="#R-image-d263acc5a17ec96a7ea49f71ab05bf59" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d263acc5a17ec96a7ea49f71ab05bf59"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
 <p>安装完成后，点击右下角save</p>
 <h2 id="4-配置public-hostname">4 配置Public Hostname</h2>
 <p>再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口<strong>Configure</strong></p>
 <p>切换到<strong>Public Hostname</strong></p>
 <p>Add a public hostname</p>
-<p><a href="#R-image-0dae5b9523288505c06b756cc6359ab9" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0dae5b9523288505c06b756cc6359ab9"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
+<p><a href="#R-image-47962d21b169a3900b2f581108d4fcf0" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-47962d21b169a3900b2f581108d4fcf0"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
 <p>同样，在<strong>Public hostnames</strong>列表也是点右边的3个小点进入配置</p>
 <h2 id="5-设置private-network">5 设置Private Network</h2>
 <p>切换到<strong>Private Network</strong></p>
@@ -200,9 +200,9 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
         </div>
       </main>
     </div>
-    <script src="../../js/clipboard.min.js?1734743286" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1734743286" defer></script>
-    <script src="../../js/theme.js?1734743286" defer></script>
+    <script src="../../js/clipboard.min.js?1734749095" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1734749095" defer></script>
+    <script src="../../js/theme.js?1734749095" defer></script>
 
 
   </body>

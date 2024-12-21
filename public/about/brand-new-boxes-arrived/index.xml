@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新到一批Homeassistant盒子，几乎没有瑕疵 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/about/brand-new-boxes-arrived/index.html</link>
+    <description>新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存&#xA;有需要的老铁们请联系我</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/about/brand-new-boxes-arrived/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
