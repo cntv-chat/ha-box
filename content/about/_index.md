@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "article"
 title = "5 关于我们"
 weight = 1
 

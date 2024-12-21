@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "article"
 title = "4 常见问题"
 weight = 1
 +++
@@ -75,11 +75,9 @@ reboot
 
 Get “http://supervisor/network/info“: dial tcp 172.30.32.2:80: connect: no route to host
 
-![截图 2024-12-01 18-25-13](https://pic.456766.xyz/typora/截图 2024-12-01 18-25-13.png)
+![截图 2024-12-01 18-25-13](https://pic.456766.xyz/202412210900816.png)
 
-
-
-![截图 2024-10-21 17-37-15](https://pic.456766.xyz/typora/截图 2024-10-21 17-37-15.png)
+![截图 2024-10-21 17-37-15](https://pic.456766.xyz/202412210859363.png)
 
 1. 访问[http://homeassistant.local:7681](http://homeassistant.local:7681/)
 
