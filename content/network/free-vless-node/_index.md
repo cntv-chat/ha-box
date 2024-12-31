@@ -5,6 +5,14 @@ weight = 1
 
 +++
 
+
+
+Cloudflare好像发布了新的用户协议，不让搞代理了。这个按教程部署完，访问时抛出522的错误，但是之前部署的还可以用
+
+请参考[Cloudflare Page搭建免费科学上网节点]({{% relref "/network/free-vless-node-page" %}}) 来搭建，这种方式还可以用
+
+
+
 ## 准备物料
 
 ## 1)域名一个

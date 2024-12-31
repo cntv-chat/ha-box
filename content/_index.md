@@ -20,4 +20,5 @@ weight = 1
   - [linux下无损扩容分区方法]({{% relref "/network/linux-partition" %}})
   - [从 Docker Hub 快速拉取镜像]({{% relref "/network/docker-pull" %}})
   - [搭建免费科学上网节点]({{% relref "/network/free-vless-node" %}})
+  - [Cloudflare Page搭建免费科学上网节点]({{% relref "/network/free-vless-node-page" %}})
 

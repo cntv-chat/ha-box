@@ -64,6 +64,17 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "3 网络技术",
+    "content": "准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n准备好github账户，不会注册的请自行bing搜索\n3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。\n复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG\n好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！\n若有不明白或遇到什么问题，请给我留言。",
+    "description": "准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n准备好github账户，不会注册的请自行bing搜索\n3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。",
+    "tags": [
+      "免费节点",
+      "Cloudflare Worker"
+    ],
+    "title": "Cloudflare page搭建免费科学上网节点",
+    "uri": "/network/free-vless-node-page/index.html"
+  },
+  {
+    "breadcrumb": "3 网络技术",
     "content": "这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。\nCloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。\nHTTP HTTPS UNIX TCP SSH RDP UNIX+TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare\n你使用我们提供的armbian盒子（目前已不再提供，实际上可以是任意一台电脑，Windows、Linux或者Mac OS）\n1 开机，获取ip地址 root密码root1234\n如果接有显示器，那么登陆后查看ip地址\n如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip\n2 创建tunnel 进入https://one.dash.cloudflare.com/\n导航到Networks \u003e Tunnels\n然后Create a tunnel\ntunnel type就默认的cloudflare，然后next\n然后设置tunnel name,然后save tunnel\n3 安装和配置cloudflared **Choose an operating system:**Debian\n**Choose an architecture:**arm64-bit\n安装完成后，点击右下角save\n4 配置Public Hostname 再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口Configure\n切换到Public Hostname\nAdd a public hostname\n同样，在Public hostnames列表也是点右边的3个小点进入配置\n5 设置Private Network 切换到Private Network\nCIDR：192.168.3.0/24 （根据自身情况填写）\nDescription：随便\n6 回到ssh客户端 ssh客户端的设备也要安装cloudflared\n# 注意ssh客户端所在的系统平台，下面的代码是ubuntu,amd64架构 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb sudo dpkg -i cloudflared.deb然后修改~/.ssh/config文件，没有就创建一个，内容如下，我这里配了两个，根据自己情况设置\nHost ssh.456766.xyz ProxyCommand cloudflared access ssh --hostname %h Host ssh.ha-box.xyz ProxyCommand cloudflared access ssh --hostname %h7 ssh连接远程服务器 开启一个终端，执行\nssh root@ssh.ha-box.xyz\n如果一切顺利，就可以看到下面的信息\nThis key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])? ",
     "description": "这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。\nCloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。\nHTTP HTTPS UNIX TCP SSH RDP UNIX+TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare",
     "tags": [

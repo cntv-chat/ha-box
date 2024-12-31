@@ -5,35 +5,43 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.140.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
-    <meta name="description" content="这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。
-Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。
-HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare">
+    <meta name="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+准备好github账户，不会注册的请自行bing搜索
+3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
-    <meta name="twitter:title" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
-    <meta name="twitter:description" content="这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。
-Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。
-HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare">
-    <meta property="og:url" content="http://localhost:1313/network/cloudflare-tunnel-ssh/index.html">
+    <meta name="twitter:title" content="Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+准备好github账户，不会注册的请自行bing搜索
+3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。">
+    <meta property="og:url" content="http://localhost:1313/network/free-vless-node-page/index.html">
     <meta property="og:site_name" content="HaBox 技术支持站">
-    <meta property="og:title" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
-    <meta property="og:description" content="这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。
-Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。
-HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare">
+    <meta property="og:title" content="Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta property="og:description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+准备好github账户，不会注册的请自行bing搜索
+3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。">
     <meta property="og:locale" content="zh_cn">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/hero.png">
-    <meta itemprop="name" content="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
-    <meta itemprop="description" content="这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考远程控制Homeassistant盒子。只是控制HA Box是通过http协议，而本文是使用ssh协议。
-Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。
-HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件： 您已经将域名托管到cloudflare">
-    <meta itemprop="wordCount" content="120">
+    <meta itemprop="name" content="Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站">
+    <meta itemprop="description" content="准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。
+注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册&#43;续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。
+2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号
+准备好github账户，不会注册的请自行bing搜索
+3)到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。">
+    <meta itemprop="wordCount" content="13">
     <meta itemprop="image" content="http://localhost:1313/images/hero.png">
-    <meta itemprop="keywords" content="Cloudflare Tunnel,Ssh内网穿透">
-    <title>Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站</title>
-    <link href="../../network/cloudflare-tunnel-ssh/index.xml" rel="alternate" type="application/rss+xml" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站">
-    <link href="../../network/cloudflare-tunnel-ssh/index.print.html" rel="alternate" type="text/html" title="Cloudflare tunnel配置ssh连接 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+    <meta itemprop="keywords" content="免费节点,Cloudflare Worker">
+    <title>Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站</title>
+    <link href="../../network/free-vless-node-page/index.xml" rel="alternate" type="application/rss+xml" title="Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站">
+    <link href="../../network/free-vless-node-page/index.print.html" rel="alternate" type="text/html" title="Cloudflare page搭建免费科学上网节点 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
 
     <link href="../../css/fontawesome-all.min.css?1735609162" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1735609162" rel="stylesheet"></noscript>
     <link href="../../css/nucleus.css?1735609162" rel="stylesheet">
@@ -68,7 +76,7 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
 <script>LA.init({id:"3Jh9XF56OMu5x31r",ck:"3Jh9XF56OMu5x31r"})</script>
 
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../network/cloudflare-tunnel-ssh/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../network/free-vless-node-page/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -81,14 +89,13 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#前提条件">前提条件：</a></li>
-    <li><a href="#1-开机获取ip地址">1 开机，获取ip地址</a></li>
-    <li><a href="#2-创建tunnel">2 创建tunnel</a></li>
-    <li><a href="#3-安装和配置cloudflared">3 安装和配置cloudflared</a></li>
-    <li><a href="#4-配置public-hostname">4 配置Public Hostname</a></li>
-    <li><a href="#5-设置private-network">5 设置Private Network</a></li>
-    <li><a href="#6-回到ssh客户端">6 回到ssh客户端</a></li>
-    <li><a href="#7-ssh连接远程服务器">7 ssh连接远程服务器</a></li>
+    <li><a href="#准备物料">准备物料</a></li>
+    <li><a href="#1域名一个">1)域名一个</a>
+      <ul>
+        <li><a href="#2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</a></li>
+        <li><a href="#3到github网站fork-edgetunnel项目">3)到github网站fork edgetunnel项目</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -97,16 +104,16 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../network/index.html"><span itemprop="name">3 网络技术</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Cloudflare tunnel配置ssh连接</span><meta itemprop="position" content="2"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Cloudflare page搭建免费科学上网节点</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/network/cloudflare-tunnel-ssh/_index.md" target="_self" title="编辑 (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/network/free-vless-node-page/_index.md" target="_self" title="编辑 (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/cloudflare-tunnel-ssh/index.print.html" title="打印整章 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/free-vless-node-page/index.print.html" title="打印整章 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/free-vless-node-page/index.html" title="Cloudflare page搭建免费科学上网节点 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/index.html" title="3 网络技术 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/linux-partition/index.html" title="linux下无损扩容分区方法 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../network/cloudflare-tunnel-ssh/index.html" title="Cloudflare tunnel配置ssh连接 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -127,76 +134,31 @@ HTTP HTTPS UNIX TCP SSH RDP UNIX&#43;TLS SMB HTTP_STATUS BASTION 前提条件：
             <header class="headline">
 <div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
   <ul>
-    <li><a class="term-link" href="../../tags/cloudflare-tunnel/index.html">Cloudflare Tunnel</a></li>
-    <li><a class="term-link" href="../../tags/ssh%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html">Ssh内网穿透</a></li>
+    <li><a class="term-link" href="../../tags/cloudflare-worker/index.html">Cloudflare Worker</a></li>
+    <li><a class="term-link" href="../../tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.html">免费节点</a></li>
   </ul>
 </div>
             </header>
 
-<h1 id="cloudflare-tunnel配置ssh连接">Cloudflare tunnel配置ssh连接</h1>
+<h1 id="cloudflare-page搭建免费科学上网节点">Cloudflare page搭建免费科学上网节点</h1>
 
-<p>这篇文章是给想从公司通过ssh连接到家里面的linux服务器而写的，是基于一个已经刷了armbian系统的电视盒子。当然，通过Ha盒子也是可以实现的。因为我们已经实现了内网穿透，远程控制Ha Box了，可以参考<a href="../../installation/free-remote-control/index.html">远程控制Homeassistant盒子</a>。只是控制HA Box是通过http协议，而本文是使用ssh协议。</p>
-<p>Cloudflare支持很多协议，比如连接到家里Windows电脑的远程桌面，共享存储什么的，下面是它支持的协议。</p>
-<ul>
-<li>HTTP</li>
-<li>HTTPS</li>
-<li>UNIX</li>
-<li>TCP</li>
-<li>SSH</li>
-<li>RDP</li>
-<li>UNIX+TLS</li>
-<li>SMB</li>
-<li>HTTP_STATUS</li>
-<li>BASTION</li>
-</ul>
-<h2 id="前提条件">前提条件：</h2>
-<p>您已经将域名托管到cloudflare</p>
-<p>你使用我们提供的armbian盒子（目前已不再提供，实际上可以是任意一台电脑，Windows、Linux或者Mac OS）</p>
-<h2 id="1-开机获取ip地址">1 开机，获取ip地址</h2>
-<p>root密码root1234</p>
-<p>如果接有显示器，那么登陆后查看ip地址</p>
-<p>如果没有接显示器，可以从路由器后台查看主机名为armbian的设备ip</p>
-<h2 id="2-创建tunnel">2 创建tunnel</h2>
-<p>进入https://one.dash.cloudflare.com/</p>
-<p>导航到<strong>Networks</strong> &gt; <strong>Tunnels</strong></p>
-<p>然后<strong>Create a tunnel</strong></p>
-<p>tunnel type就默认的cloudflare，然后next</p>
-<p><a href="#R-image-fcef44ed88dfc38aca6c18978e5f62b0" class="lightbox-link"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fcef44ed88dfc38aca6c18978e5f62b0"><img alt="image-20240928114211562" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928114211562.png"></a></p>
-<p>然后设置tunnel name,然后save tunnel</p>
-<h2 id="3-安装和配置cloudflared">3 安装和配置cloudflared</h2>
-<p>**Choose an operating system:**Debian</p>
-<p>**Choose an architecture:**arm64-bit</p>
-<p><a href="#R-image-74a6a30ff737deaf358f31ae90eff85d" class="lightbox-link"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-74a6a30ff737deaf358f31ae90eff85d"><img alt="image-20240928111438949" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111438949.png"></a></p>
-<p>安装完成后，点击右下角save</p>
-<h2 id="4-配置public-hostname">4 配置Public Hostname</h2>
-<p>再回到Tunnels列表，就可以看到刚才创建的Tunnel了，拉到右边有3个点，点它会弹出配置入口<strong>Configure</strong></p>
-<p>切换到<strong>Public Hostname</strong></p>
-<p>Add a public hostname</p>
-<p><a href="#R-image-0ea8e904a57c958c183492f95d978cac" class="lightbox-link"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ea8e904a57c958c183492f95d978cac"><img alt="image-20240928111738284" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20240928111738284.png"></a></p>
-<p>同样，在<strong>Public hostnames</strong>列表也是点右边的3个小点进入配置</p>
-<h2 id="5-设置private-network">5 设置Private Network</h2>
-<p>切换到<strong>Private Network</strong></p>
-<p>CIDR：192.168.3.0/24  （根据自身情况填写）</p>
-<p>Description：随便</p>
-<h2 id="6-回到ssh客户端">6 回到ssh客户端</h2>
-<p>ssh客户端的设备也要安装cloudflared</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code># 注意ssh客户端所在的系统平台，下面的代码是ubuntu,amd64架构
-curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+<h2 id="准备物料">准备物料</h2>
+<h2 id="1域名一个">1)域名一个</h2>
+<p>推荐到<a href="https://www.namesilo.com/" rel="external" target="_self">namesilo.com</a>注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。</p>
+<p>注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。</p>
+<h3 id="2准备好cloudflare账号备用">2)准备好Cloudflare账号备用</h3>
+<p>打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号</p>
+<p>准备好github账户，不会注册的请自行bing搜索</p>
+<h3 id="3到github网站fork-edgetunnel项目">3)到github网站fork edgetunnel项目</h3>
+<p>进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，把项目fork到你的名下。</p>
+<p><a href="#R-image-d24158a897d857658aa18c7759c26529" class="lightbox-link"><img alt="image-20241231093044125" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../../home/peter/.config/Typora/typora-user-images/image-20241231093044125.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d24158a897d857658aa18c7759c26529"><img alt="image-20241231093044125" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../../home/peter/.config/Typora/typora-user-images/image-20241231093044125.png"></a></p>
+<p><a href="#R-image-49a855cd7d8ec58890ad0b8e007af65d" class="lightbox-link"><img alt="image-20241231093217873" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../../home/peter/.config/Typora/typora-user-images/image-20241231093217873.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-49a855cd7d8ec58890ad0b8e007af65d"><img alt="image-20241231093217873" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../../home/peter/.config/Typora/typora-user-images/image-20241231093217873.png"></a></p>
+<p>复制图上标记的内容，到科学上网工具中通过剪贴板导入或手动输入配置参数，注意协议是VLESS。我PC端用的V2rayA，安卓手机用的V2rayNG</p>
+<p>好了，本教程到此结束，快去享受免费、快速的、自由的网络去吧！</p>
+<p>若有不明白或遇到什么问题，请给我留言。</p>
 
-sudo dpkg -i cloudflared.deb</code></pre></div><p>然后修改~/.ssh/config文件，没有就创建一个，内容如下，我这里配了两个，根据自己情况设置</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>Host ssh.456766.xyz
-        ProxyCommand cloudflared access ssh --hostname %h
-
-Host ssh.ha-box.xyz
-        ProxyCommand cloudflared access ssh --hostname %h</code></pre></div><h2 id="7-ssh连接远程服务器">7 ssh连接远程服务器</h2>
-<p>开启一个终端，执行</p>
-<p>ssh <a href="mailto:root@ssh.ha-box.xyz" rel="external" target="_self">root@ssh.ha-box.xyz</a></p>
-<p>如果一切顺利，就可以看到下面的信息</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>This key is not known by any other names.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pre></div>
 <script
   id="utteranc"
   src="https://utteranc.es/client.js"
@@ -315,8 +277,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
           <li data-nav-id="/access/homekit/index.html" class=""><a class="padding" href="../../access/homekit/index.html">HA Box桥接米家设备到HomeKit<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/access/mijia/index.html" class=""><a class="padding" href="../../access/mijia/index.html">将米家设备接入HomeAssistant<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/network/index.html" class="parent "><input type="checkbox" id="R-section-30d33bf08e663016953c1238fd6c9aad" aria-controls="R-subsections-30d33bf08e663016953c1238fd6c9aad" checked><label for="R-section-30d33bf08e663016953c1238fd6c9aad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单3 网络技术</span></label><a class="padding" href="../../network/index.html">3 网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-30d33bf08e663016953c1238fd6c9aad" class="morespace collapsible-menu">
-          <li data-nav-id="/network/free-vless-node-page/index.html" class=""><a class="padding" href="../../network/free-vless-node-page/index.html">Cloudflare page搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/network/cloudflare-tunnel-ssh/index.html" class="active"><a class="padding" href="../../network/cloudflare-tunnel-ssh/index.html">Cloudflare tunnel配置ssh连接<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-vless-node-page/index.html" class="active"><a class="padding" href="../../network/free-vless-node-page/index.html">Cloudflare page搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/cloudflare-tunnel-ssh/index.html" class=""><a class="padding" href="../../network/cloudflare-tunnel-ssh/index.html">Cloudflare tunnel配置ssh连接<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/network/linux-partition/index.html" class=""><a class="padding" href="../../network/linux-partition/index.html">linux下无损扩容分区方法<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/network/docker-pull/index.html" class=""><a class="padding" href="../../network/docker-pull/index.html">从 Docker Hub 快速拉取镜像<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/network/free-vless-node/index.html" class=""><a class="padding" href="../../network/free-vless-node/index.html">搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
@@ -338,7 +300,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? </code></pr
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">语言</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="../../network/cloudflare-tunnel-ssh/index.html" lang="zh-cn" selected></option>
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="../../network/free-vless-node-page/index.html" lang="zh-cn" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
