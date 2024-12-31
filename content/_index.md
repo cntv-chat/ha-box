@@ -28,3 +28,7 @@ weight = 1
 
 - [Homeassistant盒子介绍]({{% relref "/about/homeassistant-box-introduction" %}})
 - [新到一批Homeassistant盒子，几乎没有瑕疵]({{% relref "/about/brand-new-boxes-arrived" %}})
+
+
+
+![img](https://pic.456766.xyz/typora/qrcode_1733795762228-574x1024.png)
