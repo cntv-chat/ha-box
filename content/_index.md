@@ -22,3 +22,9 @@ weight = 1
   - [搭建免费科学上网节点]({{% relref "/network/free-vless-node" %}})
   - [Cloudflare Page搭建免费科学上网节点]({{% relref "/network/free-vless-node-page" %}})
 
+整理了一些常见问题，可以访问[常见问题]({{% relref "/faq" %}})
+
+[关于我们](https://www.ha-box.xyz/about/index.html)
+
+- [Homeassistant盒子介绍]({{% relref "/about/homeassistant-box-introduction" %}})
+- [新到一批Homeassistant盒子，几乎没有瑕疵]({{% relref "/about/brand-new-boxes-arrived" %}})

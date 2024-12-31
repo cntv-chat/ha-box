@@ -64,7 +64,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "3 网络技术",
-    "content": "准备物料 域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n准备好Github账号和Cloudflare账号 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n准备好github账户，不会注册的请自行bing搜索\n到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，弹出页面之间而点Create fork。\n等待构建和部署完成，然后点继续处理项目\n恭喜，到这里就结束了，剩下的自己研究吧，\n若有不明白或遇到什么问题，请给我留言。",
+    "content": "准备物料 域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n准备好Github账号和Cloudflare账号 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n准备好github账户，不会注册的请自行bing搜索\n到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，弹出页面之间而点Create fork。\n等待构建和部署完成，然后点继续处理项目\n上面添加的UUID变量，值可以随便填，不过还是最好稍微复杂一些。\n自定义域激活生效可能要几分钟，先去重新部署一下代码，使之前添加的UUID生效\n重新部署完成后，尝试访问一下，基本上应该可以正常访问了\n最后将设置的UUID附加到后面访问，即可拿到节点链接，页面往下拉有vless节点链接，别的方式自己研究。\n恭喜，到这里就结束了，剩下的自己研究吧，\n若有不明白或遇到什么问题，请给我留言。",
     "description": "准备物料 域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。\n注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。\n准备好Github账号和Cloudflare账号 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号\n准备好github账户，不会注册的请自行bing搜索\n到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，弹出页面之间而点Create fork。",
     "tags": [
       "免费节点",
@@ -132,8 +132,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 ",
-    "description": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 ",
+    "content": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
+    "description": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
     "tags": [
       "Homeassistant",
       "HA Box",
