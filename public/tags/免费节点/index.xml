@@ -8,11 +8,18 @@
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cloudflare page搭建免费科学上网节点</title>
+      <link>http://localhost:1313/network/free-vless-node-page/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/network/free-vless-node-page/index.html</guid>
+      <description>准备物料 域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。&#xA;准备好Github账号和Cloudflare账号 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号&#xA;准备好github账户，不会注册的请自行bing搜索&#xA;到github网站fork edgetunnel项目 进入项目主页，项目地址：https://github.com/cmliu/edgetunnel，点击fork，弹出页面之间而点Create fork。</description>
+    </item>
+    <item>
       <title>搭建免费科学上网节点</title>
       <link>http://localhost:1313/network/free-vless-node/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/network/free-vless-node/index.html</guid>
-      <description>准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。&#xA;2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号&#xA;3)准备代码 https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js&#xA;备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</description>
+      <description>Cloudflare好像发布了新的用户协议，不让搞代理了。这个按教程部署完，访问时抛出522的错误，但是之前部署的还可以用&#xA;请参考Cloudflare Page搭建免费科学上网节点 来搭建，这种方式还可以用&#xA;准备物料 1)域名一个 推荐到namesilo.com注册域名，安全、支持支付宝支付、价格便宜，没有陷阱。&#xA;注册6位及以上数字的xyz域名（比如456766.xyz），只要$0.99，续费$0.99，注册+续费它9年才$10不到，不用担心域名过期。这也是仅有的成本，简直不要太安逸了。&#xA;2)准备好Cloudflare账号备用 打开https://www.cloudflare.com/zh-cn，通过一个电子邮件地址即可注册Cloudflare账号</description>
     </item>
   </channel>
 </rss>
