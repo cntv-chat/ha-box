@@ -33,7 +33,7 @@
       <link>http://localhost:1313/faq/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/faq/index.html</guid>
-      <description>[TOC]&#xA;Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），&#xA;在ha提示符后面执行&#xA;authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; </description>
+      <description>[TOC]&#xA;无线网卡不能使用的临时解决方案 访问http://homeassistant.local:7681&#xA;出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件&#xA;在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）</description>
     </item>
     <item>
       <title>5 关于我们</title>

@@ -3,57 +3,53 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.140.2">
+    <meta name="generator" content="Hugo 0.142.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="description" content="[TOC]
-Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记
-在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），
-在ha提示符后面执行
-authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+无线网卡不能使用的临时解决方案 访问http://homeassistant.local:7681
+出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件
+在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
     <meta name="twitter:title" content="4 常见问题 :: HaBox 技术支持站">
     <meta name="twitter:description" content="[TOC]
-Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记
-在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），
-在ha提示符后面执行
-authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+无线网卡不能使用的临时解决方案 访问http://homeassistant.local:7681
+出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件
+在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）">
     <meta property="og:url" content="http://localhost:1313/faq/index.html">
     <meta property="og:site_name" content="HaBox 技术支持站">
     <meta property="og:title" content="4 常见问题 :: HaBox 技术支持站">
     <meta property="og:description" content="[TOC]
-Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记
-在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），
-在ha提示符后面执行
-authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+无线网卡不能使用的临时解决方案 访问http://homeassistant.local:7681
+出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件
+在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）">
     <meta property="og:locale" content="zh_cn">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/hero.png">
     <meta itemprop="name" content="4 常见问题 :: HaBox 技术支持站">
     <meta itemprop="description" content="[TOC]
-Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记
-在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），
-在ha提示符后面执行
-authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
-    <meta itemprop="wordCount" content="100">
+无线网卡不能使用的临时解决方案 访问http://homeassistant.local:7681
+出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件
+在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）">
+    <meta itemprop="wordCount" content="112">
     <meta itemprop="image" content="http://localhost:1313/images/hero.png">
     <title>4 常见问题 :: HaBox 技术支持站</title>
     <link href="http://localhost:1313/faq/index.html" rel="canonical" type="text/html" title="4 常见问题 :: HaBox 技术支持站">
     <link href="../faq/index.xml" rel="alternate" type="application/rss+xml" title="4 常见问题 :: HaBox 技术支持站"><link rel="icon" href="../images/favicon.png" type="image/png">
 
-    <link href="../css/fontawesome-all.min.css?1736255484" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1736255484" rel="stylesheet"></noscript>
-    <link href="../css/nucleus.css?1736255484" rel="stylesheet">
-    <link href="../css/auto-complete.css?1736255484" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1736255484" rel="stylesheet"></noscript>
-    <link href="../css/perfect-scrollbar.min.css?1736255484" rel="stylesheet">
-    <link href="../css/fonts.css?1736255484" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1736255484" rel="stylesheet"></noscript>
-    <link href="../css/theme.css?1736255484" rel="stylesheet">
-    <link href="../css/theme-relearn-auto.css?1736255484" rel="stylesheet" id="R-variant-style">
-    <link href="../css/chroma-relearn-auto.css?1736255484" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../css/variant.css?1736255484" rel="stylesheet">
-    <link href="../css/print.css?1736255484" rel="stylesheet" media="print">
-    <link href="../css/format-print.css?1736255484" rel="stylesheet">
-    <script src="../js/variant.js?1736255484"></script>
+    <link href="../css/fontawesome-all.min.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fontawesome-all.min.css?1737805962" rel="stylesheet"></noscript>
+    <link href="../css/nucleus.css?1737805962" rel="stylesheet">
+    <link href="../css/auto-complete.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/auto-complete.css?1737805962" rel="stylesheet"></noscript>
+    <link href="../css/perfect-scrollbar.min.css?1737805962" rel="stylesheet">
+    <link href="../css/fonts.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../css/fonts.css?1737805962" rel="stylesheet"></noscript>
+    <link href="../css/theme.css?1737805962" rel="stylesheet">
+    <link href="../css/theme-relearn-auto.css?1737805962" rel="stylesheet" id="R-variant-style">
+    <link href="../css/chroma-relearn-auto.css?1737805962" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../css/variant.css?1737805962" rel="stylesheet">
+    <link href="../css/print.css?1737805962" rel="stylesheet" media="print">
+    <link href="../css/format-print.css?1737805962" rel="stylesheet">
+    <script src="../js/variant.js?1737805962"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -108,6 +104,14 @@ authentication reset --username &#34;用户名&#34; --password &#34;新密码&#3
 <h1 id="4-常见问题">4 常见问题</h1>
 
 <p>[TOC]</p>
+<h3 id="无线网卡不能使用的临时解决方案">无线网卡不能使用的临时解决方案</h3>
+<p>访问http://homeassistant.local:7681</p>
+<p>出现ha提示符后输入login回车，进入命令行界面
+编辑 /mnt/boot/cmdline.txt 文件</p>
+<p>在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）</p>
+<p>保存，重启就可以正常使用了。</p>
+<p>如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。</p>
+<p>预计下一版会修正</p>
 <h3 id="homeassistant-box忘记密码怎么办">Homeassistant Box忘记密码怎么办？</h3>
 <p>如果只是忘记密码，用户名没忘记</p>
 <ol>
@@ -118,8 +122,8 @@ authentication reset --username &#34;用户名&#34; --password &#34;新密码&#3
 <p>在ha提示符后面执行</p>
 </li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</code></pre></div><p><a href="#R-image-23d14ba88a470436a21025f9ebab778b" class="lightbox-link"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23d14ba88a470436a21025f9ebab778b"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</code></pre></div><p><a href="#R-image-f66d6c2acec1c181d8d7707a4ea192b9" class="lightbox-link"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f66d6c2acec1c181d8d7707a4ea192b9"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png"></a></p>
 <p>再回到<a href="http://homeassistant.local:8123" rel="external" target="_self">http://homeassistant.local:8123</a>登陆即可</p>
 <h3 id="想清除homeassistant-box-账户信息怎么弄">想清除Homeassistant Box 账户信息怎么弄？</h3>
 <p>如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息</p>
@@ -131,13 +135,13 @@ authentication reset --username &#34;用户名&#34; --password &#34;新密码&#3
 <p>在ha提示符后输入login回车</p>
 </li>
 </ol>
-<p><a href="#R-image-382a4d15b246fd996bfe591589a5b120" class="lightbox-link"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-382a4d15b246fd996bfe591589a5b120"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png"></a></p>
+<p><a href="#R-image-4114f947f8909468a7d6d492e1fd346e" class="lightbox-link"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4114f947f8909468a7d6d492e1fd346e"><img alt="image-20241220100347715" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220100347715.png"></a></p>
 <ol start="3">
 <li>在#提示符下执行，注意是大写字母C</li>
 </ol>
-<div class="highlight wrap-code"><pre tabindex="0"><code>ha-install -C</code></pre></div><p><a href="#R-image-8daf76398982ca6c8294bea5da391973" class="lightbox-link"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8daf76398982ca6c8294bea5da391973"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>ha-install -C</code></pre></div><p><a href="#R-image-336470bfc7c39b10bafd71ce38ab2aa1" class="lightbox-link"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-336470bfc7c39b10bafd71ce38ab2aa1"><img alt="image-20241220095932222" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095932222.png"></a></p>
 <p>再回到<a href="http://homeassistant.local:8123" rel="external" target="_self">http://homeassistant.local:8123</a>登陆即可</p>
 <h3 id="重置homeassistant盒子恢复出厂设置">重置Homeassistant盒子，恢复出厂设置</h3>
 <ol>
@@ -152,8 +156,8 @@ authentication reset --username &#34;用户名&#34; --password &#34;新密码&#3
 </li>
 </ol>
 <div class="highlight wrap-code"><pre tabindex="0"><code>rm -rf /mnt/data/supervisor/homeassistant/.storage/
-reboot</code></pre></div><p><a href="#R-image-949662f547b72383134f50eef41479e4" class="lightbox-link"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-949662f547b72383134f50eef41479e4"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png"></a></p>
+reboot</code></pre></div><p><a href="#R-image-ee8bebec6709990539cbe0b50010ceb2" class="lightbox-link"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee8bebec6709990539cbe0b50010ceb2"><img alt="image-20241220171716361" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220171716361.png"></a></p>
 <h3 id="侧边栏没有supervisor菜单项">侧边栏没有supervisor菜单项</h3>
 <ol>
 <li>
@@ -168,10 +172,10 @@ reboot</code></pre></div><p><a href="#R-image-949662f547b72383134f50eef41479e4" 
 </ol>
 <h3 id="connect-no-route-to-host">connect: no route to host</h3>
 <p>Get “http://supervisor/network/info“: dial tcp 172.30.32.2:80: connect: no route to host</p>
-<p><a href="#R-image-c0b91bef8a7ad391ffcef589750b7462" class="lightbox-link"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c0b91bef8a7ad391ffcef589750b7462"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png"></a></p>
-<p><a href="#R-image-7b8bc20c279302ca3328467f436c7ae0" class="lightbox-link"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b8bc20c279302ca3328467f436c7ae0"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png"></a></p>
+<p><a href="#R-image-e08e2fd28c8225fbf42db2f3a4e9d487" class="lightbox-link"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e08e2fd28c8225fbf42db2f3a4e9d487"><img alt="截图 2024-12-01 18-25-13" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210900816.png"></a></p>
+<p><a href="#R-image-d720ebdde64b480c69b432e61f19bcc9" class="lightbox-link"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d720ebdde64b480c69b432e61f19bcc9"><img alt="截图 2024-10-21 17-37-15" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/202412210859363.png"></a></p>
 <ol>
 <li>
 <p>访问<a href="http://homeassistant.local:7681/" rel="external" target="_self">http://homeassistant.local:7681</a></p>
@@ -209,10 +213,10 @@ wgturbo apply -D</code></pre></div><h3 id="homeassistant-box磁盘空间快满�
 purge_keep_days: 5</p>
 <h4 id="3删除备份文件">3）删除备份文件</h4>
 <p>设置-系统-备份</p>
-<p><a href="#R-image-ac02317a111a2ebe82a8dd574750cf1c" class="lightbox-link"><img alt="5304065944B9F37195F37C64FE48A21C" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250107204727798.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac02317a111a2ebe82a8dd574750cf1c"><img alt="5304065944B9F37195F37C64FE48A21C" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250107204727798.png"></a></p>
-<p><a href="#R-image-b246ca915b8d031f5594326846d4cceb" class="lightbox-link"><img alt="A1B9198B7B9170BB0432827C3DC2D635" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250107204804562.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b246ca915b8d031f5594326846d4cceb"><img alt="A1B9198B7B9170BB0432827C3DC2D635" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250107204804562.png"></a></p>
+<p><a href="#R-image-bf46cc579ab36f74640347c835dd3fd2" class="lightbox-link"><img alt="5304065944B9F37195F37C64FE48A21C" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250107204727798.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf46cc579ab36f74640347c835dd3fd2"><img alt="5304065944B9F37195F37C64FE48A21C" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250107204727798.png"></a></p>
+<p><a href="#R-image-75f749643847bca4f796466107970989" class="lightbox-link"><img alt="A1B9198B7B9170BB0432827C3DC2D635" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250107204804562.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-75f749643847bca4f796466107970989"><img alt="A1B9198B7B9170BB0432827C3DC2D635" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250107204804562.png"></a></p>
 
 <script
   id="utteranc"
@@ -245,9 +249,9 @@ purge_keep_days: 5</p>
         </div>
       </main>
     </div>
-    <script src="../js/clipboard.min.js?1736255484" defer></script>
-    <script src="../js/perfect-scrollbar.min.js?1736255484" defer></script>
-    <script src="../js/theme.js?1736255484" defer></script>
+    <script src="../js/clipboard.min.js?1737805962" defer></script>
+    <script src="../js/perfect-scrollbar.min.js?1737805962" defer></script>
+    <script src="../js/theme.js?1737805962" defer></script>
 
 
   </body>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 常见问题 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/wifi-bug/_index-%E5%89%AF%E6%9C%AC/index.html</link>
+    <description>[TOC]&#xA;Homeassistant Box忘记密码怎么办？ 如果只是忘记密码，用户名没忘记&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/），&#xA;在ha提示符后面执行&#xA;authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; </description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/wifi-bug/_index-%E5%89%AF%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
