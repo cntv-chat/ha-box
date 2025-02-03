@@ -5,6 +5,8 @@ weight = 1
 
 +++
 
+[ HA盒子初始化系统]({{% relref "/installation/initialize-system" %}})
+
 首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。
 
 ## 等待欢迎界面

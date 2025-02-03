@@ -37,6 +37,9 @@
     <loc>http://localhost:1313/installation/habox-over-greatwall/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/installation/initialize-system/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/about/homeassistant-box-introduction/index.html</loc>
   </url>
   <url>
@@ -85,6 +88,9 @@
     <loc>http://localhost:1313/tags/ha-box/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/tags/habox%E5%88%9D%E5%A7%8B%E5%8C%96/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/tags/hacs%E5%AE%89%E8%A3%85/index.html</loc>
   </url>
   <url>
@@ -113,6 +119,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/wifi%E9%85%8D%E7%BD%AE/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/%E5%88%9D%E5%A7%8B%E5%8C%96/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/%E5%BC%80%E7%AE%B1/index.html</loc>

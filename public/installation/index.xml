@@ -12,7 +12,7 @@
       <link>http://localhost:1313/installation/instructions/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/installation/instructions/index.html</guid>
-      <description>首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。&#xA;等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）</description>
+      <description> HA盒子初始化系统&#xA;首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。&#xA;等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）</description>
     </item>
     <item>
       <title> 给HA Box插上无线WIFI的翅膀</title>
@@ -34,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/installation/habox-over-greatwall/index.html</guid>
       <description>前提，你已拥有可以用的梯子（节点），如果没有请参考：&#xA;搭建免费科学上网节点&#xA;加载项商店搜索&#34;加速&#34;，安装它（实际上就是v2raya,很好用的工具）</description>
+    </item>
+    <item>
+      <title>homeassistant初始化系统</title>
+      <link>http://localhost:1313/installation/initialize-system/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/installation/initialize-system/index.html</guid>
+      <description> 关于Homeassistant盒子初始化，Peter有话说……&#xA;之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。&#xA;因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……&#xA;有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。&#xA;因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。</description>
     </item>
     <item>
       <title>远程控制Homeassistant盒子</title>

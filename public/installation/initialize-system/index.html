@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.143.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content=" 关于Homeassistant盒子初始化，Peter有话说……
+之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。
+因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……
+有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。
+因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="homeassistant初始化系统 :: HaBox 技术支持站">
+    <meta name="twitter:description" content=" 关于Homeassistant盒子初始化，Peter有话说……
+之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。
+因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……
+有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。
+因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。">
+    <meta property="og:url" content="http://localhost:1313/installation/initialize-system/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="homeassistant初始化系统 :: HaBox 技术支持站">
+    <meta property="og:description" content=" 关于Homeassistant盒子初始化，Peter有话说……
+之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。
+因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……
+有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。
+因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="homeassistant初始化系统 :: HaBox 技术支持站">
+    <meta itemprop="description" content=" 关于Homeassistant盒子初始化，Peter有话说……
+之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。
+因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……
+有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。
+因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。">
+    <meta itemprop="wordCount" content="21">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="keywords" content="初始化,Habox初始化">
+    <title>homeassistant初始化系统 :: HaBox 技术支持站</title>
+    <link href="../../installation/initialize-system/index.xml" rel="alternate" type="application/rss+xml" title="homeassistant初始化系统 :: HaBox 技术支持站">
+    <link href="../../installation/initialize-system/index.print.html" rel="alternate" type="text/html" title="homeassistant初始化系统 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1738589994" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1738589994" rel="stylesheet">
+    <link href="../../css/fonts.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1738589994" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1738589994" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1738589994" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1738589994" rel="stylesheet">
+    <link href="../../css/print.css?1738589994" rel="stylesheet" media="print">
+    <script src="../../js/variant.js?1738589994"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3Jh9XF56OMu5x31r",ck:"3Jh9XF56OMu5x31r"})</script>
+
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../installation/initialize-system/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#有问题">有问题？</a></li>
+        <li><a href="#初始化过程">初始化过程</a></li>
+        <li><a href="#开始使用">开始使用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../installation/index.html"><span itemprop="name">1 安装维护</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">homeassistant初始化系统</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/installation/initialize-system/_index.md" target="_self" title="编辑 (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../installation/initialize-system/index.print.html" title="打印整章 (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../installation/habox-over-greatwall/index.html" title="Ha盒子配置科学上网 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../installation/free-remote-control/index.html" title="远程控制Homeassistant盒子 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="../../tags/habox%E5%88%9D%E5%A7%8B%E5%8C%96/index.html">Habox初始化</a></li>
+    <li><a class="term-link" href="../../tags/%E5%88%9D%E5%A7%8B%E5%8C%96/index.html">初始化</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id="homeassistant初始化系统">homeassistant初始化系统</h1>
+
+<blockquote>
+<p>关于Homeassistant盒子初始化，Peter有话说……</p>
+<p>之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。</p>
+<p>因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……</p></blockquote>
+<p>有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。</p>
+<p>因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。</p>
+<p><a href="#R-image-14dd07732be4770d42c6724872edecd8" class="lightbox-link"><img alt="截图 2025-02-03 20-12-12" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203212446045.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14dd07732be4770d42c6724872edecd8"><img alt="截图 2025-02-03 20-12-12" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203212446045.png"></a></p>
+<h3 id="有问题">有问题？</h3>
+<p>如果访问不了，出现拒绝连接之类的，应该是还没启动完成或者是别的什么问题。此时，可以试试http://homeassistant.local:8124，这是冬瓜伴侣辅助管理页面，通常这个服务会先于其他服务启动。也可以访问http://homeassistant.local:7681试试（这是命令行窗口，基本上等同于接上了显示器后看到的效果）</p>
+<p>如果冬瓜伴侣也访问不了，基本上可以判断是网络问题。访问http://homeassistant.local:8124的设备和homeassistant盒子是否连到了同一网络？当然还有一种情况是网线有问题，我们也遇到过这种情况；还有就是把盒子接到光猫的IPTV端口上去了（有的朋友用的是运营商送的光猫和路由器合体的设备）</p>
+<p>还有一种情况是路由器不支持homeassistant.local这种方式访问，不用着急，我们可以直接用ip访问。可以在路由器后台找找设备连接中名称为homeassistant的设备，看看ip地址是什么。如果都找不到homeassistant的设备，那又是上面说的网络问题，继续排查吧。</p>
+<p><a href="#R-image-56e4d4cbdd304d2f1a035df8540cd716" class="lightbox-link"><img alt="截图 2025-02-03 20-16-02" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203201615169.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56e4d4cbdd304d2f1a035df8540cd716"><img alt="截图 2025-02-03 20-16-02" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203201615169.png"></a></p>
+<p><a href="#R-image-ac6cb5327936d2734704295f5a433554" class="lightbox-link"><img alt="截图 2025-02-03 20-20-09" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203202041766.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac6cb5327936d2734704295f5a433554"><img alt="截图 2025-02-03 20-20-09" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203202041766.png"></a></p>
+<h3 id="初始化过程">初始化过程</h3>
+<p>通常情况在等待初始化过程时，我会打开http://homeassistant.local:7681监测进度。</p>
+<p>出现&quot;&gt;&ldquo;提示符后输入login回车，然后在&rdquo;#&ldquo;提示符下输入ha-install -t 回车就可以监测初始化进度了。</p>
+<p>但是这个过程会刷新页面，所以会退到&rdquo;&gt;&ldquo;提示符，需要再次做上面的操作</p>
+<p>当然，也可以访问冬瓜伴侣（http://homeassistant.local:8124）来监测整个过程，这会更直观一些，并且不会出现需要上面提到的刷新页面后需要重新输入login再输入ha-install -t的操作。</p>
+<p><a href="#R-image-6ffc80f18a543019c5bc354e247c0858" class="lightbox-link"><img alt="截图 2025-02-03 20-06-37" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203201306903.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ffc80f18a543019c5bc354e247c0858"><img alt="截图 2025-02-03 20-06-37" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203201306903.png"></a></p>
+<p><a href="#R-image-14dad5f8685b9ce920ae6649cc1f3d20" class="lightbox-link"><img alt="截图 2025-02-03 20-11-45" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203201306955.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14dad5f8685b9ce920ae6649cc1f3d20"><img alt="截图 2025-02-03 20-11-45" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203201306955.png"></a></p>
+<p><a href="#R-image-46664ffea414b90aee889c4889d84fad" class="lightbox-link"><img alt="截图 2025-02-03 20-25-34" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203213333471.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-46664ffea414b90aee889c4889d84fad"><img alt="截图 2025-02-03 20-25-34" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203213333471.png"></a></p>
+<p><a href="#R-image-2af4085ce5c433f8edda102789f7be67" class="lightbox-link"><img alt="截图 2025-02-03 20-12-21" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203201750237.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2af4085ce5c433f8edda102789f7be67"><img alt="截图 2025-02-03 20-12-21" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203201750237.png"></a></p>
+<p><a href="#R-image-f4317c0c29dba3951c8eca6a58862d11" class="lightbox-link"><img alt="截图 2025-02-03 20-25-49" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203202724617.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4317c0c29dba3951c8eca6a58862d11"><img alt="截图 2025-02-03 20-25-49" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203202724617.png"></a></p>
+<h3 id="开始使用">开始使用</h3>
+<p>实际上在初始化后期这个页面就可以访问了，但是由于初始化未完成，中途由于因初始化系统自动重启会导致连接失败，如果您不了解这个，您会惊讶：什么破盒子，系统有问题吧，怎么又连接中断访问不了了？不行，我得联系卖家问问什么情况。如此这般</p>
+<p><a href="#R-image-d521c885d8f6ed2df6ae37230c04660f" class="lightbox-link"><img alt="截图 2025-02-03 20-18-41" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/20250203201857569.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d521c885d8f6ed2df6ae37230c04660f"><img alt="截图 2025-02-03 20-18-41" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/20250203201857569.png"></a></p>
+<p><a href="../../installation/instructions/index.html"> HA盒子使用说明书（开箱即用）</a></p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo img,
+            #R-logo img * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo img {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 50.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo img {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="../../index.html">
+             <img src="../../images/logo.png">HA Box 
+          </a>
+
+        </div>
+
+        <search><form action="../../search.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="搜索 (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-times" title="清除搜索"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en', 'zh'];
+        </script>
+        <script src="../../js/auto-complete.js?1738589994" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1738589994" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1738589994" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1738589994" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1738589994" defer></script>
+        <script src="../../js/lunr/lunr.zh.min.js?1738589994" defer></script>
+        <script src="../../js/search.js?1738589994" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/installation/index.html" class="parent "><input type="checkbox" id="R-section-c7d2c74d7b93b238c2b4b636995f66f9" aria-controls="R-subsections-c7d2c74d7b93b238c2b4b636995f66f9" checked><label for="R-section-c7d2c74d7b93b238c2b4b636995f66f9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单1 安装维护</span></label><a class="padding" href="../../installation/index.html">1 安装维护<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c7d2c74d7b93b238c2b4b636995f66f9" class="morespace collapsible-menu">
+          <li data-nav-id="/installation/instructions/index.html" class=""><a class="padding" href="../../installation/instructions/index.html"> HA盒子使用说明书（开箱即用）<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/wifi/index.html" class=""><a class="padding" href="../../installation/wifi/index.html"> 给HA Box插上无线WIFI的翅膀<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/hacs/index.html" class=""><a class="padding" href="../../installation/hacs/index.html">HACS安装激活<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/habox-over-greatwall/index.html" class=""><a class="padding" href="../../installation/habox-over-greatwall/index.html">Ha盒子配置科学上网<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/initialize-system/index.html" class="active"><a class="padding" href="../../installation/initialize-system/index.html">homeassistant初始化系统<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/installation/free-remote-control/index.html" class=""><a class="padding" href="../../installation/free-remote-control/index.html">远程控制Homeassistant盒子<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/access/index.html" class=""><input type="checkbox" id="R-section-8a2548568bbc2b59f59b2efe93b2b97f" aria-controls="R-subsections-8a2548568bbc2b59f59b2efe93b2b97f"><label for="R-section-8a2548568bbc2b59f59b2efe93b2b97f"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单2 设备接入</span></label><a class="padding" href="../../access/index.html">2 设备接入<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-8a2548568bbc2b59f59b2efe93b2b97f" class="morespace collapsible-menu">
+          <li data-nav-id="/access/homekit/index.html" class=""><a class="padding" href="../../access/homekit/index.html">HA Box桥接米家设备到HomeKit<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/access/mijia/index.html" class=""><a class="padding" href="../../access/mijia/index.html">将米家设备接入HomeAssistant<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/network/index.html" class=""><input type="checkbox" id="R-section-30d33bf08e663016953c1238fd6c9aad" aria-controls="R-subsections-30d33bf08e663016953c1238fd6c9aad"><label for="R-section-30d33bf08e663016953c1238fd6c9aad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单3 网络技术</span></label><a class="padding" href="../../network/index.html">3 网络技术<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-30d33bf08e663016953c1238fd6c9aad" class="morespace collapsible-menu">
+          <li data-nav-id="/network/free-vless-node-page/index.html" class=""><a class="padding" href="../../network/free-vless-node-page/index.html">Cloudflare page搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/cloudflare-tunnel-ssh/index.html" class=""><a class="padding" href="../../network/cloudflare-tunnel-ssh/index.html">Cloudflare tunnel配置ssh连接<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/linux-partition/index.html" class=""><a class="padding" href="../../network/linux-partition/index.html">linux下无损扩容分区方法<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/docker-pull/index.html" class=""><a class="padding" href="../../network/docker-pull/index.html">从 Docker Hub 快速拉取镜像<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/network/free-vless-node/index.html" class=""><a class="padding" href="../../network/free-vless-node/index.html">搭建免费科学上网节点<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/faq/index.html" class=""><a class="padding" href="../../faq/index.html">4 常见问题<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/about/index.html" class=""><input type="checkbox" id="R-section-8e860947a5464776bf9bb1c24171f57a" aria-controls="R-subsections-8e860947a5464776bf9bb1c24171f57a"><label for="R-section-8e860947a5464776bf9bb1c24171f57a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单5 关于我们</span></label><a class="padding" href="../../about/index.html">5 关于我们<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-8e860947a5464776bf9bb1c24171f57a" class="morespace collapsible-menu">
+          <li data-nav-id="/about/homeassistant-box-introduction/index.html" class=""><a class="padding" href="../../about/homeassistant-box-introduction/index.html">Homeassistant盒子介绍<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/about/brand-new-boxes-arrived/index.html" class=""><a class="padding" href="../../about/brand-new-boxes-arrived/index.html">新到一批Homeassistant盒子，几乎没有瑕疵<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">语言</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh-cn" value="#R-select-language-zh-cn" data-url="../../installation/initialize-system/index.html" lang="zh-cn" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">主题</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-zen-auto" value="zen-auto">Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次  </span></p>
+<span id="busuanzi_container_site_uv">您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者</span>
+
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <script src="../../js/clipboard.min.js?1738589994" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1738589994" defer></script>
+    <script src="../../js/theme.js?1738589994" defer></script>
+
+
+  </body>
+</html>
+
+

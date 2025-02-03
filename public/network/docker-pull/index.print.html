@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.142.0">
+    <meta name="generator" content="Hugo 0.143.0">
     <meta name="generator" content="Relearn 6.0.0+tip">
     <meta name="description" content="最近一段时间 Docker 镜像一直是 Pull 不下来的状态，感觉除了挂🪜，想直连 Docker Hub 是几乎不可能的。更糟糕的是，很多原本可靠的国内镜像站，例如一些大厂和高校运营的，也陆续关停了，这对我们这些个人开发者和中小企业来说是挺难受的。之前，通过这些镜像站，我们可以快速、方便地获取所需的 Docker 镜像，现在这条路也不行了。感觉这次动作不小，以后想直接访问 Docker Hub 是不可能了。所以我们得想办法搭建自己的私有镜像仓库。">
     <meta name="author" content="">
@@ -27,18 +27,18 @@
     <link href="http://localhost:1313/network/docker-pull/index.html" rel="canonical" type="text/html" title="从 Docker Hub 快速拉取镜像 :: HaBox 技术支持站">
     <link href="../../network/docker-pull/index.xml" rel="alternate" type="application/rss+xml" title="从 Docker Hub 快速拉取镜像 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <link href="../../css/fontawesome-all.min.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1737805962" rel="stylesheet"></noscript>
-    <link href="../../css/nucleus.css?1737805962" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1737805962" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1737805962" rel="stylesheet">
-    <link href="../../css/fonts.css?1737805962" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1737805962" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1737805962" rel="stylesheet">
-    <link href="../../css/theme-relearn-auto.css?1737805962" rel="stylesheet" id="R-variant-style">
-    <link href="../../css/chroma-relearn-auto.css?1737805962" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="../../css/variant.css?1737805962" rel="stylesheet">
-    <link href="../../css/print.css?1737805962" rel="stylesheet" media="print">
-    <link href="../../css/format-print.css?1737805962" rel="stylesheet">
-    <script src="../../js/variant.js?1737805962"></script>
+    <link href="../../css/fontawesome-all.min.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1738589994" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1738589994" rel="stylesheet">
+    <link href="../../css/fonts.css?1738589994" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1738589994" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1738589994" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1738589994" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1738589994" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1738589994" rel="stylesheet">
+    <link href="../../css/print.css?1738589994" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1738589994" rel="stylesheet">
+    <script src="../../js/variant.js?1738589994"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -156,13 +156,13 @@
 </span></span><span style="display:flex;"><span>registry:2</span></span></code></pre></div><h3 id="搭建-nexus">搭建 Nexus</h3>
 <p>可选择使用 Docker 命令搭建 <a href="https://link.segmentfault.com/?enc=tbYJWzjSyDQsTkkURfooAQ%3D%3D.QIipXcRsUxqp02x09FrfLCPrKyA3C9SNrkeQCydZtdnSd8CC0luc36yEaTIfkJ8C" rel="external" target="_self">Nexus</a>。</p>
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>docker run -d -p <span style="color:#ae81ff">8081</span>:8081 --name nexus sonatype/nexus3</span></span></code></pre></div><p>或者使用 <a href="https://link.segmentfault.com/?enc=FZchBOKi1qtQY8v1bnXJjw%3D%3D.pGJQ82Ux9WQpeuAt8uqme7hqNpSrSEhuAqUV%2FqA%2F0XIg0LX7UAYua15dLu6eud4ZpuMQpwD5YOON%2FtiFc1AQ2A%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-fe00b2ab73e225833763606eb04f2547" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe00b2ab73e225833763606eb04f2547"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
+<p><a href="#R-image-e42262c782142145ce03e52486ab6de5" class="lightbox-link"><img alt="preview" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/view" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e42262c782142145ce03e52486ab6de5"><img alt="preview" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/view"></a></p>
 <p>搭建完成后正常登录 Nexus 页面，根据页面引导配置 Docker 相关的存储 Repository 及代理 Repository 即可。</p>
 <h3 id="搭建-harbor">搭建 Harbor</h3>
 <p>可参考 <a href="https://link.segmentfault.com/?enc=gArRPFlTwahPHAZVYax5eQ%3D%3D.nEIXf3i42IPUpjQpS0rCTWWuYuZuTijmAc5tYh0b0JQ6Rpq%2FgSXPBgpsoxHhenn2" rel="external" target="_self">Harbor文档 </a>搭建或者使用 <a href="https://link.segmentfault.com/?enc=Y8%2FkX9dQK4wkXs1osqCq2Q%3D%3D.Y4NBA%2Fwcm2hd3jymDG3IHKxzC%2BwC7C2hOmQohmPoWdDa6NnnhnrlgpZirSzWOz3yAO6WgEWO0ylpmxJECRtUIw%3D%3D" rel="external" target="_self">Rainbond</a> 应用商店一键安装。</p>
-<p><a href="#R-image-b07e30d85494bfbff60684ac39a9f583" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b07e30d85494bfbff60684ac39a9f583"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
+<p><a href="#R-image-06e9ee851ba30ee917ab06e94f88c84b" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06e9ee851ba30ee917ab06e94f88c84b"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/1460000044981234"></a></p>
 <h2 id="可用的镜像代理">可用的镜像代理</h2>
 <p>最近十来天我尝试了很多镜像加速站，整理了以下镜像站目前是可用状态，但可能随时会遇到不可用、关停、访问比较慢的状态，建议同时配置多个镜像源。</p>
 <table>
@@ -208,8 +208,8 @@
 </table>
 <h2 id="福利">福利</h2>
 <p>近期 Rainbond 社区也接受到许多用户反馈 Docker 镜像拉不下来，不能构建、打包了，因此 Rainbond 也搭建了个镜像加速服务，采用 <code>CloudFlare + 国外服务器 Nginx 反代</code>的方案为 Rainbond 社区的用户们提供镜像加速服务。</p>
-<p><a href="#R-image-0eadbfdb49cc7eddde2f817bdee8ea00" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0eadbfdb49cc7eddde2f817bdee8ea00"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
+<p><a href="#R-image-c954ebb1359fc5e2b72215536a06eb21" class="lightbox-link"><img alt="img" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c954ebb1359fc5e2b72215536a06eb21"><img alt="img" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/2261433068-091e79c93c8fa759"></a></p>
 <p>目前速度挺快的（未来不好说</p>
 <h3 id="使用方法">使用方法</h3>
 <p>1.直接获取 Docker Hub 镜像</p>
@@ -253,9 +253,9 @@
         </div>
       </main>
     </div>
-    <script src="../../js/clipboard.min.js?1737805962" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1737805962" defer></script>
-    <script src="../../js/theme.js?1737805962" defer></script>
+    <script src="../../js/clipboard.min.js?1738589994" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1738589994" defer></script>
+    <script src="../../js/theme.js?1738589994" defer></script>
 
 
   </body>

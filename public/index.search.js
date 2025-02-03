@@ -1,8 +1,8 @@
 var relearn_search_index = [
   {
     "breadcrumb": "1 安装维护",
-    "content": "首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。\n等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）\n基本设置 创建用户 选择家的位置 这个地方如果搜索不到，您可以通过缩放地图，拖动地图中的位置图标到家所在的位置，然后是设置国家选项（如果是通过搜索找到的位置，就没有这个选项，系统自动设置了）\n信息收集 接下来是收集数据，建议不选，然后是自动发现家里的智能设备，直接点完成即可。\n正式进入后台 升级和修复 您可能会发现左侧配置选项边上有如上图所示的数字提示，点进去\n该升级升级，该修复修复\n结束语 到此，您基本上就可以根据自身情况进行设备的接入和控制了，请持续关注我们，我们将持续发布使用HomeAssistant盒子相关的使用说明！",
-    "description": "首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。\n等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）",
+    "content": " HA盒子初始化系统\n首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。\n等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）\n基本设置 创建用户 选择家的位置 这个地方如果搜索不到，您可以通过缩放地图，拖动地图中的位置图标到家所在的位置，然后是设置国家选项（如果是通过搜索找到的位置，就没有这个选项，系统自动设置了）\n信息收集 接下来是收集数据，建议不选，然后是自动发现家里的智能设备，直接点完成即可。\n正式进入后台 升级和修复 您可能会发现左侧配置选项边上有如上图所示的数字提示，点进去\n该升级升级，该修复修复\n结束语 到此，您基本上就可以根据自身情况进行设备的接入和控制了，请持续关注我们，我们将持续发布使用HomeAssistant盒子相关的使用说明！",
+    "description": " HA盒子初始化系统\n首先，感谢您选择由“HABox智能家居盒子”提供的Home assistant智能家居盒子，下面请与我一起进入这个神秘的小盒子一探究竟。\n等待欢迎界面 拿到盒子后，连上网线，插上电源，开机……启动并加载完成，大概要等待2分半种。然后在浏览器地址栏输入http://homeassistant.local:8123 进行访问，不出所料，您将看到如下欢迎界面。（你也可以在路由器后台查看具体ip地址，然后输入http://ip:8123进行访问）",
     "tags": [
       "Homeassistant Box",
       "开箱",
@@ -57,7 +57,7 @@ var relearn_search_index = [
   {
     "breadcrumb": "",
     "content": " IT老者，一事无成，闲来无事，喜欢折腾。\nHA盒子，找我就行，包您满意，诚信经营。\n大家好！ 我是Peter，一名已过不惑之年的IT工程师。目前有一份可以在家上班的工作，不用早晚挤公交地铁奔波于两点之间，节省了不少空闲 时间，感谢上帝的眷顾。\n这两句打油诗是设置闲鱼介绍的时候设置的，贴到这里，姑且作为本站点和闲鱼账户之间的一个见证吧，因为我发现有 不少闲鱼卖家也把本站点放到了他们的商品介绍里面，作为他们提供技术支持的一个途径。\n当然，这并没有什么不妥之处，信息共享是一件好事，同时也感谢这些卖家对本站的认可。只是希望大家能够鉴别，他们提供的盒子以及服务和本站没关系！\n感谢冬瓜团队提供的Haos镜像，使得Homeassistant能够在物美价廉的众多盒子上运行，特别是运营商盒子，大大的推动了Homeassistant在中国大发展。\n联系我们 【闲鱼】https://m.tb.cn/h.TVTzZg2?tk=eAvn3w5fPRE MF1643 「这是我的闲鱼号，快来看看吧～」 点击链接直接打开\nQQ群",
-    "description": " IT老者，一事无成，闲来无事，喜欢折腾。\nHA盒子，找我就行，包您满意，诚信经营。\n大家好！ 我是Peter，一名已过不惑之年的IT工程师。目前有一份可以在家上班的工作，不用早晚挤公交地铁奔波于两点之间，节省了不少空闲 时间，感谢上帝的眷顾。\n这两句打油诗是设置闲鱼介绍的时候设置的，贴到这里，姑且作为本站点和闲鱼账户之间的一个见证吧，因为我发现有 不少闲鱼卖家也把本站点放到了他们的商品介绍里面，作为他们提供技术支持的一个途径。\n当然，这并没有什么不妥之处，信息共享是一件好事，同时也感谢这些卖家对本站的认可。只是希望大家能够鉴别，他们提供的盒子以及服务和本站没关系！\n感谢冬瓜团队提供的Haos镜像，使得Homeassistant能够在物美价廉的众多盒子上运行，特别是运营商盒子，大大的推动了Homeassistant在中国大发展。\n联系我们 【闲鱼】https://m.tb.cn/h.TVTzZg2?tk=eAvn3w5fPRE MF1643 「这是我的闲鱼号，快来看看吧～」 点击链接直接打开",
+    "description": " IT老者，一事无成，闲来无事，喜欢折腾。\nHA盒子，找我就行，包您满意，诚信经营。\n大家好！ 我是Peter，一名已过不惑之年的IT工程师。目前有一份可以在家上班的工作，不用早晚挤公交地铁奔波于两点之间，节省了不少空闲 时间，感谢上帝的眷顾。\n这两句打油诗是设置闲鱼介绍的时候设置的，贴到这里，姑且作为本站点和闲鱼账户之间的一个见证吧，因为我发现有 不少闲鱼卖家也把本站点放到了他们的商品介绍里面，作为他们提供技术支持的一个途径。\n当然，这并没有什么不妥之处，信息共享是一件好事，同时也感谢这些卖家对本站的认可。只是希望大家能够鉴别，他们提供的盒子以及服务和本站没关系！\n感谢冬瓜团队提供的Haos镜像，使得Homeassistant能够在物美价廉的众多盒子上运行，特别是运营商盒子，大大的推动了Homeassistant在中国大发展。",
     "tags": [],
     "title": "5 关于我们",
     "uri": "/about/index.html"
@@ -119,6 +119,17 @@ var relearn_search_index = [
     "uri": "/installation/habox-over-greatwall/index.html"
   },
   {
+    "breadcrumb": "1 安装维护",
+    "content": " 关于Homeassistant盒子初始化，Peter有话说……\n之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。\n因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……\n有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。\n因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。\n有问题？ 如果访问不了，出现拒绝连接之类的，应该是还没启动完成或者是别的什么问题。此时，可以试试http://homeassistant.local:8124，这是冬瓜伴侣辅助管理页面，通常这个服务会先于其他服务启动。也可以访问http://homeassistant.local:7681试试（这是命令行窗口，基本上等同于接上了显示器后看到的效果）\n如果冬瓜伴侣也访问不了，基本上可以判断是网络问题。访问http://homeassistant.local:8124的设备和homeassistant盒子是否连到了同一网络？当然还有一种情况是网线有问题，我们也遇到过这种情况；还有就是把盒子接到光猫的IPTV端口上去了（有的朋友用的是运营商送的光猫和路由器合体的设备）\n还有一种情况是路由器不支持homeassistant.local这种方式访问，不用着急，我们可以直接用ip访问。可以在路由器后台找找设备连接中名称为homeassistant的设备，看看ip地址是什么。如果都找不到homeassistant的设备，那又是上面说的网络问题，继续排查吧。\n初始化过程 通常情况在等待初始化过程时，我会打开http://homeassistant.local:7681监测进度。\n出现\"\u003e“提示符后输入login回车，然后在”#“提示符下输入ha-install -t 回车就可以监测初始化进度了。\n但是这个过程会刷新页面，所以会退到”\u003e“提示符，需要再次做上面的操作\n当然，也可以访问冬瓜伴侣（http://homeassistant.local:8124）来监测整个过程，这会更直观一些，并且不会出现需要上面提到的刷新页面后需要重新输入login再输入ha-install -t的操作。\n开始使用 实际上在初始化后期这个页面就可以访问了，但是由于初始化未完成，中途由于因初始化系统自动重启会导致连接失败，如果您不了解这个，您会惊讶：什么破盒子，系统有问题吧，怎么又连接中断访问不了了？不行，我得联系卖家问问什么情况。如此这般\nHA盒子使用说明书（开箱即用）",
+    "description": " 关于Homeassistant盒子初始化，Peter有话说……\n之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。\n因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……\n有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。\n因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。",
+    "tags": [
+      "初始化",
+      "Habox初始化"
+    ],
+    "title": "homeassistant初始化系统",
+    "uri": "/installation/initialize-system/index.html"
+  },
+  {
     "breadcrumb": "5 关于我们",
     "content": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。\n当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！\n但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。\n先看看大家容易混淆的s905l3和s905l3a芯片的对比\nSpecification comparison: Processor Amlogic S905L3 Amlogic S905L3A Market (main) TV Box TV Box ISA ARMv8-A (64-bit) ARMv8-A (64-bit) Microarchitecture Cortex-A53 Cortex-A53 Family S9 S9 Part number(s), S-Spec S905L3 S905L3A Release date 2022 Q4 2022 Q3 Lithography 28 nm HKMG 12 nm Cores 4 4 Threads 4 4 Base frequency 2,0 GHz 1,8 GHz Turbo frequency - - High performance cores 4x ARM Cortex-A53 @ 2,0 GHz 4x ARM Cortex-A53 @ 1,8 GHz Cache memory 1 MB 1 MB Max memory capacity 4 GB 4 GB Memory types LPDDR2/3, DDR3/4 DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200 TDP 5 W 5 W GPU integrated graphics ARM Mali-450 MP5 ARM Mali-G31 MP2 GPU execution units 5 2 GPU shading units 80 32 GPU clock 750 MHz 850 MHz GPU FP32 floating point 59,5 GFLOPS 20,8 GFLOPS Socket SoC SoC Drystone MIPS 18 400 DMIPS 16 560 DMIPS Crypto engine - AES, DES, TDES, TRNG Security - TrustZone, Secure boot Max display resolution 4K@60fps 4K@75fps Video decoding H.265, H.264, 1080p@60fps VP9 4K@60fps H.265 4K@75fps, H.264 4K@30fps Video encoding - H.265/H.264 1080p@60fps Modem 10/100M Ethernet 10/100/1000 MAC, 10/100 PHY Connectivity USB 2.0, HDMI 2.0 USB 2.0, USB 3.0, HDMI 2.1 Wi-Fi Wi-Fi 802.11 a/b/g/n/ac Wi-Fi/IEEE 802.11 a/b/g/n/ас Bluetooth Bluetooth 4.2 Bluetooth 4.1 Audio - DAC, SPDIF, I2S, PDM AnTuTu 35 294 46 026 (Android) Geekbench 4 single core 550 755 (Android) Geekbench 4 multi-core 1 578 2 062 (Android) Geekbench 5 single core 105 130 (Android) Geekbench 5 multi-core 266 434 (SGEMM) GFLOPS Performance 4,18 GFLOPS 5,45 GFLOPS (Multi-core / watt performance) Performance / watt ratio 316 pts / W 412 pts / W 详细的对比数据，请访问 https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/\n下面是M401A的几张图片\n偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ",
     "description": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。",
@@ -132,8 +143,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
-    "description": " 安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
+    "content": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
+    "description": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
     "tags": [
       "Homeassistant",
       "HA Box",
@@ -275,6 +286,14 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": [],
+    "title": "标签 :: Habox初始化",
+    "uri": "/tags/habox%E5%88%9D%E5%A7%8B%E5%8C%96/index.html"
+  },
+  {
+    "breadcrumb": "标签",
+    "content": "",
+    "description": "",
+    "tags": [],
     "title": "标签 :: HACS安装",
     "uri": "/tags/hacs%E5%AE%89%E8%A3%85/index.html"
   },
@@ -349,6 +368,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "标签 :: Wifi配置",
     "uri": "/tags/wifi%E9%85%8D%E7%BD%AE/index.html"
+  },
+  {
+    "breadcrumb": "标签",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "标签 :: 初始化",
+    "uri": "/tags/%E5%88%9D%E5%A7%8B%E5%8C%96/index.html"
   },
   {
     "breadcrumb": "标签",

@@ -8,6 +8,7 @@ weight = 1
 
 
 - 安装维护
+  - [ HA盒子初始化系统]({{% relref "/installation/initialize-system" %}})
   - [ HA盒子使用说明书（开箱即用）]({{% relref "/installation/instructions" %}})
   - [ 给HA Box插上无线WIFI的翅膀]({{% relref "/installation/wifi" %}})
   - [HACS安装激活]({{% relref "/installation/hacs" %}})
