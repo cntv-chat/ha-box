@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeassistant盒子安装HACS极速版 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/installation/hacs-china/index.html</link>
+    <description>一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明&#xA;HACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。&#xA;也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。&#xA;二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/installation/hacs-china/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

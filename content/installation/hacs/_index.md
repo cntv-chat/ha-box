@@ -17,6 +17,14 @@ HACS 是一个全面的、社区驱动的**插件管理系统** ，专为Google�
 
 
 
+> [!NOTE]
+>
+> 如果因为网络原因访问不了github.com而没法激活，或者提示“cloud_not_register”，可以使用HACS极速版，安装方法如下：
+>
+> [HACS极速版安装激活]({{% relref "/installation/hacs-china" %}})
+
+
+
 由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。
 
 配置 - 设备与服务 ，在集成选项卡右下角点**添加集成**按钮

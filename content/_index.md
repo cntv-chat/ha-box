@@ -12,6 +12,7 @@ weight = 1
   - [ HA盒子使用说明书（开箱即用）]({{% relref "/installation/instructions" %}})
   - [ 给HA Box插上无线WIFI的翅膀]({{% relref "/installation/wifi" %}})
   - [HACS安装激活]({{% relref "/installation/hacs" %}})
+  - [HACS极速版安装激活]({{% relref "/installation/hacs-china" %}})
   - [远程控制Homeassistant盒子]({{% relref "/installation/free-remote-control" %}})
   - [Ha盒子配置科学上网]({{% relref "/installation/habox-over-greatwall" %}})
 - 设备接入

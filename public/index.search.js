@@ -98,7 +98,7 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "1 安装维护",
-    "content": "一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。\n二、安装HACS [!WARNING]\n注意，激活前，请先在Github注册账号并登陆，否则有的朋友打开激活连接后发现是登陆页面而不是输入激活码的页面。关于怎么注册Github账户，请查看https://blog.csdn.net/2301_76884890/article/details/141474376\n由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。\n配置 - 设备与服务 ，在集成选项卡右下角点添加集成按钮\n在弹出窗口搜索HACS，你将看到HACS已经在列表里，然后点击它（整行随便点就行，右边的几个图标只是告诉你HACS的一些功能）\n全勾选上，然后提交\n接下来是打开链接，进到github.com有个授权的动作\n不出以外的话，你将看到这个页面，复制刚才弹窗给你的验证码，直接鼠标全选上复制过去直接粘贴，然后点 Continue 继续\n有时候会因为种种原因出现下面这个弹窗提示cloud_not_register,网络问题直接关闭从头再来多试几次\n如果出现下面这个页面说明你刚才的验证码没输错，可以点击Authorize hacs授权了\nOK,到这里说明已经配置成功了，可以关闭这个页面了。\n返回到Homeassistant,HACS已经配置成功，并自动发现了家里的一些设备，可以对区域进行配置，告诉HACS这个设备是在客厅还是在卧室或者别的房间。当然你也可以直接点关闭或完成。\n看，左侧已经出现HACS的连接，集成里面已配置列表已经有HACS了。\n此时你可能需要重启一下HA Box缓解一下激动的心情了",
+    "content": "一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。\n二、安装HACS [!WARNING]\n注意，激活前，请先在Github注册账号并登陆，否则有的朋友打开激活连接后发现是登陆页面而不是输入激活码的页面。关于怎么注册Github账户，请查看https://blog.csdn.net/2301_76884890/article/details/141474376\n[!NOTE]\n如果因为网络原因访问不了github.com而没法激活，或者提示“cloud_not_register”，可以使用HACS极速版，安装方法如下：\nHACS极速版安装激活\n由于Homeassistant的安装五花八门，所以网上有很多教程看上去非常复杂，但是在HA Box中安装HACS非常简单，下面我们一起来看看怎么安装。\n配置 - 设备与服务 ，在集成选项卡右下角点添加集成按钮\n在弹出窗口搜索HACS，你将看到HACS已经在列表里，然后点击它（整行随便点就行，右边的几个图标只是告诉你HACS的一些功能）\n全勾选上，然后提交\n接下来是打开链接，进到github.com有个授权的动作\n不出以外的话，你将看到这个页面，复制刚才弹窗给你的验证码，直接鼠标全选上复制过去直接粘贴，然后点 Continue 继续\n有时候会因为种种原因出现下面这个弹窗提示cloud_not_register,网络问题直接关闭从头再来多试几次\n如果出现下面这个页面说明你刚才的验证码没输错，可以点击Authorize hacs授权了\nOK,到这里说明已经配置成功了，可以关闭这个页面了。\n返回到Homeassistant,HACS已经配置成功，并自动发现了家里的一些设备，可以对区域进行配置，告诉HACS这个设备是在客厅还是在卧室或者别的房间。当然你也可以直接点关闭或完成。\n看，左侧已经出现HACS的连接，集成里面已配置列表已经有HACS了。\n此时你可能需要重启一下HA Box缓解一下激动的心情了",
     "description": "一、HACS是什么 HACS 是一个全面的、社区驱动的插件管理系统 ，专为Google的开源 智能家居 平台 Home Assistant 设计。 通过HACS，你可以方便地发现、安装和管理与Home Assistant兼容的各种插件，包括自定义集成、面板、配置器和其他小部件。",
     "tags": [
       "HACS安装",
@@ -130,6 +130,17 @@ var relearn_search_index = [
     "uri": "/installation/initialize-system/index.html"
   },
   {
+    "breadcrumb": "1 安装维护",
+    "content": "一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明\nHACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。\n也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。\n二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单\n首先我们需要确保已经在加载项里面安装好了“Advanced SSH \u0026 Web Terminal”，并在配置选项下设置了用户名和密码，别忘了点保存。\n然后使之显示于侧边栏并启动\n在侧边栏点开Terminal，然后执行下面的代码\nwget -O - https://get.hacs.vip | bash - # 或 curl -fsSL get.hacs.vip | bash等待下载安装完后，重启盒子就可以了",
+    "description": "一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明\nHACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。\n也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。\n二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单",
+    "tags": [
+      "HACS极速版安装",
+      "HACS激活"
+    ],
+    "title": "Homeassistant盒子安装HACS极速版",
+    "uri": "/installation/hacs-china/index.html"
+  },
+  {
     "breadcrumb": "5 关于我们",
     "content": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。\n当然由于后期冬瓜的HAOS镜像可以适配了更多的盒子，导致市场价格进一步下降，屯了一些M401A和UNT403A，亏大了！\n但是不得不说，以上这三种盒子依然是最合适的。闲鱼很多便宜的都是s905l3芯片，个人并不推荐，大家购买的时候要注意看是什么芯片。\n先看看大家容易混淆的s905l3和s905l3a芯片的对比\nSpecification comparison: Processor Amlogic S905L3 Amlogic S905L3A Market (main) TV Box TV Box ISA ARMv8-A (64-bit) ARMv8-A (64-bit) Microarchitecture Cortex-A53 Cortex-A53 Family S9 S9 Part number(s), S-Spec S905L3 S905L3A Release date 2022 Q4 2022 Q3 Lithography 28 nm HKMG 12 nm Cores 4 4 Threads 4 4 Base frequency 2,0 GHz 1,8 GHz Turbo frequency - - High performance cores 4x ARM Cortex-A53 @ 2,0 GHz 4x ARM Cortex-A53 @ 1,8 GHz Cache memory 1 MB 1 MB Max memory capacity 4 GB 4 GB Memory types LPDDR2/3, DDR3/4 DDR3/DDR3L-2133, DDR4-2666, LPDDR4-3200 TDP 5 W 5 W GPU integrated graphics ARM Mali-450 MP5 ARM Mali-G31 MP2 GPU execution units 5 2 GPU shading units 80 32 GPU clock 750 MHz 850 MHz GPU FP32 floating point 59,5 GFLOPS 20,8 GFLOPS Socket SoC SoC Drystone MIPS 18 400 DMIPS 16 560 DMIPS Crypto engine - AES, DES, TDES, TRNG Security - TrustZone, Secure boot Max display resolution 4K@60fps 4K@75fps Video decoding H.265, H.264, 1080p@60fps VP9 4K@60fps H.265 4K@75fps, H.264 4K@30fps Video encoding - H.265/H.264 1080p@60fps Modem 10/100M Ethernet 10/100/1000 MAC, 10/100 PHY Connectivity USB 2.0, HDMI 2.0 USB 2.0, USB 3.0, HDMI 2.1 Wi-Fi Wi-Fi 802.11 a/b/g/n/ac Wi-Fi/IEEE 802.11 a/b/g/n/ас Bluetooth Bluetooth 4.2 Bluetooth 4.1 Audio - DAC, SPDIF, I2S, PDM AnTuTu 35 294 46 026 (Android) Geekbench 4 single core 550 755 (Android) Geekbench 4 multi-core 1 578 2 062 (Android) Geekbench 5 single core 105 130 (Android) Geekbench 5 multi-core 266 434 (SGEMM) GFLOPS Performance 4,18 GFLOPS 5,45 GFLOPS (Multi-core / watt performance) Performance / watt ratio 316 pts / W 412 pts / W 详细的对比数据，请访问 https://gadgetversus.com/processor/amlogic-s905l3-vs-amlogic-s905l3a/\n下面是M401A的几张图片\n偶尔也出黑豹X2（panther x2）和x96max+，但是量很少，就不作介绍了，有兴趣的同学自行bing（嗯，不用百度很多年了，世界变得清净了不少）\n安装维护 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 ",
     "description": "我们主要采用运营商盒子中的M401A、UNT403A、CM311-1A作为Homeassistant的承载体，可以说这是市场选择的结果：\n我们采用的HAOS镜像是冬瓜制作的，能够适配以上运营商电视盒子。而该镜像开始之支持以上三种盒子 运营商电视盒子因其出货量大，因此在二手市场性价比也很高，价格不会太高 晶晨S905l3A芯片，2+16G的配置可以说刚刚好，能够满足大部分的需求，接入200+设备不是问题 安装方式为官方推荐的HAOS，通常民间称之为全功能版本，采用冬瓜制作的镜像，对中国网络环境做了优化，并增加了一些比较适用的Add-ons。",
@@ -143,8 +154,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
-    "description": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
+    "content": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 HACS极速版安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
+    "description": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 HACS极速版安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
     "tags": [
       "Homeassistant",
       "HA Box",
@@ -304,6 +315,14 @@ var relearn_search_index = [
     "tags": [],
     "title": "标签 :: HACS激活",
     "uri": "/tags/hacs%E6%BF%80%E6%B4%BB/index.html"
+  },
+  {
+    "breadcrumb": "标签",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "标签 :: HACS极速版安装",
+    "uri": "/tags/hacs%E6%9E%81%E9%80%9F%E7%89%88%E5%AE%89%E8%A3%85/index.html"
   },
   {
     "breadcrumb": "标签",

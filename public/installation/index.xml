@@ -43,6 +43,13 @@
       <description> 关于Homeassistant盒子初始化，Peter有话说……&#xA;之前我们提供的Homeassistant盒子买家收到后，接通电源开机，插上网线连接到路由器，大概2、3分钟后访问http://homeassistant.local:8123 或者通过ip访问，比如http://192.168.11.121:8123，不出意外的话就会出现创建账户的管理页面，然后就可以开始配置、使用。那是有一个15～20分钟的初始化过程，我这边在发货前已经替买家跑完。但是这让我有些力不从心，太耗费时间了。&#xA;因此，从今天开始这个初始化过程将由买家（也许就是您）自己完成！实际上，这是一个有趣的过程……&#xA;有的朋友拿到盒子后插上电源连上网线就着急访问http://homeassistant.local:8123，但是盒子还没启动，页面打不开，然后就怀疑盒子有问题找到我，那也我不能不管啊，所以又一通询问一通解释。比较耗费时间精力。&#xA;因此，朋友们拿到盒子后，首先接通电源插上网线等3分钟后再访问http://homeassistant.local:8123。</description>
     </item>
     <item>
+      <title>Homeassistant盒子安装HACS极速版</title>
+      <link>http://localhost:1313/installation/hacs-china/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/installation/hacs-china/index.html</guid>
+      <description>一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明&#xA;HACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。&#xA;也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。&#xA;二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单</description>
+    </item>
+    <item>
       <title>远程控制Homeassistant盒子</title>
       <link>http://localhost:1313/installation/free-remote-control/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
