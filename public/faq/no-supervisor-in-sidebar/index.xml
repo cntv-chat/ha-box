@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>侧边栏没有supervisor菜单项 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/no-supervisor-in-sidebar/index.html</link>
+    <description> 访问http://homeassistant.local:7681 输入login回车，进入root模式 输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c </description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/no-supervisor-in-sidebar/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

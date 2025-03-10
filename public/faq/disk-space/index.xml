@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeassistant磁盘空间快满 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/disk-space/index.html</link>
+    <description>Homeassistant Box磁盘空间快满了，怎么办？ 1）清理过时的docker镜像文件 我们在使用 Docker 一段时间后，系统一般都会残存一些临时的、没有被使用的镜像文件，可以通过以下命令进行清理：&#xA;访问http://homeassistant.local:7681 输入login回车进入root模式 执行 docker image prune 2）清理历史记录 在configuration.yaml里添加或修改</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/disk-space/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

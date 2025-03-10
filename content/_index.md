@@ -5,6 +5,12 @@ weight = 1
 
 +++
 
+[HABox智能家居盒子](https://www.goofish.com/personal?userId=2209420746666) 本站唯一店铺，请点击连接进入选购
+
+[Homeassistant盒子链接](https://www.goofish.com/item?id=868904979582&categoryId=50023914)
+
+![截图 2025-03-10 09-02-56](https://pic.456766.xyz/20250310092729679.png)
+
 
 
 - 安装维护

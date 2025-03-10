@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 6.0.0+tip">
+    <meta name="description" content="如果只是忘记密码，用户名没忘记
+在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/hero.png">
+    <meta name="twitter:title" content="Homeassistant重置密码 :: HaBox 技术支持站">
+    <meta name="twitter:description" content="如果只是忘记密码，用户名没忘记
+在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+    <meta property="og:url" content="http://localhost:1313/faq/reset-password/index.html">
+    <meta property="og:site_name" content="HaBox 技术支持站">
+    <meta property="og:title" content="Homeassistant重置密码 :: HaBox 技术支持站">
+    <meta property="og:description" content="如果只是忘记密码，用户名没忘记
+在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/hero.png">
+    <meta itemprop="name" content="Homeassistant重置密码 :: HaBox 技术支持站">
+    <meta itemprop="description" content="如果只是忘记密码，用户名没忘记
+在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; ">
+    <meta itemprop="wordCount" content="10">
+    <meta itemprop="image" content="http://localhost:1313/images/hero.png">
+    <title>Homeassistant重置密码 :: HaBox 技术支持站</title>
+    <link href="http://localhost:1313/faq/reset-password/index.html" rel="canonical" type="text/html" title="Homeassistant重置密码 :: HaBox 技术支持站">
+    <link href="../../faq/reset-password/index.xml" rel="alternate" type="application/rss+xml" title="Homeassistant重置密码 :: HaBox 技术支持站"><link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <link href="../../css/fontawesome-all.min.css?1741570537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1741570537" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1741570537" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1741570537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1741570537" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1741570537" rel="stylesheet">
+    <link href="../../css/fonts.css?1741570537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1741570537" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1741570537" rel="stylesheet">
+    <link href="../../css/theme-relearn-auto.css?1741570537" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/chroma-relearn-auto.css?1741570537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="../../css/variant.css?1741570537" rel="stylesheet">
+    <link href="../../css/print.css?1741570537" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1741570537" rel="stylesheet">
+    <script src="../../js/variant.js?1741570537"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="../../index.search.js";
+      // variant stuff
+      window.variants && variants.init( [ 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'zen-auto', 'zen-light', 'zen-dark', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3Jh9XF56OMu5x31r",ck:"3Jh9XF56OMu5x31r"})</script>
+
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../faq/reset-password/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../faq/index.html"><span itemprop="name">4 常见问题</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Homeassistant重置密码</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../faq/disk-space/index.html" title="Homeassistant磁盘空间快满 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../faq/no-supervisor-in-sidebar/index.html" title="侧边栏没有supervisor菜单项 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="homeassistant重置密码">Homeassistant重置密码</h1>
+
+<p>如果只是忘记密码，用户名没忘记</p>
+<ol>
+<li>在浏览器访问<a href="http://homeassistant.local:7681/" rel="external" target="_self">http://homeassistant.local:7681</a>（或者用ip访问，比如http://192.168.3.198:7681/），</li>
+<li>在ha提示符后面执行</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0"><code>authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34;</code></pre></div><p><a href="https://www.ha-box.xyz/faq/index.html#R-image-62e3c00209807f3325fac00d32021a28" rel="external" target="_self"><a href="#R-image-5eb48857014e72153b116d1092f4b12b" class="lightbox-link"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5eb48857014e72153b116d1092f4b12b"><img alt="image-20241220095851655" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="https://pic.456766.xyz/typora/image-20241220095851655.png"></a></a></p>
+<p>再回到<a href="http://homeassistant.local:8123/" rel="external" target="_self">http://homeassistant.local:8123</a>登陆即可</p>
+
+<script
+  id="utteranc"
+  src="https://utteranc.es/client.js"
+  repo="cntv-chat/ha-box"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const theme = document.body.className.includes("dark")
+      ? "github-light"
+      : "photon-dark";
+    const message = {
+      type: "set-theme",
+      theme: theme,
+    };
+    const utteranc = document.querySelector(".utterances-frame");
+    utteranc.contentWindow.postMessage(message, "https://utteranc.es");
+  });
+</script>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1741570537" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1741570537" defer></script>
+    <script src="../../js/theme.js?1741570537" defer></script>
+
+
+  </body>
+</html>
+
+

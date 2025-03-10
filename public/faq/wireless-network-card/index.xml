@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>无线网卡不能使用的临时解决方案 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/wireless-network-card/index.html</link>
+    <description>访问http://homeassistant.local:7681&#xA;出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件&#xA;在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）&#xA;保存，重启就可以正常使用了。&#xA;如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/wireless-network-card/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -28,6 +28,9 @@
     <loc>http://localhost:1313/network/cloudflare-tunnel-ssh/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/faq/core2025.3-bemfa/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/access/homekit/index.html</loc>
   </url>
   <url>
@@ -40,6 +43,9 @@
     <loc>http://localhost:1313/installation/initialize-system/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/faq/disk-space/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/installation/hacs-china/index.html</loc>
   </url>
   <url>
@@ -49,7 +55,13 @@
     <loc>http://localhost:1313/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/faq/reset-password/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/network/linux-partition/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/no-supervisor-in-sidebar/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/network/docker-pull/index.html</loc>
@@ -61,10 +73,19 @@
     <loc>http://localhost:1313/access/mijia/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/faq/clear-user-account/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/wireless-network-card/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/about/brand-new-boxes-arrived/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/installation/free-remote-control/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/faq/factory-reset/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>

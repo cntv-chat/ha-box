@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>core 2025.3.0 bemfa 问题临时解决方案 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/core2025.3-bemfa/index.html</link>
+    <description>Homeassistant core 2025.3.0 bemfa 无法加载配置向导问题的临时解决方案&#xA;临时解决方案： \homeassistant\custom_components\bemfa文件夹下 manifest.json中的 “requirements”: [“paho-mqtt==1.6.1”] 修改为 “requirements”: [“paho-mqtt&gt;=2.0.0”]</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/core2025.3-bemfa/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

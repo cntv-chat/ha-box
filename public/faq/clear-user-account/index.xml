@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>清除Homeassistant Box 账户信息 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/clear-user-account/index.html</link>
+    <description>想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 </description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/clear-user-account/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

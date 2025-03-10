@@ -85,6 +85,14 @@ var relearn_search_index = [
     "uri": "/network/cloudflare-tunnel-ssh/index.html"
   },
   {
+    "breadcrumb": "4 常见问题",
+    "content": "Homeassistant core 2025.3.0 bemfa 无法加载配置向导问题的临时解决方案\n临时解决方案： \\homeassistant\\custom_components\\bemfa文件夹下 manifest.json中的 “requirements”: [“paho-mqtt==1.6.1”] 修改为 “requirements”: [“paho-mqtt\u003e=2.0.0”]\nmqtt.py中 self._mqttc = mqtt.Client(uid, mqtt.MQTTv311) 修改为 self._mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, client_id=uid, protocol=mqtt.MQTTv311)\n保存 重启HA 后生效",
+    "description": "Homeassistant core 2025.3.0 bemfa 无法加载配置向导问题的临时解决方案\n临时解决方案： \\homeassistant\\custom_components\\bemfa文件夹下 manifest.json中的 “requirements”: [“paho-mqtt==1.6.1”] 修改为 “requirements”: [“paho-mqtt\u003e=2.0.0”]",
+    "tags": [],
+    "title": "core 2025.3.0 bemfa 问题临时解决方案",
+    "uri": "/faq/core2025.3-bemfa/index.html"
+  },
+  {
     "breadcrumb": "2 设备接入",
     "content": "HA Box使用说明书\n在HA Box 中安装HACS\n将米家设备接入HomeAssistant\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。\n首先，我们要添加 HomeKit Bridge 集成。点击“配置”，进入“设备与服务”页面。在“集成”选项下，点右下角“添加集成” 然后输入“homekit” 或者\"apple\"\n点击“Apple”\n点击添加“HomeKit Bridge 集成”，按照指引完成添加。\n需要注意是的，如果你有温湿度传感器，点击“要添加的域”下拉选项，记得勾选“Sensor”，这个选项默认是不勾选的。\n添加 HomeKit Bridge 集成成功后，点击界面左下角的通知按钮。查看 homekit 的配对二维码。\n打开“家庭”应用，点击左上角的“+”号，选择“添加配件”。扫描上个步骤的得到的二维码，点击“添加到家庭”。在加入过程中，可能会提示“未认证设备”，点击“仍要添加”。然后完成剩余步骤，逐个添加设备。完成后，你就能能用Siri控制你的智能设备了。\n大功告成！",
     "description": "HA Box使用说明书\n在HA Box 中安装HACS\n将米家设备接入HomeAssistant\n前提条件是我们已经安装了HACS,如果没有请参考上面的连接安装\n接下来，我们通过 HomeKit Bridge 将 Home Assistant 中设备桥接到 HomeKit。",
@@ -130,6 +138,14 @@ var relearn_search_index = [
     "uri": "/installation/initialize-system/index.html"
   },
   {
+    "breadcrumb": "4 常见问题",
+    "content": "Homeassistant Box磁盘空间快满了，怎么办？ 1）清理过时的docker镜像文件 我们在使用 Docker 一段时间后，系统一般都会残存一些临时的、没有被使用的镜像文件，可以通过以下命令进行清理：\n访问http://homeassistant.local:7681 输入login回车进入root模式 执行 docker image prune 2）清理历史记录 在configuration.yaml里添加或修改\nrecorder: purge_keep_days: 5\n3）删除备份文件 设置-系统-备份",
+    "description": "Homeassistant Box磁盘空间快满了，怎么办？ 1）清理过时的docker镜像文件 我们在使用 Docker 一段时间后，系统一般都会残存一些临时的、没有被使用的镜像文件，可以通过以下命令进行清理：\n访问http://homeassistant.local:7681 输入login回车进入root模式 执行 docker image prune 2）清理历史记录 在configuration.yaml里添加或修改",
+    "tags": [],
+    "title": "Homeassistant磁盘空间快满",
+    "uri": "/faq/disk-space/index.html"
+  },
+  {
     "breadcrumb": "1 安装维护",
     "content": "一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明\nHACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。\n也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。\n二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单\n首先我们需要确保已经在加载项里面安装好了“Advanced SSH \u0026 Web Terminal”，并在配置选项下设置了用户名和密码，别忘了点保存。\n然后使之显示于侧边栏并启动\n在侧边栏点开Terminal，然后执行下面的代码\nwget -O - https://get.hacs.vip | bash - # 或 curl -fsSL get.hacs.vip | bash等待下载安装完后，重启盒子就可以了",
     "description": "一、HACS极速版和普通HACS的区别 我们来看看HACS极速版的说明\nHACS是一款优秀的 Home Assistant 集成商店，然而国人想要使用它下载插件或前端卡片却困难重重，主要原因就是国内的网络环境。 本项目（极速版）使用了gitmirror.com和fastgit.org等提供的Github代理服务，可以让大家更快的下载商店里的插件。\n也就是说，HACS极速版是HACS官方集成的修改版，主要解决国内网络问题，功能上和HACS一样。\n二、安装HACS极速版 使用HACS极速版不需要github账号，也不需要激活，因为极速版实际上是公共一套激活数据。安装非常简单",
@@ -154,8 +170,8 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
-    "content": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 HACS极速版安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
-    "description": " 安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 HACS极速版安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题",
+    "content": "HABox智能家居盒子 本站唯一店铺，请点击连接进入选购\nHomeassistant盒子链接\n安装维护 HA盒子初始化系统 HA盒子使用说明书（开箱即用） 给HA Box插上无线WIFI的翅膀 HACS安装激活 HACS极速版安装激活 远程控制Homeassistant盒子 Ha盒子配置科学上网 设备接入 HA Box桥接米家设备到HomeKit 将米家设备接入HomeAssistant 网络技术 linux下无损扩容分区方法 从 Docker Hub 快速拉取镜像 搭建免费科学上网节点 Cloudflare Page搭建免费科学上网节点 整理了一些常见问题，可以访问常见问题\n关于我们\nHomeassistant盒子介绍 新到一批Homeassistant盒子，几乎没有瑕疵 ",
+    "description": "HABox智能家居盒子 本站唯一店铺，请点击连接进入选购\nHomeassistant盒子链接",
     "tags": [
       "Homeassistant",
       "HA Box",
@@ -163,6 +179,14 @@ var relearn_search_index = [
     ],
     "title": "Homeassistant使用教程",
     "uri": "/index.html"
+  },
+  {
+    "breadcrumb": "4 常见问题",
+    "content": "如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username \"用户名\" --password \"新密码\" 再回到http://homeassistant.local:8123登陆即可",
+    "description": "如果只是忘记密码，用户名没忘记\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username \"用户名\" --password \"新密码\" ",
+    "tags": [],
+    "title": "Homeassistant重置密码",
+    "uri": "/faq/reset-password/index.html"
   },
   {
     "breadcrumb": "3 网络技术",
@@ -174,6 +198,14 @@ var relearn_search_index = [
     ],
     "title": "linux下无损扩容分区方法",
     "uri": "/network/linux-partition/index.html"
+  },
+  {
+    "breadcrumb": "4 常见问题",
+    "content": " 访问http://homeassistant.local:7681 输入login回车，进入root模式 输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c ",
+    "description": " 访问http://homeassistant.local:7681 输入login回车，进入root模式 输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c ",
+    "tags": [],
+    "title": "侧边栏没有supervisor菜单项",
+    "uri": "/faq/no-supervisor-in-sidebar/index.html"
   },
   {
     "breadcrumb": "3 网络技术",
@@ -209,6 +241,22 @@ var relearn_search_index = [
     "uri": "/access/mijia/index.html"
   },
   {
+    "breadcrumb": "4 常见问题",
+    "content": "想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 在#提示符下执行，注意是大写字母C ha-install -C 再回到http://homeassistant.local:8123登陆即可",
+    "description": "想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息\n在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 ",
+    "tags": [],
+    "title": "清除Homeassistant Box 账户信息",
+    "uri": "/faq/clear-user-account/index.html"
+  },
+  {
+    "breadcrumb": "4 常见问题",
+    "content": "访问http://homeassistant.local:7681\n出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件\n在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）\n保存，重启就可以正常使用了。\n如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。\n预计下一版会修正",
+    "description": "访问http://homeassistant.local:7681\n出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件\n在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）\n保存，重启就可以正常使用了。\n如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。",
+    "tags": [],
+    "title": "无线网卡不能使用的临时解决方案",
+    "uri": "/faq/wireless-network-card/index.html"
+  },
+  {
     "breadcrumb": "5 关于我们",
     "content": "新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存\n有需要的老铁们请联系我",
     "description": "新到一批Homeassistant盒子，CM31101A和M401A，都是晶晨S905l3a芯片，2+16大内存\n有需要的老铁们请联系我",
@@ -227,6 +275,14 @@ var relearn_search_index = [
     ],
     "title": "远程控制Homeassistant盒子",
     "uri": "/installation/free-remote-control/index.html"
+  },
+  {
+    "breadcrumb": "4 常见问题",
+    "content": " 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot ",
+    "description": " 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot ",
+    "tags": [],
+    "title": "重置Homeassistant盒子，恢复出厂设置",
+    "uri": "/faq/factory-reset/index.html"
   },
   {
     "breadcrumb": "",

@@ -7,5 +7,54 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>core 2025.3.0 bemfa 问题临时解决方案</title>
+      <link>http://localhost:1313/faq/core2025.3-bemfa/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/core2025.3-bemfa/index.html</guid>
+      <description>Homeassistant core 2025.3.0 bemfa 无法加载配置向导问题的临时解决方案&#xA;临时解决方案： \homeassistant\custom_components\bemfa文件夹下 manifest.json中的 “requirements”: [“paho-mqtt==1.6.1”] 修改为 “requirements”: [“paho-mqtt&gt;=2.0.0”]</description>
+    </item>
+    <item>
+      <title>Homeassistant磁盘空间快满</title>
+      <link>http://localhost:1313/faq/disk-space/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/disk-space/index.html</guid>
+      <description>Homeassistant Box磁盘空间快满了，怎么办？ 1）清理过时的docker镜像文件 我们在使用 Docker 一段时间后，系统一般都会残存一些临时的、没有被使用的镜像文件，可以通过以下命令进行清理：&#xA;访问http://homeassistant.local:7681 输入login回车进入root模式 执行 docker image prune 2）清理历史记录 在configuration.yaml里添加或修改</description>
+    </item>
+    <item>
+      <title>Homeassistant重置密码</title>
+      <link>http://localhost:1313/faq/reset-password/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/reset-password/index.html</guid>
+      <description>如果只是忘记密码，用户名没忘记&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后面执行 authentication reset --username &#34;用户名&#34; --password &#34;新密码&#34; </description>
+    </item>
+    <item>
+      <title>侧边栏没有supervisor菜单项</title>
+      <link>http://localhost:1313/faq/no-supervisor-in-sidebar/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/no-supervisor-in-sidebar/index.html</guid>
+      <description> 访问http://homeassistant.local:7681 输入login回车，进入root模式 输入ha-install -c 强制重配（然后重启系统看看），注意是小写字母c </description>
+    </item>
+    <item>
+      <title>清除Homeassistant Box 账户信息</title>
+      <link>http://localhost:1313/faq/clear-user-account/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/clear-user-account/index.html</guid>
+      <description>想清除Homeassistant Box 账户信息怎么弄？ 如果用户名和密码都忘记了，或者你就是想单纯的清除账户信息&#xA;在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 </description>
+    </item>
+    <item>
+      <title>无线网卡不能使用的临时解决方案</title>
+      <link>http://localhost:1313/faq/wireless-network-card/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/wireless-network-card/index.html</guid>
+      <description>访问http://homeassistant.local:7681&#xA;出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件&#xA;在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）&#xA;保存，重启就可以正常使用了。&#xA;如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。</description>
+    </item>
+    <item>
+      <title>重置Homeassistant盒子，恢复出厂设置</title>
+      <link>http://localhost:1313/faq/factory-reset/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/factory-reset/index.html</guid>
+      <description> 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot </description>
+    </item>
   </channel>
 </rss>

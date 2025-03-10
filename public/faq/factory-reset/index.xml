@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>重置Homeassistant盒子，恢复出厂设置 :: HaBox 技术支持站</title>
+    <link>http://localhost:1313/faq/factory-reset/index.html</link>
+    <description> 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot </description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:1313/faq/factory-reset/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
