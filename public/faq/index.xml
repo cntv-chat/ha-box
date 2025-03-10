@@ -50,6 +50,13 @@
       <description>访问http://homeassistant.local:7681&#xA;出现ha提示符后输入login回车，进入命令行界面 编辑 /mnt/boot/cmdline.txt 文件&#xA;在console=tty0 后面增加 net.ifnames=0（和前面用空格隔开）&#xA;保存，重启就可以正常使用了。&#xA;如果修改后，又升级了homeassistant的版本，那可能会又不能使用。如果是这样，可以再来一次上面的操作。</description>
     </item>
     <item>
+      <title>重新安装最新的小米官方插件</title>
+      <link>http://localhost:1313/faq/xiaomi-home/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/xiaomi-home/index.html</guid>
+      <description>最近homeassistant core 升级到2025.5.3，好几个插件不好使，小米官方插件也未能幸免，不过小米官方立即发布了新版本，修复了存在的问题。但是我也需要好几个客户小米官方插件已经更新到最新版本还是不能用。&#xA;那么，怎么重装小米官方插件呢？&#xA;1，浏览器访问http://homeassistant.local:7681 ，输入login后回车&#xA;2,导航到/mnt/data/supervisor/homeassistant/custom_components/&#xA;cd /mnt/data/supervisor/homeassistant/custom_components/&#xA;3、删除原来的目录ha_xiaomi_home（也有可能是xiaomi_home）</description>
+    </item>
+    <item>
       <title>重置Homeassistant盒子，恢复出厂设置</title>
       <link>http://localhost:1313/faq/factory-reset/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

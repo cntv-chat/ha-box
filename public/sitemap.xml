@@ -85,6 +85,9 @@
     <loc>http://localhost:1313/installation/free-remote-control/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/faq/xiaomi-home/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/faq/factory-reset/index.html</loc>
   </url>
   <url>

@@ -278,6 +278,14 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "4 常见问题",
+    "content": "最近homeassistant core 升级到2025.5.3，好几个插件不好使，小米官方插件也未能幸免，不过小米官方立即发布了新版本，修复了存在的问题。但是我也需要好几个客户小米官方插件已经更新到最新版本还是不能用。\n那么，怎么重装小米官方插件呢？\n1，浏览器访问http://homeassistant.local:7681 ，输入login后回车\n2,导航到/mnt/data/supervisor/homeassistant/custom_components/\ncd /mnt/data/supervisor/homeassistant/custom_components/\n3、删除原来的目录ha_xiaomi_home（也有可能是xiaomi_home）\nrm -rf ha_xiaomi_home\n4、下载xiaomi官方插件最新版（当前为0.2.1）\nwget https://github.com/XiaoMi/ha_xiaomi_home/releases/download/v0.2.1/xiaomi_home.zip\n5、解压到ha_xiaomi_home目录\nunzip xiaomi_home.zip -d ha_xiaomi_home\n6、重启\nreboot\n7、重启完成后，在设置-设备与服务 添加集成 输入xiaomi找到xiaomi home就可以用了\n如果下载不了文件，请自行搜索github加速下载，或者使用冬瓜伴侣",
+    "description": "最近homeassistant core 升级到2025.5.3，好几个插件不好使，小米官方插件也未能幸免，不过小米官方立即发布了新版本，修复了存在的问题。但是我也需要好几个客户小米官方插件已经更新到最新版本还是不能用。\n那么，怎么重装小米官方插件呢？\n1，浏览器访问http://homeassistant.local:7681 ，输入login后回车\n2,导航到/mnt/data/supervisor/homeassistant/custom_components/\ncd /mnt/data/supervisor/homeassistant/custom_components/\n3、删除原来的目录ha_xiaomi_home（也有可能是xiaomi_home）",
+    "tags": [],
+    "title": "重新安装最新的小米官方插件",
+    "uri": "/faq/xiaomi-home/index.html"
+  },
+  {
+    "breadcrumb": "4 常见问题",
     "content": " 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot ",
     "description": " 在浏览器访问http://homeassistant.local:7681（或者用ip访问，比如http://192.168.3.198:7681/）， 在ha提示符后输入login回车 删除隐藏目录，没有任何提示，删除后执行reboot重启，命令： rm -rf /mnt/data/supervisor/homeassistant/.storage/ reboot ",
     "tags": [],
