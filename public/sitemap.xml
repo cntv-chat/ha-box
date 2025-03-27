@@ -70,16 +70,25 @@
     <loc>http://localhost:1313/network/free-vless-node/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/job/liying/new-retail/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/access/mijia/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/faq/clear-user-account/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/job/liying/low-cost-airlines/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/faq/wireless-network-card/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/about/brand-new-boxes-arrived/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/job/liying/work/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/installation/free-remote-control/index.html</loc>
@@ -137,6 +146,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/homekit/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/job/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/linux/index.html</loc>
