@@ -29,7 +29,7 @@ weight = 1
 
 [**为什么吼完孩子，孩子转眼就忘？不是他不记仇，真实答案让人心酸！**](https://mp.weixin.qq.com/s/TBi9OE-yj-kdFRbfWyZTLA)
 
-###### 这是学生时代发表的部分文章。
+###### 这是学生时代发表的部分作品。
 
-[ **学生时代发表的部分文章**]({{% relref "/job/liying/work" %}})
+[ **学生时代发表的部分作品**]({% relref "/job/liying/work" %})
 
