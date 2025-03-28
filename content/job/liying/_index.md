@@ -31,5 +31,5 @@ weight = 1
 
 ###### 这是学生时代发表的部分作品。
 
-[ **学生时代发表的部分作品**]({% relref "/job/liying/work" %})
+[**学生时代发表的部分作品**]({{% relref "/job/liying/work" %}})
 
