@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>学生时代发表的部分文章 :: HaBox 技术支持站</title>
+    <title></title>
     <link>http://localhost:1313/job/liying/work/index.html</link>
-    <description>《离别心情》 </description>
+    <description>《Computer，我一生的爱》 </description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/job/liying/work/index.xml" rel="self" type="application/rss+xml" />
